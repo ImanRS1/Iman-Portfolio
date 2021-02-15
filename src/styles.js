@@ -53,6 +53,8 @@ export const StyledCard = styled.div`
   }
 `;
 
+//const StyledAttribute = styled(StyledAbout)``
+
 export const StyledAttribute = styled.div`
   min-height: 90vh;
   display: flex;
