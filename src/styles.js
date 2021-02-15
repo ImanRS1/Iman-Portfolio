@@ -42,7 +42,7 @@ export const StyledCard = styled.div`
     display: flex;
     align-items: center;
     svg {
-      font-size: 80px;
+      font-size: 50px;
     }
     h3 {
       margin-left: 1rem;

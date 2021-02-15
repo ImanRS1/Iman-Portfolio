@@ -5,7 +5,7 @@ import AttributeSection from "../components/AttributeSection";
 const About = () => {
   return (
     <div>
-      <AboutSection />;
+      <AboutSection />
       <AttributeSection />
     </div>
   );
