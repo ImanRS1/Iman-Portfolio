@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import { useHistory } from "react-router-dom";
 import { WorkState } from "../workState";
+import { motion } from "framer-motion";
+import { pageAnimation } from "../animation";
 
 const WorkDetail = () => {
   const history = useHistory();
@@ -15,7 +17,12 @@ const WorkDetail = () => {
   }, [works, url]);
 
   return (
-    <StyledDetails>
+    <StyledDetails
+      variants={pageAnimation}
+      initial="hidden"
+      animate="show"
+      exit="exit"
+    >
       <StyledHeadLine>
         <h2>{work.title}</h2>
         <img src={work.mainImg} alt="Work picture" />
@@ -34,7 +41,7 @@ const WorkDetail = () => {
   );
 };
 
-const StyledDetails = styled.div`
+const StyledDetails = styled(motion.div)`
   color: white;
 `;
 

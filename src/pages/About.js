@@ -1,13 +1,15 @@
 import React from "react";
 import AboutSection from "../components/AboutSection";
 import AttributeSection from "../components/AttributeSection";
+import {motion} from "framer-motion";
+import {pageAnimation} from "../animation";
 
 const About = () => {
   return (
-    <div>
+    <motion.div variants={pageAnimation} initial="hidden" animate="show" exit="exit">
       <AboutSection />
       <AttributeSection />
-    </div>
+    </motion.div>
   );
 };
 

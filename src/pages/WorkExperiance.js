@@ -2,10 +2,18 @@ import React from "react";
 import home1 from "../img/placeholder-img.jpg";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+import { pageAnimation } from "../animation";
 
 const WorkExperiance = () => {
   return (
-    <Works>
+    <Works
+      variants={pageAnimation}
+      initial="hidden"
+      animate="show"
+      exit="exit"
+      style={{ background: "whitesmoke" }}
+    >
       <Work>
         <Link to="/work/work1">
           <h2>Second job</h2>
@@ -28,7 +36,7 @@ const WorkExperiance = () => {
   );
 };
 
-const Works = styled.div`
+const Works = styled(motion.div)`
   min-height: 100vh;
   overflow: hidden;
   padding: 5rem 10rem;

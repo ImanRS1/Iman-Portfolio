@@ -1,6 +1,6 @@
 import React from "react";
 import home1 from "../img/placeholder-img.jpg";
-import styled from "styled-components";
+import {motion} from "framer-motion";
 import {
   StyledAbout,
   StyledDescription,
@@ -12,19 +12,19 @@ const AboutSection = () => {
   return (
     <StyledAbout>
       <StyledDescription>
-        <div className="title">
+        <motion.div className="title">
           <StyledHide className="StyledHide">
-            <h2>lorem 1</h2>
+            <motion.h2>lorem 1</motion.h2>
           </StyledHide>
           <StyledHide className="StyledHide">
-            <h2>
+            <motion.h2>
               lor<span>rem</span> 3
-            </h2>
+            </motion.h2>
           </StyledHide>
           <StyledHide className="StyledHide">
-            <h2>lorem 3</h2>
+            <motion.h2>lorem 3</motion.h2>
           </StyledHide>
-        </div>
+        </motion.div>
         <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium
           praesentium deserunt amet?
