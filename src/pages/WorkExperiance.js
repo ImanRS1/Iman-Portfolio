@@ -7,16 +7,20 @@ const WorkExperiance = () => {
   return (
     <Works>
       <Work>
-        <h2>Second job</h2>
+        <Link to="/work/work1">
+          <h2>Second job</h2>
+        </Link>
         <div className="line"></div>
-        <Link>
+        <Link to="/work/work1">
           <img src={home1} alt="Picture of second work experiance" />
         </Link>
       </Work>
       <Work>
-        <h2>First job</h2>
+        <Link to="/work/work2">
+          <h2>First job</h2>
+        </Link>
         <div className="line"></div>
-        <Link>
+        <Link to="/work/work2">
           <img src={home1} alt="Picture of first work experiance" />
         </Link>
       </Work>
