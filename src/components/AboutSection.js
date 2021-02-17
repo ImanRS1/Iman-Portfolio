@@ -1,5 +1,6 @@
 import React from "react";
 import home1 from "../img/placeholder-img.jpg";
+import iman from "../img/iman.jpg";
 import { motion } from "framer-motion";
 import { titleAnim, fade, imgAnim } from "../animation";
 import Wave from "./Wave";
@@ -35,7 +36,7 @@ const AboutSection = () => {
       </StyledDescription>
       <StyledImage>
         <motion.img
-          src={home1}
+          src={iman}
           alt="Image of Iman Reza Soltani"
           variants={imgAnim}
         />

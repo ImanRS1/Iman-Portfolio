@@ -8,6 +8,9 @@ export const StyledAbout = styled(motion.div)`
   justify-content: space-between;
   padding: 5rem 10rem;
   color: white;
+  @media (max-width: 1300px){
+    background-color: white;
+    }
 `;
 
 export const StyledDescription = styled.div`
