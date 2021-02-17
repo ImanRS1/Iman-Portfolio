@@ -3,6 +3,7 @@ import AboutSection from "../components/AboutSection";
 import AttributeSection from "../components/AttributeSection";
 import { motion } from "framer-motion";
 import { pageAnimation } from "../animation";
+import ScrollTop from "../components/ScrollTop";
 
 const About = () => {
   return (
@@ -14,6 +15,7 @@ const About = () => {
     >
       <AboutSection />
       <AttributeSection />
+      <ScrollTop />
     </motion.div>
   );
 };

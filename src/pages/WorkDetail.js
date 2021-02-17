@@ -4,6 +4,7 @@ import { useHistory } from "react-router-dom";
 import { WorkState } from "../workState";
 import { motion } from "framer-motion";
 import { pageAnimation } from "../animation";
+import ScrollTop from "../components/ScrollTop";
 
 const WorkDetail = () => {
   const history = useHistory();
@@ -37,6 +38,7 @@ const WorkDetail = () => {
       <StyledImageDisplay>
         <img src={work.secondaryImg} alt="Work picture" />
       </StyledImageDisplay>
+      <ScrollTop />
     </StyledDetails>
   );
 };

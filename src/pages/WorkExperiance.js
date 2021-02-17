@@ -13,6 +13,7 @@ import {
 } from "../animation";
 import { StyledHide } from "../styles";
 import { useScroll } from "../components/useScroll";
+import ScrollTop from "../components/ScrollTop";
 
 const WorkExperiance = () => {
   const [element, controls] = useScroll();
@@ -89,6 +90,7 @@ const WorkExperiance = () => {
           </StyledHide>
         </Link>
       </Work>
+      <ScrollTop />
     </Works>
   );
 };

@@ -43,7 +43,9 @@ const StyledNav = styled.nav`
 
 const StyledNavContainer = styled.nav`
   min-height: 10vh;
-  position: relative;
+  position: sticky;
+  top: 0;
+  z-index: 4;
   a {
     color: white;
     text-decoration: none;
