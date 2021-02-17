@@ -1,31 +1,37 @@
 import React from "react";
 import styled from "styled-components";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Nav = () => {
   return (
-    <StyledNav>
-      <h1>
-        <Link id="logo" to="/">
-          Iman Reza Soltani
-        </Link>
-      </h1>
-      <ul>
-        <li>
-          <Link to="/">1. About Iman</Link>
-        </li>
-        <li>
-          <Link to="/workexperiance">2. Work Experiance</Link>
-        </li>
-        <li>
-          <Link to="/educationandskills">3. Education and Skills</Link>
-        </li>
-      </ul>
-    </StyledNav>
+    <StyledNavContainer>
+      <StyledNav>
+        <h1>
+          <Link id="logo" to="/">
+            Iman Reza Soltani
+          </Link>
+        </h1>
+        <ul>
+          <li>
+            <Link to="/">1. About Iman</Link>
+          </li>
+          <li>
+            <Link to="/workexperiance">2. Work Experiance</Link>
+          </li>
+          <li>
+            <Link to="/educationandskills">3. Education and Skills</Link>
+          </li>
+        </ul>
+      </StyledNav>
+    </StyledNavContainer>
   );
 };
 
 const StyledNav = styled.nav`
+  position: absolute;
+  z-index: 30;
+  width: 100vw;
+
   min-height: 10vh;
   display: flex;
   margin: auto;
@@ -33,6 +39,11 @@ const StyledNav = styled.nav`
   align-items: center;
   padding: 1rem 10rem;
   background: #282828;
+`;
+
+const StyledNavContainer = styled.nav`
+  min-height: 10vh;
+  position: relative;
   a {
     color: white;
     text-decoration: none;

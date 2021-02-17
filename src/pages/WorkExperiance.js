@@ -47,7 +47,13 @@ const WorkExperiance = () => {
           </StyledHide>
         </Link>
       </Work>
-      <Work>
+      <Work
+        ref={element}
+        variants={fade}
+        animate={controls}
+        initial="hidden"
+        layout="position"
+      >
         <Link to="/work/work1">
           <motion.h2 variants={fade}>Second job</motion.h2>
         </Link>
@@ -64,11 +70,17 @@ const WorkExperiance = () => {
       </Work>
       <Work>
         <Link to="/work/work2">
-          <h2>First job</h2>
+          <motion.h2 variants={fade}>First job</motion.h2>
         </Link>
-        <div className="line"></div>
+        <motion.div variants={lineAnim} className="line"></motion.div>
         <Link to="/work/work2">
-          <img src={home1} alt="Picture of first work experiance" />
+          <StyledHide>
+            <motion.img
+              variants={imgAnim}
+              src={home1}
+              alt="Picture of first work experiance"
+            />
+          </StyledHide>
         </Link>
       </Work>
     </Works>
@@ -78,14 +90,14 @@ const WorkExperiance = () => {
 const Works = styled(motion.div)`
   min-height: 100vh;
   overflow: hidden;
-  padding: 5rem 10rem;
+  padding: 1rem 10rem;
   h2 {
     padding: 1rem 0rem;
   }
 `;
 
 const Work = styled(motion.div)`
-  padding-bottom: 10rem;
+  padding-bottom: 5rem;
   .line {
     height: 0.5rem;
     background: #23d997;
@@ -101,7 +113,7 @@ const Work = styled(motion.div)`
 const Frame1 = styled(motion.div)`
   position: fixed;
   left: 0;
-  top: 10%;
+  top: 0;
   width: 100%;
   height: 100vh;
   background: #fffebf;
