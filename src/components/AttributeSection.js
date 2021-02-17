@@ -2,20 +2,21 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlane, faFileCode } from "@fortawesome/free-solid-svg-icons";
 import home1 from "../img/placeholder-img.jpg";
+import styled from "styled-components";
+import {useScroll} from "./useScroll";
+import {scrollReveal} from "../animation";
 import {
-  StyledAbout,
   StyledDescription,
   StyledImage,
-  StyledHide,
   StyledCards,
   StyledCard,
   StyledAttribute,
 } from "../styles";
-import styled from "styled-components";
 
 const AttributeSection = () => {
+  const [element, controls] = useScroll();
   return (
-    <StyledAttribute>
+    <StyledAttribute variants={scrollReveal} animate={controls} initial={"hidden"} ref={element}>
       <StyledDescription>
         <h2>
           Lorem <span>ipsum dolor</span> sit amet.

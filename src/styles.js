@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
-export const StyledAbout = styled.div`
+export const StyledAbout = styled(motion.div)`
   min-height: 90vh;
   display: flex;
   align-items: center;
@@ -57,7 +58,7 @@ export const StyledCard = styled.div`
 
 //const StyledAttribute = styled(StyledAbout)``
 
-export const StyledAttribute = styled.div`
+export const StyledAttribute = styled(motion.div)`
   min-height: 90vh;
   display: flex;
   align-items: center;

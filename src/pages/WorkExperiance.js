@@ -12,8 +12,10 @@ import {
   sliderContainer,
 } from "../animation";
 import { StyledHide } from "../styles";
+import { useScroll } from "../components/useScroll";
 
 const WorkExperiance = () => {
+  const [element, controls] = useScroll();
   return (
     <Works
       variants={pageAnimation}
@@ -65,7 +67,7 @@ const Works = styled(motion.div)`
   }
 `;
 
-const Work = styled.div`
+const Work = styled(motion.div)`
   padding-bottom: 10rem;
   .line {
     height: 0.5rem;
