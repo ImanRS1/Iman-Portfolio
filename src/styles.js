@@ -15,6 +15,7 @@ export const StyledDescription = styled.div`
   h2 {
     font-weight: lighter;
   }
+  z-index: 2;
 `;
 
 export const StyledImage = styled.div`
@@ -25,6 +26,7 @@ export const StyledImage = styled.div`
     height: 80vh;
     object-fit: cover;
   }
+  z-index: 2;
 `;
 
 export const StyledHide = styled.div`

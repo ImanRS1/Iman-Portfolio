@@ -1,7 +1,8 @@
 import React from "react";
 import home1 from "../img/placeholder-img.jpg";
-import {motion} from "framer-motion";
-import {titleAnim, fade, imgAnim} from "../animation";
+import { motion } from "framer-motion";
+import { titleAnim, fade, imgAnim } from "../animation";
+import Wave from "./Wave";
 import {
   StyledAbout,
   StyledDescription,
@@ -33,8 +34,13 @@ const AboutSection = () => {
         <motion.button variants={fade}>Contact Iman</motion.button>
       </StyledDescription>
       <StyledImage>
-        <motion.img src={home1} alt="Image of Iman Reza Soltani" variants={imgAnim} />
+        <motion.img
+          src={home1}
+          alt="Image of Iman Reza Soltani"
+          variants={imgAnim}
+        />
       </StyledImage>
+      <Wave />
     </StyledAbout>
   );
 };
