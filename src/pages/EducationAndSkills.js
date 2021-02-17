@@ -10,7 +10,7 @@ const EducationAndSkills = () => {
       animate="show"
       exit="exit"
     >
-      <h1>Education and Skills</h1>;
+      <h1>Education and Skills</h1>
     </motion.div>
   );
 };

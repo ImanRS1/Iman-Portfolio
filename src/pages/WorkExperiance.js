@@ -68,7 +68,13 @@ const WorkExperiance = () => {
           </StyledHide>
         </Link>
       </Work>
-      <Work>
+      <Work
+        ref={element2}
+        variants={fade}
+        animate={controls2}
+        initial="hidden"
+        layout="position"
+      >
         <Link to="/work/work2">
           <motion.h2 variants={fade}>First job</motion.h2>
         </Link>
