@@ -3,6 +3,13 @@ import home1 from "./img/placeholder-img.jpg"
 export const WorkState = () => {
   return [
     {
+      title: "Code",
+      mainImg: home1,
+      secondaryImg: home1,
+      url: "/work/work",
+      workDescription: "Beskrivning 0",
+    },
+    {
       title: "JOB1",
       mainImg: home1,
       secondaryImg: home1,

@@ -16,6 +16,8 @@ import { useScroll } from "../components/useScroll";
 
 const WorkExperiance = () => {
   const [element, controls] = useScroll();
+  const [element2, controls2] = useScroll();
+
   return (
     <Works
       variants={pageAnimation}
@@ -30,6 +32,21 @@ const WorkExperiance = () => {
         <Frame3 variants={slider}></Frame3>
         <Frame4 variants={slider}></Frame4>
       </motion.div>
+      <Work>
+        <Link to="/work/work">
+          <motion.h2 variants={fade}>Job 0</motion.h2>
+        </Link>
+        <motion.div variants={lineAnim} className="line"></motion.div>
+        <Link to="/work/work">
+          <StyledHide>
+            <motion.img
+              variants={imgAnim}
+              src={home1}
+              alt="Picture of second work experiance"
+            />
+          </StyledHide>
+        </Link>
+      </Work>
       <Work>
         <Link to="/work/work1">
           <motion.h2 variants={fade}>Second job</motion.h2>
