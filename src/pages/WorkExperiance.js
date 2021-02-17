@@ -3,7 +3,15 @@ import home1 from "../img/placeholder-img.jpg";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { pageAnimation } from "../animation";
+import {
+  pageAnimation,
+  fade,
+  imgAnim,
+  lineAnim,
+  slider,
+  sliderContainer,
+} from "../animation";
+import { StyledHide } from "../styles";
 
 const WorkExperiance = () => {
   return (
@@ -14,13 +22,25 @@ const WorkExperiance = () => {
       exit="exit"
       style={{ background: "whitesmoke" }}
     >
+      <motion.div variants={sliderContainer}>
+        <Frame1 variants={slider}></Frame1>
+        <Frame2 variants={slider}></Frame2>
+        <Frame3 variants={slider}></Frame3>
+        <Frame4 variants={slider}></Frame4>
+      </motion.div>
       <Work>
         <Link to="/work/work1">
-          <h2>Second job</h2>
+          <motion.h2 variants={fade}>Second job</motion.h2>
         </Link>
-        <div className="line"></div>
+        <motion.div variants={lineAnim} className="line"></motion.div>
         <Link to="/work/work1">
-          <img src={home1} alt="Picture of second work experiance" />
+          <StyledHide>
+            <motion.img
+              variants={imgAnim}
+              src={home1}
+              alt="Picture of second work experiance"
+            />
+          </StyledHide>
         </Link>
       </Work>
       <Work>
@@ -49,7 +69,7 @@ const Work = styled.div`
   padding-bottom: 10rem;
   .line {
     height: 0.5rem;
-    background: #cccccc;
+    background: #23d997;
     margin-bottom: 3rem;
   }
   img {
@@ -57,6 +77,28 @@ const Work = styled.div`
     height: 70vh;
     object-fit: cover;
   }
+`;
+
+const Frame1 = styled(motion.div)`
+  position: fixed;
+  left: 0;
+  top: 10%;
+  width: 100%;
+  height: 100vh;
+  background: #fffebf;
+  z-index: 2;
+`;
+
+const Frame2 = styled(Frame1)`
+  background: #ff8efb;
+`;
+
+const Frame3 = styled(Frame1)`
+  background: #8ed2ff;
+`;
+
+const Frame4 = styled(Frame1)`
+  background: #8effa0;
 `;
 
 export default WorkExperiance;
