@@ -59,13 +59,13 @@ const StyledHeadLine = styled.div`
   }
   img {
     width: 100%;
-    height: 70vh;
+    height: 50vh;
     object-fit: cover;
   }
 `;
 
 const StyledWorkDescription = styled.div`
-  min-height: 80vh;
+  min-height: 40vh;
   display: flex;
   margin: 5rem 10rem;
   align-items: center;

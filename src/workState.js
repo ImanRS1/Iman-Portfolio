@@ -1,18 +1,20 @@
 import home1 from "./img/placeholder-img.jpg"
+import code2 from "./img/code2.jpg";
+import turbine1 from "./img/gasturbine1.jpg";
 
 export const WorkState = () => {
   return [
     {
       title: "Code",
-      mainImg: home1,
-      secondaryImg: home1,
+      mainImg: code2,
+      secondaryImg: code2,
       url: "/work/work",
-      workDescription: "Beskrivning 0",
+      workDescription: "Beskrivning 000",
     },
     {
       title: "JOB1",
-      mainImg: home1,
-      secondaryImg: home1,
+      mainImg: turbine1,
+      secondaryImg: turbine1,
       url: "/work/work1",
       workDescription: "beskrivning 1",
     },
