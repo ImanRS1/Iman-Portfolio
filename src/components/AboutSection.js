@@ -17,20 +17,19 @@ const AboutSection = () => {
       <StyledDescription>
         <motion.div className="title">
           <StyledHide className="StyledHide">
-            <motion.h2 variants={titleAnim}>lorem 1</motion.h2>
+            <motion.h2 variants={titleAnim}>Learning</motion.h2>
           </StyledHide>
           <StyledHide className="StyledHide">
             <motion.h2 variants={titleAnim}>
-              lor<span>rem</span> 3
+              <span>Never</span>
             </motion.h2>
           </StyledHide>
           <StyledHide className="StyledHide">
-            <motion.h2 variants={titleAnim}>lorem 3</motion.h2>
+            <motion.h2 variants={titleAnim}>Ends</motion.h2>
           </StyledHide>
         </motion.div>
-        <motion.p variants={fade}>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium
-          praesentium deserunt amet?
+        <motion.p variants={fade} style={{width: "80%"}}>
+          “I believe that a persons greatest asset is not necessarily the knowledge they possess, but their ability to acquire and understand new knowledge.”
         </motion.p>
         <motion.button variants={fade}>Contact Iman</motion.button>
       </StyledDescription>
