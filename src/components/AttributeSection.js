@@ -1,7 +1,13 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPlane, faFileCode } from "@fortawesome/free-solid-svg-icons";
+import {
+  faPlane,
+  faFileCode,
+  faCogs,
+  faStreetView,
+} from "@fortawesome/free-solid-svg-icons";
 import home1 from "../img/placeholder-img.jpg";
+import code1 from "../img/code1.jpg";
 import styled from "styled-components";
 import { useScroll } from "./useScroll";
 import { scrollReveal } from "../animation";
@@ -23,40 +29,40 @@ const AttributeSection = () => {
       ref={element}
     >
       <StyledImage>
-        <img src={home1} alt="Image of code" />
+        <img src={code1} alt="Image of code" />
       </StyledImage>
       <StyledDescription>
         <h2>
-          Lorem <span>ipsum dolor</span> sit amet.
+          Bullet <span>points</span> about Iman.
         </h2>
         <StyledCards>
           <StyledCard>
             <div className="icon">
-              <FontAwesomeIcon icon={faPlane} color="green" />
-              <h3>Efficent</h3>
+              <FontAwesomeIcon icon={faPlane} color="#23d997" />
+              <h3>International</h3>
             </div>
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>International work experience stretching over 17 countries</p>
           </StyledCard>
           <StyledCard>
             <div className="icon">
-              <FontAwesomeIcon icon={faFileCode} color="green" />
-              <h3>Efficent</h3>
+              <FontAwesomeIcon icon={faFileCode} color="#23d997" />
+              <h3>Coding</h3>
             </div>
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Ambitious programmer, always striving to improve</p>
           </StyledCard>
           <StyledCard>
             <div className="icon">
-              <FontAwesomeIcon icon={faPlane} color="green" />
-              <h3>Efficent</h3>
+              <FontAwesomeIcon icon={faCogs} color="#23d997" />
+              <h3>Engineer</h3>
             </div>
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Experienced engineer, a professional problem solver</p>
           </StyledCard>
           <StyledCard>
             <div className="icon">
-              <FontAwesomeIcon icon={faFileCode} color="green" />
-              <h3>Efficent</h3>
+              <FontAwesomeIcon icon={faStreetView} color="#23d997" />
+              <h3>Data & Location</h3>
             </div>
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Born 1989, residing in Stockholm Sweden</p>
           </StyledCard>
         </StyledCards>
       </StyledDescription>

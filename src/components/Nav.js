@@ -13,6 +13,7 @@ const Nav = () => {
           <Link id="logo" to="/">
             Iman Reza Soltani
           </Link>
+          <h6 style={{ color: "white" }}>Front-end Developer</h6>
         </h1>
         <ul>
           <li>
