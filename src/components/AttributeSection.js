@@ -3,8 +3,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlane, faFileCode } from "@fortawesome/free-solid-svg-icons";
 import home1 from "../img/placeholder-img.jpg";
 import styled from "styled-components";
-import {useScroll} from "./useScroll";
-import {scrollReveal} from "../animation";
+import { useScroll } from "./useScroll";
+import { scrollReveal } from "../animation";
 import {
   StyledDescription,
   StyledImage,
@@ -16,7 +16,15 @@ import {
 const AttributeSection = () => {
   const [element, controls] = useScroll();
   return (
-    <StyledAttribute variants={scrollReveal} animate={controls} initial={"hidden"} ref={element}>
+    <StyledAttribute
+      variants={scrollReveal}
+      animate={controls}
+      initial={"hidden"}
+      ref={element}
+    >
+      <StyledImage>
+        <img src={home1} alt="Image of code" />
+      </StyledImage>
       <StyledDescription>
         <h2>
           Lorem <span>ipsum dolor</span> sit amet.
@@ -28,7 +36,8 @@ const AttributeSection = () => {
               <h3>Efficent</h3>
             </div>
             <p>Lorem ipsum dolor sit amet.</p>
-            <StyledCard></StyledCard>
+          </StyledCard>
+          <StyledCard>
             <div className="icon">
               <FontAwesomeIcon icon={faFileCode} color="green" />
               <h3>Efficent</h3>
@@ -51,9 +60,6 @@ const AttributeSection = () => {
           </StyledCard>
         </StyledCards>
       </StyledDescription>
-      <StyledImage>
-        <img src={home1} alt="Image of code" />
-      </StyledImage>
     </StyledAttribute>
   );
 };

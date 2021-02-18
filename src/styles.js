@@ -8,14 +8,13 @@ export const StyledAbout = styled(motion.div)`
   justify-content: space-between;
   padding: 5rem 10rem;
   color: white;
-  @media (max-width: 1300px){
-    background-color: white;
-    }
+  @media (max-width: 1300px) {
+  }
 `;
 
 export const StyledDescription = styled.div`
   flex: 1;
-  padding-right: 5rem;
+  padding-left: 2rem;
   h2 {
     font-weight: lighter;
   }
@@ -26,7 +25,7 @@ export const StyledImage = styled.div`
   flex: 1;
   overflow: hidden;
   img {
-    width: 100%;
+    width: 90%;
     height: 80vh;
     object-fit: cover;
   }
@@ -44,6 +43,7 @@ export const StyledCards = styled.div`
 
 export const StyledCard = styled.div`
   flex-basis: 20rem;
+  padding-left: 2rem;
   .icon {
     display: flex;
     align-items: center;
