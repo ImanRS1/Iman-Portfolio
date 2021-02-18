@@ -76,3 +76,27 @@ export const StyledAttribute = styled(motion.div)`
     padding: 2rem 0rem 4rem 0rem;
   }
 `;
+
+export const StyledContact = styled(motion.div)`
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5rem 10rem;
+  color: white;
+  h2 {
+    padding-bottom: 2rem;
+  }
+  p {
+    width: 70%;
+    padding: 2rem 0rem 4rem 0rem;
+  }
+`;
+
+export const ContactOptions = styled(motion.div)`
+  display: flex;
+  justify-content: space-evenly;
+  flex: 1;
+`;
+
+export const ContactOption = styled(motion.div)``;

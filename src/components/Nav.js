@@ -9,12 +9,14 @@ const Nav = () => {
   return (
     <StyledNavContainer>
       <StyledNav>
-        <h1>
-          <Link id="logo" to="/">
-            Iman Reza Soltani
-          </Link>
+        <div>
+          <h1>
+            <Link id="logo" to="/">
+              Iman Reza Soltani
+            </Link>
+          </h1>
           <h6 style={{ color: "white" }}>Front-end Developer</h6>
-        </h1>
+        </div>
         <ul>
           <li>
             <Link to="/">1. About Iman</Link>
