@@ -1,5 +1,4 @@
 import React from "react";
-import home1 from "../img/placeholder-img.jpg";
 import iman from "../img/iman.jpg";
 import { motion } from "framer-motion";
 import { titleAnim, fade, imgAnim } from "../animation";
@@ -10,6 +9,14 @@ import {
   StyledImage,
   StyledHide,
 } from "../styles";
+
+const ScrollBottom = () => {
+  window.scrollTo({
+    top: 200000,
+    left: 0,
+    behavior: "smooth",
+  });
+};
 
 const AboutSection = () => {
   return (
@@ -28,10 +35,14 @@ const AboutSection = () => {
             <motion.h2 variants={titleAnim}>Ends</motion.h2>
           </StyledHide>
         </motion.div>
-        <motion.p variants={fade} style={{width: "80%"}}>
-          “I believe that a persons greatest asset is not necessarily the knowledge they possess, but their ability to acquire and understand new knowledge.”
+        <motion.p variants={fade} style={{ width: "80%" }}>
+          “I believe that a persons greatest asset is not necessarily the
+          knowledge they possess, but their ability to acquire and understand
+          new knowledge.”
         </motion.p>
-        <motion.button variants={fade}>Contact Iman</motion.button>
+        <motion.button variants={fade} onClick={ScrollBottom}>
+          Contact Iman
+        </motion.button>
       </StyledDescription>
       <StyledImage>
         <motion.img
