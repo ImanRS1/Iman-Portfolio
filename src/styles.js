@@ -78,10 +78,9 @@ export const StyledAttribute = styled(motion.div)`
 `;
 
 export const StyledContact = styled(motion.div)`
-  min-height: 80vh;
+  min-height: 50vh;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
   padding: 5rem 10rem;
   color: white;
   h2 {
@@ -93,10 +92,38 @@ export const StyledContact = styled(motion.div)`
   }
 `;
 
-export const ContactOptions = styled(motion.div)`
+export const StyledContactOptions = styled(motion.div)`
   display: flex;
   justify-content: space-evenly;
-  flex: 1;
+  align-items: center;
+  height: 20rem;
+  flex-wrap: wrap; 
+  margin-bottom: 5rem;
 `;
 
-export const ContactOption = styled(motion.div)``;
+export const StyledContactOptionSocial = styled(motion.div)`
+  svg{
+    font-size: 10rem;
+    padding: 0rem 1rem;
+  }
+  
+`;
+
+export const StyledContactOptionNandMCon = styled(motion.div)`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 10rem;
+  svg {
+    font-size: 5rem;
+  }
+  h1{
+    padding-left: 1rem;
+  }
+  padding: 0rem 1rem;
+`
+
+export const StyledContactOptionNandM = styled(motion.div)`
+  display: flex;
+  align-items: center;
+`
