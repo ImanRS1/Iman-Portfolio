@@ -115,6 +115,7 @@ export const StyledContactOptionSocial = styled(motion.div)`
 `;
 
 export const StyledContactOptionNandMCon = styled(motion.div)`
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

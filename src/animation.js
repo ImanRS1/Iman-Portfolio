@@ -23,7 +23,25 @@ export const titleAnim = {
   hidden: { y: 200 },
   show: {
     y: 0,
-    transition: { duration: 0.75, ease: "easeOut" },
+    transition: { duration: 0.75, ease: "easeOut"},
+  },
+};
+
+export const contactStagger = {
+  hidden: {
+
+  },
+  show: {
+    transition: {
+      staggerChildren: 0.4,
+    }
+  }
+}
+export const contactAnim = {
+  hidden: { x: -400 },
+  show: {
+    x: 0,
+    transition: { duration: 1.5, ease: "easeOut" },
   },
 };
 
@@ -50,6 +68,11 @@ export const imgAnim = {
 export const lineAnim = {
   hidden: { width: "0%" },
   show: { width: "100%", transition: { duration: 1 } },
+};
+
+export const lineAnimSlow = {
+  hidden: { width: "0%" },
+  show: { width: "100%", transition: { duration: 2 } },
 };
 
 export const slider = {

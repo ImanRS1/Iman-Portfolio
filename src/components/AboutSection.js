@@ -16,15 +16,15 @@ const AboutSection = () => {
     <StyledAbout>
       <StyledDescription>
         <motion.div className="title">
-          <StyledHide className="StyledHide">
+          <StyledHide>
             <motion.h2 variants={titleAnim}>Learning</motion.h2>
           </StyledHide>
-          <StyledHide className="StyledHide">
+          <StyledHide>
             <motion.h2 variants={titleAnim}>
               <span>Never</span>
             </motion.h2>
           </StyledHide>
-          <StyledHide className="StyledHide">
+          <StyledHide>
             <motion.h2 variants={titleAnim}>Ends</motion.h2>
           </StyledHide>
         </motion.div>
