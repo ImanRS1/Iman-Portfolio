@@ -7,13 +7,14 @@ import {
   StyledContactOptionNandM,
 } from "../styles";
 import { useScroll } from "./useScroll";
-import { scrollReveal } from "../animation";
+import { scrollReveal, lineAnim } from "../animation";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithubSquare } from "@fortawesome/free-brands-svg-icons";
 import {
   faEnvelopeSquare,
   faPhoneSquareAlt,
 } from "@fortawesome/free-solid-svg-icons";
+import { motion } from "framer-motion";
 
 const ContactSection = () => {
   const [element, controls] = useScroll();
@@ -29,6 +30,7 @@ const ContactSection = () => {
         <h2>
           Contact <span>Iman</span>
         </h2>
+        <motion.div variants={lineAnim} className="line"></motion.div>
         <p>Lets get in touch!</p>
       </div>
       <StyledContactOptions>

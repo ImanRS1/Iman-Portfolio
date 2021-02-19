@@ -90,6 +90,11 @@ export const StyledContact = styled(motion.div)`
     width: 70%;
     padding: 2rem 0rem 4rem 0rem;
   }
+  .line {
+    height: 0.5rem;
+    background: #23d997;
+    margin-bottom: 3rem;
+  }
 `;
 
 export const StyledContactOptions = styled(motion.div)`
