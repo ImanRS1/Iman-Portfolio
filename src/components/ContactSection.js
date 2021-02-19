@@ -38,7 +38,7 @@ const ContactSection = () => {
           Contact <span>Iman</span>
         </h2>
         <motion.div variants={lineAnimSlow} className="line"></motion.div>
-        <p>Lets get in touch!</p>
+        <p>Let's get in touch!</p>
       </div>
       <StyledContactOptions variants={contactStagger}>
         <StyledHide>

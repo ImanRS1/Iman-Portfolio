@@ -72,7 +72,7 @@ export const lineAnim = {
 
 export const lineAnimSlow = {
   hidden: { width: "0%" },
-  show: { width: "100%", transition: { duration: 2 } },
+  show: { width: "100%", transition: { duration: 1.5 } },
 };
 
 export const slider = {

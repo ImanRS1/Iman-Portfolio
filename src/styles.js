@@ -6,8 +6,10 @@ export const StyledAbout = styled(motion.div)`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 5rem 10rem;
+  padding: 0rem 10rem;
   color: white;
+}
+
   @media (max-width: 1300px) {
   }
 `;
@@ -125,6 +127,7 @@ export const StyledContactOptionNandMCon = styled(motion.div)`
   }
   h1{
     padding-left: 1rem;
+    font-weight: normal;
   }
   padding: 0rem 1rem;
 `

@@ -34,6 +34,9 @@ button{
         background-color: #23d997;
         color: white;
     }
+    &:focus {
+        outline: none;
+    }
 }
 
 h2{
