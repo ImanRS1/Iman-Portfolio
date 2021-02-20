@@ -38,12 +38,14 @@ export const StyledHide = styled.div`
   overflow: hidden;
 `;
 
-export const StyledCards = styled.div`
+export const StyledCards = styled(motion.div)`
   display: flex;
   flex-wrap: wrap;
+  overflow-y: hidden;
 `;
 
-export const StyledCard = styled.div`
+export const StyledCard = styled(motion.div)`
+width: 20rem;
   flex-basis: 20rem;
   padding-left: 2rem;
   .icon {

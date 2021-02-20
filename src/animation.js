@@ -27,7 +27,15 @@ export const titleAnim = {
   },
 };
 
-export const contactStagger = {
+export const attributeAnim = {
+  hidden: { y: 400 },
+  show: {
+    y: 0,
+    transition: { duration: 0.75, ease: "easeOut"},
+  },
+};
+
+export const animStagger = {
   hidden: {
 
   },

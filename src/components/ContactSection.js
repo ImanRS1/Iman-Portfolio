@@ -13,7 +13,7 @@ import {
   lineAnimSlow,
   titleAnim,
   contactAnim,
-  contactStagger,
+  animStagger,
 } from "../animation";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithubSquare } from "@fortawesome/free-brands-svg-icons";
@@ -40,7 +40,7 @@ const ContactSection = () => {
         <motion.div variants={lineAnimSlow} className="line"></motion.div>
         <p>Let's get in touch!</p>
       </div>
-      <StyledContactOptions variants={contactStagger}>
+      <StyledContactOptions variants={animStagger}>
         <StyledHide>
           <StyledContactOptionNandMCon variants={contactAnim}>
             <StyledContactOptionNandM>
