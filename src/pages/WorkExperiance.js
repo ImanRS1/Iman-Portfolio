@@ -13,7 +13,16 @@ import {
   slider,
   sliderContainer,
 } from "../animation";
-import { StyledHide } from "../styles";
+import {
+  StyledHide,
+  Frame1,
+  Frame2,
+  Frame3,
+  Frame4,
+  StyledWorks,
+  StyledWork,
+  StyledWorkxHeaders,
+} from "../styles";
 import { useScroll } from "../components/useScroll";
 import ScrollTop from "../components/ScrollTop";
 
@@ -22,7 +31,7 @@ const WorkExperiance = () => {
   const [element2, controls2] = useScroll();
 
   return (
-    <Works
+    <StyledWorks
       variants={pageAnimation}
       initial="hidden"
       animate="show"
@@ -35,9 +44,12 @@ const WorkExperiance = () => {
         <Frame3 variants={slider}></Frame3>
         <Frame4 variants={slider}></Frame4>
       </motion.div>
-      <Work>
+      <StyledWork>
         <Link to="/work/work">
-          <motion.h2 variants={fade}>Job 0</motion.h2>
+          <StyledWorkxHeaders variants={fade}>
+            <h2>Front-end Developer</h2>
+            <h2>2020-2021</h2>
+          </StyledWorkxHeaders>
         </Link>
         <motion.div variants={lineAnim} className="line"></motion.div>
         <Link to="/work/work">
@@ -49,8 +61,8 @@ const WorkExperiance = () => {
             />
           </StyledHide>
         </Link>
-      </Work>
-      <Work
+      </StyledWork>
+      <StyledWork
         ref={element}
         variants={fade}
         animate={controls}
@@ -58,7 +70,10 @@ const WorkExperiance = () => {
         layout="position"
       >
         <Link to="/work/work1">
-          <motion.h2 variants={fade}>Second job</motion.h2>
+          <StyledWorkxHeaders variants={fade}>
+            <h2>Commissioning Engineer</h2>
+            <h2>2014-2021</h2>
+          </StyledWorkxHeaders>
         </Link>
         <motion.div variants={lineAnim} className="line"></motion.div>
         <Link to="/work/work1">
@@ -70,8 +85,8 @@ const WorkExperiance = () => {
             />
           </StyledHide>
         </Link>
-      </Work>
-      <Work
+      </StyledWork>
+      <StyledWork
         ref={element2}
         variants={fade}
         animate={controls2}
@@ -79,7 +94,10 @@ const WorkExperiance = () => {
         layout="position"
       >
         <Link to="/work/work2">
-          <motion.h2 variants={fade}>First job</motion.h2>
+          <StyledWorkxHeaders variants={fade}>
+            <h2>Engineering Part-M</h2>
+            <h2>2012-2014</h2>
+          </StyledWorkxHeaders>
         </Link>
         <motion.div variants={lineAnim} className="line"></motion.div>
         <Link to="/work/work2">
@@ -91,55 +109,10 @@ const WorkExperiance = () => {
             />
           </StyledHide>
         </Link>
-      </Work>
+      </StyledWork>
       <ScrollTop />
-    </Works>
+    </StyledWorks>
   );
 };
-
-const Works = styled(motion.div)`
-  min-height: 100vh;
-  overflow: hidden;
-  padding: 1rem 10rem;
-  h2 {
-    padding: 1rem 0rem;
-  }
-`;
-
-const Work = styled(motion.div)`
-  padding-bottom: 5rem;
-  .line {
-    height: 0.5rem;
-    background: #23d997;
-    margin-bottom: 3rem;
-  }
-  img {
-    width: 100%;
-    height: 70vh;
-    object-fit: cover;
-  }
-`;
-
-const Frame1 = styled(motion.div)`
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100vh;
-  background: #fffebf;
-  z-index: 2;
-`;
-
-const Frame2 = styled(Frame1)`
-  background: #ff8efb;
-`;
-
-const Frame3 = styled(Frame1)`
-  background: #8ed2ff;
-`;
-
-const Frame4 = styled(Frame1)`
-  background: #8effa0;
-`;
 
 export default WorkExperiance;
