@@ -31,8 +31,13 @@ const WorkDetail = () => {
       <StyledWorkDescription>
         <WorkDescription
           title={work.title}
-          description={work.workDescription}
+          desc1={work.workDescription1}
+          desc2={work.workDescription2}
+          desc3={work.workDescription3}
+          desc4={work.workDescription4}
+          desc5={work.workDescription5}
           key={work.title}
+          desc6={work.title === "Front-end Developer" ? fedDesc() : ""}
         />
       </StyledWorkDescription>
       <StyledImageDisplay>
@@ -80,7 +85,7 @@ const StyledWorkDescription = styled.div`
     margin: 1rem 0rem;
   }
   p {
-    padding: 2rem 0rem;
+    padding: 1rem 0rem;
   }
 `;
 
@@ -88,19 +93,32 @@ const StyledImageDisplay = styled.div`
   min-height: 50vh;
   img {
     width: 100%;
-    height: 100vh;
+    height: 50vh;
     object-fit: cover;
   }
 `;
 
-const WorkDescription = ({ title, description }) => {
+const WorkDescription = ({ title, desc1, desc2, desc3, desc4, desc5, desc6 }) => {
   return (
     <div>
       <h3>{title}</h3>
       <div className="line"></div>
-      <p>{description}</p>
+      <p>{desc1}</p>
+      <p>{desc2}</p>
+      <p>{desc3}</p>
+      <p>{desc4}</p>
+      <p>{desc5}</p>
+      <div>{desc6}</div>
+
     </div>
   );
 };
+
+const fedDesc = () =>{
+  return(
+  <p> Test </p>
+  );
+};
+
 
 export default WorkDetail;

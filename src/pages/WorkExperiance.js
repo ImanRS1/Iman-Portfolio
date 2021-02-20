@@ -1,7 +1,7 @@
 import React from "react";
-import home1 from "../img/placeholder-img.jpg";
+import plane1 from "../img/plane3.jpg";
 import code2 from "../img/code2.jpg";
-import turbine1 from "../img/gasturbine1.jpg";
+import turbine1 from "../img/gasturbine12.jpg";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
@@ -104,7 +104,7 @@ const WorkExperiance = () => {
           <StyledHide>
             <motion.img
               variants={imgAnim}
-              src={home1}
+              src={plane1}
               alt="Picture of first work experiance"
             />
           </StyledHide>
