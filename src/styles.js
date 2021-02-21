@@ -137,6 +137,7 @@ export const StyledContactOptionNandM = styled(motion.div)`
   display: flex;
   align-items: center;
 `;
+
 export const Frame1 = styled(motion.div)`
   position: fixed;
   left: 0;
@@ -193,4 +194,85 @@ export const StyledWork = styled(motion.div)`
 export const StyledWorkxHeaders = styled(motion.div)`
   display: flex;
   justify-content: space-between;
+`;
+
+
+export const StyledDetails = styled(motion.div)`
+  color: white;
+`;
+
+export const StyledHeadLine = styled.div`
+  min-height: 90vh;
+  padding-top: 20vh;
+  position: relative;
+  h2 {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+  }
+  img {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+  }
+`;
+
+export const StyledWorkDescription = styled.div`
+  min-height: 40vh;
+  display: flex;
+  margin: 5rem 10rem;
+  align-items: center;
+  justify-content: space-around;
+  h3 {
+    font-size: 5rem;
+  }
+  .line {
+    width: 100%;
+    background-color: #23d997;
+    height: 0.5rem;
+    margin: 1rem 0rem;
+  }
+  p {
+    padding: 1rem 0rem;
+  }
+`;
+
+export const StyledImageDisplay = styled.div`
+  min-height: 50vh;
+  img {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+  }
+`;
+
+export const StyledFedDesc = styled.div`
+  margin: 2rem 0rem;
+  display: flex;
+  align-items: center;
+  min-height: 25vh;
+  background-color: #252525;
+  img {
+    margin: 1rem;
+    border: 5px solid #23d997;
+    height: 25vh;
+    cursor: pointer;
+    filter: brightness(90%);
+    &:hover {
+      filter: brightness(105%);
+    }
+  }
+  div {
+    padding: 1rem;
+  }
+  h2 {
+    font-weight: normal;
+    font-size: 30px;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.4rem;
+  }
 `;

@@ -1,11 +1,16 @@
 import React, { useState, useEffect } from "react";
-import styled from "styled-components";
 import { useHistory } from "react-router-dom";
 import { WorkState } from "../workState";
-import { motion } from "framer-motion";
 import { pageAnimation } from "../animation";
 import ScrollTop from "../components/ScrollTop";
 import pr1 from "../img/mie.jpg";
+import {
+  StyledDetails,
+  StyledHeadLine,
+  StyledWorkDescription,
+  StyledImageDisplay,
+  StyledFedDesc,
+} from "../styles";
 
 const WorkDetail = () => {
   const history = useHistory();
@@ -38,7 +43,7 @@ const WorkDetail = () => {
           desc4={work.workDescription4}
           desc5={work.workDescription5}
           key={work.title}
-          desc6={work.title === "Front-end Developer" ? fedDesc() : ""}
+          desc6={work.title === "Front-end Developer" ? workDetailDesc() : ""}
         />
       </StyledWorkDescription>
       <StyledImageDisplay>
@@ -48,56 +53,6 @@ const WorkDetail = () => {
     </StyledDetails>
   );
 };
-
-const StyledDetails = styled(motion.div)`
-  color: white;
-`;
-
-const StyledHeadLine = styled.div`
-  min-height: 90vh;
-  padding-top: 20vh;
-  position: relative;
-  h2 {
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    transform: translate(-50%, -10%);
-  }
-  img {
-    width: 100%;
-    height: 50vh;
-    object-fit: cover;
-  }
-`;
-
-const StyledWorkDescription = styled.div`
-  min-height: 40vh;
-  display: flex;
-  margin: 5rem 10rem;
-  align-items: center;
-  justify-content: space-around;
-  h3 {
-    font-size: 5rem;
-  }
-  .line {
-    width: 100%;
-    background-color: #23d997;
-    height: 0.5rem;
-    margin: 1rem 0rem;
-  }
-  p {
-    padding: 1rem 0rem;
-  }
-`;
-
-const StyledImageDisplay = styled.div`
-  min-height: 50vh;
-  img {
-    width: 100%;
-    height: 50vh;
-    object-fit: cover;
-  }
-`;
 
 const WorkDescription = ({
   title,
@@ -122,7 +77,7 @@ const WorkDescription = ({
   );
 };
 
-const fedDesc = () => {
+const workDetailDesc = () => {
   return (
     <div>
       <StyledFedDesc>
@@ -164,35 +119,5 @@ const fedDesc = () => {
     </div>
   );
 };
-
-const StyledFedDesc = styled.div`
-  margin: 2rem 0rem;
-  display: flex;
-  align-items: center;
-  min-height: 25vh;
-  background-color: #252525;
-  img {
-    margin: 1rem;
-    border: 5px solid #23d997;
-    height: 25vh;
-    cursor: pointer;
-    filter: brightness(90%);
-    &:hover {
-      filter: brightness(105%);
-    }
-  }
-  div {
-    padding: 1rem;
-  }
-  h2 {
-    font-weight: normal;
-    font-size: 30px;
-  }
-  a {
-    text-decoration: none;
-    color: white;
-    font-size: 1.4rem;
-  }
-`;
 
 export default WorkDetail;
