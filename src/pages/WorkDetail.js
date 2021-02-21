@@ -5,6 +5,7 @@ import { WorkState } from "../workState";
 import { motion } from "framer-motion";
 import { pageAnimation } from "../animation";
 import ScrollTop from "../components/ScrollTop";
+import pr1 from "../img/mie.jpg";
 
 const WorkDetail = () => {
   const history = useHistory();
@@ -98,7 +99,15 @@ const StyledImageDisplay = styled.div`
   }
 `;
 
-const WorkDescription = ({ title, desc1, desc2, desc3, desc4, desc5, desc6 }) => {
+const WorkDescription = ({
+  title,
+  desc1,
+  desc2,
+  desc3,
+  desc4,
+  desc5,
+  desc6,
+}) => {
   return (
     <div>
       <h3>{title}</h3>
@@ -109,16 +118,54 @@ const WorkDescription = ({ title, desc1, desc2, desc3, desc4, desc5, desc6 }) =>
       <p>{desc4}</p>
       <p>{desc5}</p>
       <div>{desc6}</div>
-
     </div>
   );
 };
 
-const fedDesc = () =>{
-  return(
-  <p> Test </p>
+const fedDesc = () => {
+  return (
+    <StyledFedDesc>
+      <img src={pr1} />
+      <div>
+        <h2>Title: MakeItEasy</h2>
+        <p>
+          Description: This website was created as part of my education at
+          Changemaker Educations and is a website of a made believe web
+          developer company targeting smaller sized businesses.
+        </p>
+        <p>The website was created using vanilla JS, HTML5 and CSS3.</p>
+        <p>
+          Link:{" "}
+          <a href="https://imanrs1.github.io/MakeItEasy/">
+            imanrs1.github.io/MakeItEasy
+          </a>
+        </p>
+      </div>
+    </StyledFedDesc>
   );
 };
 
+const StyledFedDesc = styled.div`
+  display: flex;
+  min-height: 25vh;
+  background-color: #252525;
+  img {
+    margin: 1rem;
+    border: 5px solid #23d997;
+    height: 25vh;
+  }
+  div {
+    padding: 1rem;
+  }
+  h2 {
+    font-weight: normal;
+    font-size: 30px;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.4rem;
+  }
+`;
 
 export default WorkDetail;
