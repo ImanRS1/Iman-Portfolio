@@ -247,21 +247,24 @@ export const StyledImageDisplay = styled.div`
   }
 `;
 
-export const StyledFedDesc = styled.div`
+export const StyledFedDesc = styled(motion.div)`
   margin: 2rem 0rem;
   display: flex;
   align-items: center;
   min-height: 25vh;
   background-color: #252525;
+  transition: all 1s ease;
+  &:hover{
+    background-color:  #333333;
+    img{
+      filter: brightness(105%);
+    }
+  }
   img {
     margin: 1rem;
     border: 5px solid #23d997;
     height: 25vh;
-    cursor: pointer;
     filter: brightness(90%);
-    &:hover {
-      filter: brightness(105%);
-    }
   }
   div {
     padding: 1rem;
@@ -272,7 +275,14 @@ export const StyledFedDesc = styled.div`
   }
   a {
     text-decoration: none;
-    color: white;
+    color: #23d997;
     font-size: 1.4rem;
   }
+`;
+
+export const lightBoxWindow = styled.div`
+height: 100vh;
+width: 100vw;
+background-color: skyblue;
+}
 `;

@@ -1,15 +1,19 @@
 import React, { useState, useEffect } from "react";
 import { useHistory } from "react-router-dom";
 import { WorkState } from "../workState";
-import { pageAnimation } from "../animation";
+import { pageAnimation, fade } from "../animation";
 import ScrollTop from "../components/ScrollTop";
-import pr1 from "../img/mie.jpg";
+import mie from "../img/mie.jpg";
+import ln from "../img/ln.jpg";
+import ttt from "../img/ttt.jpg";
+
 import {
   StyledDetails,
   StyledHeadLine,
   StyledWorkDescription,
   StyledImageDisplay,
   StyledFedDesc,
+  lightBoxWindow,
 } from "../styles";
 
 const WorkDetail = () => {
@@ -43,7 +47,7 @@ const WorkDetail = () => {
           desc4={work.workDescription4}
           desc5={work.workDescription5}
           key={work.title}
-          desc6={work.title === "Front-end Developer" ? workDetailDesc() : ""}
+          desc6={work.title === "Front-end Developer" ? WorkDetailDesc() : ""}
         />
       </StyledWorkDescription>
       <StyledImageDisplay>
@@ -77,11 +81,22 @@ const WorkDescription = ({
   );
 };
 
-const workDetailDesc = () => {
+{
+  /* <img
+  src={mie}
+  onClick={(mie) => {
+    lightBox(mie.target.src);
+  }}
+/>; */
+}
+
+const WorkDetailDesc = () => {
   return (
     <div>
       <StyledFedDesc>
-        <img src={pr1} />
+        <a href="https://imanrs1.github.io/MakeItEasy/">
+          <img src={mie} />
+        </a>
         <div>
           <h2>Title: MakeItEasy</h2>
           <p>
@@ -89,7 +104,10 @@ const workDetailDesc = () => {
             Changemaker Educations and is a website of a made believe web
             developer company targeting smaller sized businesses.
           </p>
-          <p>The website was created using vanilla JS, HTML5 and CSS3.</p>
+          <p>
+            The website was created using vanilla JS, HTML5 and CSS3 with
+            imported fonts.
+          </p>
           <p>
             Link:{" "}
             <a href="https://imanrs1.github.io/MakeItEasy/">
@@ -99,19 +117,43 @@ const workDetailDesc = () => {
         </div>
       </StyledFedDesc>
       <StyledFedDesc>
-        <img src={pr1} />
+        <a href="https://imanrs1.github.io/Lorem-News/">
+          <img src={ln} />
+        </a>
         <div>
-          <h2>Title: MakeItEasy</h2>
+          <h2 href="">Title: Lorem News</h2>
           <p>
-            Description: This website was created as part of my education at
-            Changemaker Educations and is a website of a made believe web
-            developer company targeting smaller sized businesses.
+            Description: Lorem News is designed and structured as a news website
+            using different layout options and image animations, your best place
+            for the latest news in lorem!
           </p>
           <p>The website was created using vanilla JS, HTML5 and CSS3.</p>
           <p>
             Link:{" "}
-            <a href="https://imanrs1.github.io/MakeItEasy/">
-              imanrs1.github.io/MakeItEasy
+            <a href="https://imanrs1.github.io/Lorem-News/">
+              imanrs1.github.io/Lorem-News
+            </a>
+          </p>
+        </div>
+      </StyledFedDesc>
+      <StyledFedDesc>
+        <a href="https://imanrs1.github.io/TicTacToe/">
+          <img src={ttt} />
+        </a>
+        <div>
+          <h2>Title: TicTacToe</h2>
+          <p>
+            Description: A TicTacToe game with retro neon arcade inspiration,
+            demonstrating javascript DOM traversing and stylish CSS.
+          </p>
+          <p>
+            The website was created using vanilla JS, HTML5 and CSS3 with
+            imported neon fonts.
+          </p>
+          <p>
+            Link:{" "}
+            <a href="https://imanrs1.github.io/TicTacToe/">
+              imanrs1.github.io/TicTacToe
             </a>
           </p>
         </div>
