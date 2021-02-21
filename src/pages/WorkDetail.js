@@ -124,35 +124,62 @@ const WorkDescription = ({
 
 const fedDesc = () => {
   return (
-    <StyledFedDesc>
-      <img src={pr1} />
-      <div>
-        <h2>Title: MakeItEasy</h2>
-        <p>
-          Description: This website was created as part of my education at
-          Changemaker Educations and is a website of a made believe web
-          developer company targeting smaller sized businesses.
-        </p>
-        <p>The website was created using vanilla JS, HTML5 and CSS3.</p>
-        <p>
-          Link:{" "}
-          <a href="https://imanrs1.github.io/MakeItEasy/">
-            imanrs1.github.io/MakeItEasy
-          </a>
-        </p>
-      </div>
-    </StyledFedDesc>
+    <div>
+      <StyledFedDesc>
+        <img src={pr1} />
+        <div>
+          <h2>Title: MakeItEasy</h2>
+          <p>
+            Description: This website was created as part of my education at
+            Changemaker Educations and is a website of a made believe web
+            developer company targeting smaller sized businesses.
+          </p>
+          <p>The website was created using vanilla JS, HTML5 and CSS3.</p>
+          <p>
+            Link:{" "}
+            <a href="https://imanrs1.github.io/MakeItEasy/">
+              imanrs1.github.io/MakeItEasy
+            </a>
+          </p>
+        </div>
+      </StyledFedDesc>
+      <StyledFedDesc>
+        <img src={pr1} />
+        <div>
+          <h2>Title: MakeItEasy</h2>
+          <p>
+            Description: This website was created as part of my education at
+            Changemaker Educations and is a website of a made believe web
+            developer company targeting smaller sized businesses.
+          </p>
+          <p>The website was created using vanilla JS, HTML5 and CSS3.</p>
+          <p>
+            Link:{" "}
+            <a href="https://imanrs1.github.io/MakeItEasy/">
+              imanrs1.github.io/MakeItEasy
+            </a>
+          </p>
+        </div>
+      </StyledFedDesc>
+    </div>
   );
 };
 
 const StyledFedDesc = styled.div`
+  margin: 2rem 0rem;
   display: flex;
+  align-items: center;
   min-height: 25vh;
   background-color: #252525;
   img {
     margin: 1rem;
     border: 5px solid #23d997;
     height: 25vh;
+    cursor: pointer;
+    filter: brightness(90%);
+    &:hover {
+      filter: brightness(105%);
+    }
   }
   div {
     padding: 1rem;
