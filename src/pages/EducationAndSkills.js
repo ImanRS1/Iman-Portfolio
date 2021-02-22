@@ -6,7 +6,7 @@ import {
   sliderContainer,
   fade,
   lineAnim,
-  animStagger,
+  skillsStagger,
   skillAnim,
 } from "../animation";
 import ScrollTop from "../components/ScrollTop";
@@ -58,7 +58,7 @@ const EducationAndSkills = () => {
       <motion.div variants={lineAnim} className="line"></motion.div>
 
       <motion.h4 variants={fade}>Skilled in:</motion.h4>
-      <StyledSkillsHolder variants={animStagger}>
+      <StyledSkillsHolder variants={skillsStagger}>
         <StyledHide>
           <StyledSkill variants={skillAnim}>
             <img src={reactI} />
@@ -138,7 +138,10 @@ const EducationAndSkills = () => {
         <StyledEducation>
           <img src={cme} />
           <div>
-            <h3>Changemaker Educations</h3>
+            <h3>
+              <span>Changemaker Educations</span>
+            </h3>
+
             <p>Front-end development</p>
             <p>Stockholm, Sweden</p>
           </div>
@@ -146,7 +149,9 @@ const EducationAndSkills = () => {
         <StyledEducation>
           <img src={mdh} />
           <div>
-            <h3>University of Mälardalen</h3>
+            <h3>
+              <span>University of Mälardalen</span>
+            </h3>
             <p>Bachelors degree in Engineering - Aeronautical engineering</p>
             <p>Västerås, Sweden</p>
           </div>

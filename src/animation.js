@@ -54,6 +54,18 @@ export const animStagger = {
   }
 }
 
+export const skillsStagger = {
+  hidden: {
+
+  },
+  show: {
+    transition: {
+      staggerChildren: 0.2,
+    }
+  }
+}
+
+
 export const contactAnim = {
   hidden: { x: -400 },
   show: {

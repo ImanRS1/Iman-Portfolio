@@ -331,6 +331,12 @@ export const StyledEducation = styled(motion.div)`
     color: #23d997;
     font-size: 1.4rem;
   }
+  h3 {
+    padding-bottom: 1rem;
+  }
+  p {
+    padding: 0;
+  }
 `;
 
 export const StyledSkillsHolder = styled(motion.div)`
