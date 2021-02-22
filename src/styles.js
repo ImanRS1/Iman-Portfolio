@@ -12,6 +12,7 @@ export const StyledAbout = styled(motion.div)`
 
   @media (max-width: 1300px) {
   }
+
 `;
 
 export const StyledDescription = styled.div`
@@ -164,6 +165,7 @@ export const StyledWorks = styled(motion.div)`
   min-height: 100vh;
   overflow: hidden;
   padding: 1rem 10rem;
+  background-color: whitesmoke;
   h2 {
     padding: 1rem 0rem;
   }
@@ -195,7 +197,6 @@ export const StyledWorkxHeaders = styled(motion.div)`
   display: flex;
   justify-content: space-between;
 `;
-
 
 export const StyledDetails = styled(motion.div)`
   color: white;
@@ -254,9 +255,9 @@ export const StyledFedDesc = styled(motion.div)`
   min-height: 25vh;
   background-color: #252525;
   transition: all 1s ease;
-  &:hover{
-    background-color:  #333333;
-    img{
+  &:hover {
+    background-color: #333333;
+    img {
       filter: brightness(105%);
     }
   }
@@ -280,9 +281,80 @@ export const StyledFedDesc = styled(motion.div)`
   }
 `;
 
-export const lightBoxWindow = styled.div`
-height: 100vh;
-width: 100vw;
-background-color: skyblue;
-}
+export const StyledEandSContainer = styled(motion.div)`
+  background-color: whitesmoke;
+  min-height: 100vh;
+  padding: 1rem 10rem;
+  h2 {
+    padding: 1rem 0rem;
+  }
+  h4 {
+    font-size: 30px;
+  }
+  .line {
+    height: 0.5rem;
+    background: #23d997;
+    margin-bottom: 3rem;
+  }
+`;
+
+export const StyledEducationsHolder = styled(motion.div)``;
+
+export const StyledEducation = styled(motion.div)`
+  margin: 2rem 0rem;
+  display: flex;
+  align-items: center;
+  min-height: 25vh;
+  background-color: #252525;
+  transition: all 1s ease;
+  &:hover {
+    background-color: #333333;
+    img {
+      filter: brightness(105%);
+    }
+  }
+  img {
+    margin: 1rem;
+    border: 5px solid #23d997;
+    height: 25vh;
+    filter: brightness(90%);
+  }
+  div {
+    padding: 1rem;
+  }
+  h2 {
+    font-weight: normal;
+    font-size: 30px;
+  }
+  a {
+    text-decoration: none;
+    color: #23d997;
+    font-size: 1.4rem;
+  }
+`;
+
+export const StyledSkillsHolder = styled(motion.div)`
+  padding: 2rem 0rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+`;
+
+export const StyledSkill = styled(motion.div)`
+  height: 10rem;
+  width: 10rem;
+  margin: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  p {
+    color: black;
+    padding: 0;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+  }
 `;

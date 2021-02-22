@@ -36,7 +36,6 @@ const WorkExperiance = () => {
       initial="hidden"
       animate="show"
       exit="exit"
-      style={{ background: "whitesmoke" }}
     >
       <motion.div variants={sliderContainer}>
         <Frame1 variants={slider}></Frame1>
@@ -57,7 +56,7 @@ const WorkExperiance = () => {
             <motion.img
               variants={imgAnim}
               src={code2}
-              alt="Picture of second work experiance"
+              alt="Picture of some html code"
             />
           </StyledHide>
         </Link>
@@ -81,7 +80,7 @@ const WorkExperiance = () => {
             <motion.img
               variants={imgAnim}
               src={turbine1}
-              alt="Picture of second work experiance"
+              alt="Picture of a gas turbine"
             />
           </StyledHide>
         </Link>
@@ -105,7 +104,7 @@ const WorkExperiance = () => {
             <motion.img
               variants={imgAnim}
               src={plane1}
-              alt="Picture of first work experiance"
+              alt="Picture of an airplane"
             />
           </StyledHide>
         </Link>
@@ -114,5 +113,6 @@ const WorkExperiance = () => {
     </StyledWorks>
   );
 };
+
 
 export default WorkExperiance;
