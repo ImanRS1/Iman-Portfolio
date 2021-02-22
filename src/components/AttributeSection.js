@@ -12,7 +12,7 @@ import { useScroll } from "./useScroll";
 import { scrollReveal, animStagger, attributeAnim } from "../animation";
 import {
   StyledDescription,
-  StyledImage,
+  StyledSecImage,
   StyledCards,
   StyledCard,
   StyledAttribute,
@@ -28,9 +28,9 @@ const AttributeSection = () => {
       initial={"hidden"}
       ref={element}
     >
-      <StyledImage>
+      <StyledSecImage>
         <img src={code1} alt="Image of code" />
-      </StyledImage>
+      </StyledSecImage>
       <StyledDescription>
         <h2>
           Bullet <span>points</span> about Iman.

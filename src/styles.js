@@ -10,7 +10,7 @@ export const StyledAbout = styled(motion.div)`
   color: white;
 }
 
-  @media (max-width: 1300px) {
+  @media (max-width: 1370px) {
   }
 
 `;
@@ -22,6 +22,14 @@ export const StyledDescription = styled.div`
     font-weight: lighter;
   }
   z-index: 2;
+
+  @media (max-width: 581px) {
+    padding-left: 0;
+
+    h2 {
+      padding-left: 1rem;
+    }
+  }
 `;
 
 export const StyledImage = styled.div`
@@ -35,6 +43,33 @@ export const StyledImage = styled.div`
   z-index: 2;
 `;
 
+export const StyledSecImage = styled.div`
+  flex: 1;
+  overflow: hidden;
+  img {
+    width: 90%;
+    height: 80vh;
+    object-fit: cover;
+  }
+  z-index: 2;
+
+  @media (max-width: 1323px) {
+    display: flex;
+    justify-content: center;
+    img {
+      width: 100%;
+      height: 40vh;
+    }
+  }
+
+  @media (max-width: 710px) {
+    img {
+      width: 100%;
+      height: 25vh;
+    }
+  }
+`;
+
 export const StyledHide = styled.div`
   overflow: hidden;
 `;
@@ -43,11 +78,18 @@ export const StyledCards = styled(motion.div)`
   display: flex;
   flex-wrap: wrap;
   overflow-y: hidden;
+
+  @media (max-width: 1323px) {
+    justify-content: space-evenly;
+  }
+
+  @media (max-width: 455px) {
+    padding: 0rem 1rem;
+  }
 `;
 
 export const StyledCard = styled(motion.div)`
   width: 20rem;
-  flex-basis: 20rem;
   padding-left: 2rem;
   .icon {
     display: flex;
@@ -62,9 +104,29 @@ export const StyledCard = styled(motion.div)`
       color: black;
     }
   }
-`;
 
-//const StyledAttribute = styled(StyledAbout)``
+  @media (max-width: 1323px) {
+    width: 25rem;
+    margin-right: 8rem;
+  }
+
+  @media (max-width: 940px) {
+    padding-left: 0;
+    margin-right: 0rem;
+  }
+
+  @media (max-width: 710px) {
+    padding-left: 0;
+    margin-right: 0rem;
+    width: 20rem;
+  }
+
+  @media (max-width: 581px) {
+    padding-left: 0;
+    margin-right: 0rem;
+    width: 15rem;
+  }
+`;
 
 export const StyledAttribute = styled(motion.div)`
   min-height: 90vh;
@@ -79,6 +141,17 @@ export const StyledAttribute = styled(motion.div)`
   p {
     width: 70%;
     padding: 2rem 0rem 4rem 0rem;
+  }
+
+  @media (max-width: 1370px) {
+    p {
+      width: 90%;
+    }
+  }
+
+  @media (max-width: 1323px) {
+    flex-direction: column-reverse;
+    padding: 5rem 0rem;
   }
 `;
 
@@ -100,6 +173,13 @@ export const StyledContact = styled(motion.div)`
     background: #23d997;
     margin-bottom: 3rem;
   }
+
+  @media (max-width: 1400px) {
+    height: 60rem;
+  }
+  @media (max-width: 1323px) {
+    padding: 5rem 1rem;
+  }
 `;
 
 export const StyledContactOptions = styled(motion.div)`
@@ -109,12 +189,24 @@ export const StyledContactOptions = styled(motion.div)`
   height: 20rem;
   flex-wrap: wrap;
   margin-bottom: 5rem;
+
+  @media (max-width: 800px) {
+    h1 {
+      font-size: 20px;
+    }
+    flex-direction: column;
+    min-height: 40rem;
+  }
 `;
 
 export const StyledContactOptionSocial = styled(motion.div)`
   svg {
     font-size: 10rem;
     padding: 0rem 1rem;
+  }
+
+  @media (max-width: 800px) {
+    width: 50rem;
   }
 `;
 
@@ -132,6 +224,9 @@ export const StyledContactOptionNandMCon = styled(motion.div)`
     font-weight: normal;
   }
   padding: 0rem 1rem;
+
+  @media (max-width: 665px) {
+  }
 `;
 
 export const StyledContactOptionNandM = styled(motion.div)`
