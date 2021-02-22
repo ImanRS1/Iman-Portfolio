@@ -202,7 +202,7 @@ export const StyledDetails = styled(motion.div)`
 `;
 
 export const StyledHeadLine = styled.div`
-  min-height: 90vh;
+  min-height: 50vh;
   padding-top: 20vh;
   position: relative;
   h2 {
