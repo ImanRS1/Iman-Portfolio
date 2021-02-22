@@ -6,6 +6,8 @@ import ScrollTop from "../components/ScrollTop";
 import mie from "../img/mie.jpg";
 import ln from "../img/ln.jpg";
 import ttt from "../img/ttt.jpg";
+import rmp from "../img/rmp.jpg";
+import ip from "../img/ip.jpg";
 
 import {
   StyledDetails,
@@ -154,6 +156,50 @@ const WorkDetailDesc = () => {
             Link:{" "}
             <a href="https://imanrs1.github.io/TicTacToe/">
               imanrs1.github.io/TicTacToe
+            </a>
+          </p>
+        </div>
+      </StyledFedDesc>
+      <StyledFedDesc>
+        <a href="https://imanrs1.github.io/React-Music-Player/">
+          <img src={rmp} />
+        </a>
+        <div>
+          <h2>Title: React Music Player</h2>
+          <p>
+            An app like music player with minimalistic styling, easy to use and
+            easy to like.
+          </p>
+          <p>
+            The website was created using React, JS (ES6), HTML5 and SCSS with
+            imported fontawesome icons.
+          </p>
+          <p>
+            Link:{" "}
+            <a href="https://imanrs1.github.io/React-Music-Player/">
+              imanrs1.github.io/React-Music-Player
+            </a>
+          </p>
+        </div>
+      </StyledFedDesc>
+      <StyledFedDesc>
+        <a href="https://imanrs1.github.io/React-Music-Player/">
+          <img src={ip} />
+        </a>
+        <div>
+          <h2>Title: Iman Portfolio</h2>
+          <p>
+            An app like music player with minimalistic styling, easy to use and
+            easy to like.
+          </p>
+          <p>
+            The website was created using React, JS (ES6), HTML5 and SCSS with
+            imported fontawesome icons.
+          </p>
+          <p>
+            Link:{" "}
+            <a href="https://imanrs1.github.io/React-Music-Player/">
+              imanrs1.github.io/React-Music-Player
             </a>
           </p>
         </div>
