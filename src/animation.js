@@ -27,6 +27,14 @@ export const titleAnim = {
   },
 };
 
+export const skillAnim = {
+  hidden: { y: 300 },
+  show: {
+    y: 0,
+    transition: { duration: 0.35, ease: "easeOut"},
+  },
+};
+
 export const attributeAnim = {
   hidden: { y: 400 },
   show: {
@@ -45,6 +53,7 @@ export const animStagger = {
     }
   }
 }
+
 export const contactAnim = {
   hidden: { x: -400 },
   show: {
@@ -52,6 +61,7 @@ export const contactAnim = {
     transition: { duration: 1.5, ease: "easeOut" },
   },
 };
+
 
 export const fade = {
   hidden: { opacity: 0 },

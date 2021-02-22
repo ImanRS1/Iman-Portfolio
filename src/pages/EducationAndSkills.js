@@ -6,6 +6,8 @@ import {
   sliderContainer,
   fade,
   lineAnim,
+  animStagger,
+  skillAnim,
 } from "../animation";
 import ScrollTop from "../components/ScrollTop";
 import {
@@ -18,6 +20,7 @@ import {
   StyledEducation,
   StyledSkillsHolder,
   StyledSkill,
+  StyledHide,
 } from "../styles";
 import { useScroll } from "../components/useScroll";
 import mdh from "../img/mdh.jpg";
@@ -54,52 +57,74 @@ const EducationAndSkills = () => {
       <motion.h2 variants={fade}>Education and Skills</motion.h2>
       <motion.div variants={lineAnim} className="line"></motion.div>
 
-      <h4>Skilled in:</h4>
-      <StyledSkillsHolder>
-        <StyledSkill>
-          <img src={reactI} />
-          <p>React</p>
-        </StyledSkill>
-        <StyledSkill>
-          <img src={scss} />
-          <p>SCSS</p>
-        </StyledSkill>
-        <StyledSkill>
-          <img src={npm} />
-          <p>NPM</p>
-        </StyledSkill>
-        <StyledSkill>
-          <img src={nodeI} />
-          <p>NodeJS</p>
-        </StyledSkill>
-        <StyledSkill>
-          <img src={bs} />
-          <p>BootStrap5</p>
-        </StyledSkill>
-        <StyledSkill>
-          <img src={js} />
-          <p>JavaScript</p>
-        </StyledSkill>
-        <StyledSkill>
-          <img src={ht} />
-          <p>HTML5+</p>
-        </StyledSkill>
-        <StyledSkill>
-          <img src={redux} />
-          <p>Redux</p>
-        </StyledSkill>
-        <StyledSkill>
-          <img src={css} />
-          <p>CSS3</p>
-        </StyledSkill>
-        <StyledSkill>
-          <img src={gitI} />
-          <p>Git</p>
-        </StyledSkill>
-        <StyledSkill>
-          <img src={jqr} />
-          <p>jQuerry</p>
-        </StyledSkill>
+      <motion.h4 variants={fade}>Skilled in:</motion.h4>
+      <StyledSkillsHolder variants={animStagger}>
+        <StyledHide>
+          <StyledSkill variants={skillAnim}>
+            <img src={reactI} />
+            <p>React</p>
+          </StyledSkill>
+        </StyledHide>
+        <StyledHide>
+          <StyledSkill variants={skillAnim}>
+            <img src={scss} />
+            <p>SCSS</p>
+          </StyledSkill>
+        </StyledHide>
+        <StyledHide>
+          <StyledSkill variants={skillAnim}>
+            <img src={npm} />
+            <p>NPM</p>
+          </StyledSkill>
+        </StyledHide>
+        <StyledHide>
+          <StyledSkill variants={skillAnim}>
+            <img src={nodeI} />
+            <p>NodeJS</p>
+          </StyledSkill>
+        </StyledHide>
+        <StyledHide>
+          <StyledSkill variants={skillAnim}>
+            <img src={bs} />
+            <p>BootStrap5</p>
+          </StyledSkill>
+        </StyledHide>
+        <StyledHide>
+          <StyledSkill variants={skillAnim}>
+            <img src={js} />
+            <p>JavaScript</p>
+          </StyledSkill>
+        </StyledHide>
+        <StyledHide>
+          <StyledSkill variants={skillAnim}>
+            <img src={ht} />
+            <p>HTML5+</p>
+          </StyledSkill>
+        </StyledHide>
+        <StyledHide>
+          <StyledSkill variants={skillAnim}>
+            <img src={redux} />
+            <p>Redux</p>
+          </StyledSkill>
+        </StyledHide>
+        <StyledHide>
+          <StyledSkill variants={skillAnim}>
+            <img src={css} />
+            <p>CSS3</p>
+          </StyledSkill>
+        </StyledHide>
+        <StyledHide>
+          <StyledSkill variants={skillAnim}>
+            <img src={gitI} />
+            <p>Git</p>
+          </StyledSkill>
+        </StyledHide>
+        <StyledHide>
+          <StyledSkill variants={skillAnim}>
+            <img src={jqr} />
+            <p>jQuerry</p>
+          </StyledSkill>
+        </StyledHide>
       </StyledSkillsHolder>
 
       <StyledEducationsHolder
@@ -115,6 +140,7 @@ const EducationAndSkills = () => {
           <div>
             <h3>Changemaker Educations</h3>
             <p>Front-end development</p>
+            <p>Stockholm, Sweden</p>
           </div>
         </StyledEducation>
         <StyledEducation>
@@ -122,6 +148,7 @@ const EducationAndSkills = () => {
           <div>
             <h3>University of Mälardalen</h3>
             <p>Bachelors degree in Engineering - Aeronautical engineering</p>
+            <p>Västerås, Sweden</p>
           </div>
         </StyledEducation>
       </StyledEducationsHolder>
