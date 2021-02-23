@@ -8,20 +8,49 @@ export const StyledAbout = styled(motion.div)`
   justify-content: space-between;
   padding: 0rem 10rem;
   color: white;
-}
 
-  @media (max-width: 1370px) {
+  @media (max-width: 1323px) {
+    padding: 0rem 1rem;
+  }
+  @media (max-width: 640px) {
+    height: 70vh;
+    flex-direction: column;
+    padding-top: 3rem;
+    p{
+      padding: 1rem 0rem;
+    }
+
+    button{
+      margin-bottom: 1rem;
+      float: right;
+    }
+
+    .title{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
+}
 `;
 
 export const StyledDescription = styled.div`
   flex: 1;
   padding-left: 2rem;
+  z-index: 2;
+  p {
+    width: 80%;
+  }
   h2 {
     font-weight: lighter;
   }
-  z-index: 2;
+
+  @media (max-width: 640px) {
+    p {
+      width: 100%;
+    }
+  }
 
   @media (max-width: 581px) {
     padding-left: 0;
@@ -35,12 +64,28 @@ export const StyledDescription = styled.div`
 export const StyledImage = styled.div`
   flex: 1;
   overflow: hidden;
+  z-index: 2;
   img {
     width: 90%;
     height: 80vh;
     object-fit: cover;
   }
-  z-index: 2;
+  img:last-child {
+    display: none;
+  }
+
+  @media (max-width: 640px) {
+    img:first-child {
+      display: none;
+    }
+    img:last-child {
+      display: block;
+      width: 100vw;
+      height: 250px;
+      object-fit: cover;
+      padding: 0;
+    }
+  }
 `;
 
 export const StyledSecImage = styled.div`

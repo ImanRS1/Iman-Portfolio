@@ -1,5 +1,6 @@
 import React from "react";
 import iman from "../img/iman.jpg";
+import iman1 from "../img/iman1.jpg";
 import { motion } from "framer-motion";
 import { titleAnim, fade, imgAnim } from "../animation";
 import Wave from "./Wave";
@@ -35,7 +36,7 @@ const AboutSection = () => {
             <motion.h2 variants={titleAnim}>Ends</motion.h2>
           </StyledHide>
         </motion.div>
-        <motion.p variants={fade} style={{ width: "80%" }}>
+        <motion.p variants={fade}>
           “I believe that a persons greatest asset is not necessarily the
           knowledge they possess, but their ability to acquire and understand
           new knowledge.”
@@ -47,6 +48,11 @@ const AboutSection = () => {
       <StyledImage>
         <motion.img
           src={iman}
+          alt="Image of Iman Reza Soltani"
+          variants={imgAnim}
+        />
+        <motion.img
+          src={iman1}
           alt="Image of Iman Reza Soltani"
           variants={imgAnim}
         />

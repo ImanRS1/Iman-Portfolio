@@ -23,7 +23,7 @@ const Nav = () => {
             <Line
               transition={{ duration: 0.75 }}
               initial={{ width: "0%" }}
-              animate={{ width: pathname === "/" ? "50%" : "0%" }}
+              animate={{ width: pathname === "/" ? "8rem" : "0%" }}
             />
           </li>
           <li>
@@ -31,7 +31,7 @@ const Nav = () => {
             <Line
               transition={{ duration: 0.75 }}
               initial={{ width: "0%" }}
-              animate={{ width: pathname === "/workexperiance" ? "55%" : "0%" }}
+              animate={{ width: pathname === "/workexperiance" ? "11rem" : "0%" }}
             />
           </li>
           <li>
@@ -40,7 +40,7 @@ const Nav = () => {
               transition={{ duration: 0.75 }}
               initial={{ width: "0%" }}
               animate={{
-                width: pathname === "/educationandskills" ? "60%" : "0%",
+                width: pathname === "/educationandskills" ? "12.5rem" : "0%",
               }}
             />
           </li>
@@ -62,6 +62,42 @@ const StyledNav = styled.nav`
   align-items: center;
   padding: 1rem 10rem;
   background: #282828;
+
+  li {
+    padding-left: 10rem;
+    position: relative;
+  }
+
+  ul {
+    display: flex;
+    list-style: none;
+  }
+
+
+  @media (max-width: 1173px) {
+    justify-content: space-between;
+    
+    li{
+      padding: 0rem 2rem;
+    }
+    padding: 1rem 1rem;
+    min-height: 11vh;
+  }
+
+  @media (max-width: 715px) {
+    ul{
+      display: block;
+    }
+    li{
+      padding: 0.4rem 1.5rem 0.4rem 1rem;
+    }
+  }
+
+  @media (max-width: 522px) {
+    li{
+      padding: 0rem 1rem;
+    }
+  }
 `;
 
 const StyledNavContainer = styled.nav`
@@ -73,19 +109,13 @@ const StyledNavContainer = styled.nav`
     color: white;
     text-decoration: none;
   }
-  ul {
-    display: flex;
-    list-style: none;
-  }
+  
   #logo {
     font-size: 1.8rem;
     font-family: "Lobster", cursive;
     font-weight: lighter;
   }
-  li {
-    padding-left: 10rem;
-    position: relative;
-  }
+  
 `;
 
 const Line = styled(motion.div)`
@@ -95,6 +125,19 @@ const Line = styled(motion.div)`
   position: absolute;
   bottom: -80%;
   left: 10rem;
+
+  @media (max-width: 1173px) {
+    left: 2rem;
+  }
+
+  @media (max-width: 715px) {
+    bottom: -5%;
+    left: 1rem;
+  }
+
+  @media (max-width: 522px) {
+    left: 1rem;
+  }
 `;
 
 export default Nav;
