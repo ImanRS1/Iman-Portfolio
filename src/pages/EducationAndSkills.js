@@ -134,7 +134,7 @@ const EducationAndSkills = () => {
         initial="hidden"
         layout="position"
       >
-        <h4>Educations:</h4>
+        <h4>Education:</h4>
         <StyledEducation>
           <img src={cme} />
           <div>

@@ -204,9 +204,15 @@ export const StyledContactOptionSocial = styled(motion.div)`
     font-size: 10rem;
     padding: 0rem 1rem;
   }
+`;
+
+export const StyledSocialsContainer = styled(motion.div)`
+  display: flex;
+  justify-content: space-between;
+  min-width: 25%;
 
   @media (max-width: 800px) {
-    width: 50rem;
+    width: 20rem;
   }
 `;
 
@@ -226,6 +232,10 @@ export const StyledContactOptionNandMCon = styled(motion.div)`
   padding: 0rem 1rem;
 
   @media (max-width: 665px) {
+    svg {
+      font-size: 3rem;
+    }
+    justify-content: space-evenly;
   }
 `;
 

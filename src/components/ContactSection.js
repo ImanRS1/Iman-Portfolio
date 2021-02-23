@@ -6,6 +6,7 @@ import {
   StyledContactOptionNandMCon,
   StyledContactOptionNandM,
   StyledHide,
+  StyledSocialsContainer,
 } from "../styles";
 import { useScroll } from "./useScroll";
 import {
@@ -57,20 +58,22 @@ const ContactSection = () => {
             </StyledContactOptionNandM>
           </StyledContactOptionNandMCon>
         </StyledHide>
-        <StyledHide>
-          <StyledContactOptionSocial variants={titleAnim}>
-            <a href="https://se.linkedin.com/in/imanrezasoltani">
-              <FontAwesomeIcon icon={faLinkedin} color="#0077B5" />
-            </a>
-          </StyledContactOptionSocial>
-        </StyledHide>
-        <StyledHide>
-          <StyledContactOptionSocial variants={titleAnim}>
-            <a href="https://github.com/ImanRS1">
-              <FontAwesomeIcon icon={faGithubSquare} color="#fafafa" />
-            </a>
-          </StyledContactOptionSocial>
-        </StyledHide>
+        <StyledSocialsContainer>
+          <StyledHide>
+            <StyledContactOptionSocial variants={titleAnim}>
+              <a href="https://se.linkedin.com/in/imanrezasoltani">
+                <FontAwesomeIcon icon={faLinkedin} color="#0077B5" />
+              </a>
+            </StyledContactOptionSocial>
+          </StyledHide>
+          <StyledHide>
+            <StyledContactOptionSocial variants={titleAnim}>
+              <a href="https://github.com/ImanRS1">
+                <FontAwesomeIcon icon={faGithubSquare} color="#fafafa" />
+              </a>
+            </StyledContactOptionSocial>
+          </StyledHide>
+        </StyledSocialsContainer>
       </StyledContactOptions>
     </StyledContact>
   );
