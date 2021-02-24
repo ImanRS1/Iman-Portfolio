@@ -17,6 +17,7 @@ import {
   StyledCard,
   StyledAttribute,
   StyledHide,
+  StyledAttriHeader,
 } from "../styles";
 
 const AttributeSection = () => {
@@ -32,9 +33,9 @@ const AttributeSection = () => {
         <img src={code1} alt="Image of code" />
       </StyledSecImage>
       <StyledDescription>
-        <h2>
+          <StyledAttriHeader>
           Bullet <span>points</span> about Iman.
-        </h2>
+          </StyledAttriHeader>
         <StyledCards variants={animStagger}>
           <StyledHide>
             <StyledCard variants={attributeAnim}>

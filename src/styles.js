@@ -12,27 +12,53 @@ export const StyledAbout = styled(motion.div)`
   @media (max-width: 1323px) {
     padding: 0rem 1rem;
   }
+
   @media (max-width: 640px) {
-    height: 70vh;
+    min-height: 70vh;
     flex-direction: column;
     padding-top: 3rem;
-    p{
+    p {
       padding: 1rem 0rem;
     }
 
-    button{
+    button {
       margin-bottom: 1rem;
+      margin-right: 1rem;
       float: right;
     }
 
-    .title{
+    .title {
       display: flex;
       flex-direction: column;
       align-items: center;
     }
   }
 
-}
+  @media (max-height: 600px) {
+    min-height: 50vh;
+  }
+
+  @media (max-width: 374px) {
+    padding-top: 5rem;
+  }
+`;
+
+export const StyledAttriHeader = styled.div`
+  flex: 1;
+  padding-left: 2rem;
+  z-index: 2;
+  font-size: 3rem;
+  padding-bottom: 4rem;
+  p {
+    width: 80%;
+  }
+  h2 {
+    font-weight: lighter;
+  }
+  @media (max-width: 1323px) {
+    font-size: 2rem;
+    padding: 2rem 1rem 4rem 1rem;
+  }
 `;
 
 export const StyledDescription = styled.div`
@@ -180,6 +206,10 @@ export const StyledAttribute = styled(motion.div)`
   justify-content: space-between;
   padding: 5rem 10rem;
   color: white;
+  img {
+    overflow: hidden;
+  }
+
   h2 {
     padding-bottom: 5rem;
   }
@@ -197,6 +227,8 @@ export const StyledAttribute = styled(motion.div)`
   @media (max-width: 1323px) {
     flex-direction: column-reverse;
     padding: 5rem 0rem;
+    object-fit: cover;
+    padding-top: 0.5rem;
   }
 `;
 

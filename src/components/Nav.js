@@ -19,28 +19,36 @@ const Nav = () => {
         </div>
         <ul>
           <li>
-            <Link to="/">1. About Iman</Link>
-            <Line
-              transition={{ duration: 0.75 }}
-              initial={{ width: "0%" }}
-              animate={{ width: pathname === "/" ? "8rem" : "0%" }}
-            />
+            <Link to="/">
+              <div className="navText"> 1. About Iman</div>
+              <Line1
+                transition={{ duration: 0.75 }}
+                initial={{ width: "0%" }}
+                animate={{ width: pathname === "/" ? "8rem" : "0%" }}
+              />
+            </Link>
           </li>
           <li>
-            <Link to="/workexperiance">2. Work Experiance</Link>
-            <Line
-              transition={{ duration: 0.75 }}
-              initial={{ width: "0%" }}
-              animate={{ width: pathname === "/workexperiance" ? "11rem" : "0%" }}
-            />
-          </li>
-          <li>
-            <Link to="/educationandskills">3. Education and Skills</Link>
-            <Line
+            <Link to="/workexperiance">
+              <div className="navText">2. Work Experiance</div>
+            </Link>
+            <Line2
               transition={{ duration: 0.75 }}
               initial={{ width: "0%" }}
               animate={{
-                width: pathname === "/educationandskills" ? "12.5rem" : "0%",
+                width: pathname === "/workexperiance" ? "11rem" : "0%",
+              }}
+            />
+          </li>
+          <li>
+            <Link to="/educationandskills">
+              <div className="navText">3. Education & Skills</div>
+            </Link>
+            <Line3
+              transition={{ duration: 0.75 }}
+              initial={{ width: "0%" }}
+              animate={{
+                width: pathname === "/educationandskills" ? "11.5rem" : "0%",
               }}
             />
           </li>
@@ -53,7 +61,7 @@ const Nav = () => {
 const StyledNav = styled.nav`
   position: absolute;
   z-index: 30;
-  width: 100vw;
+  width: 100%;
 
   min-height: 10vh;
   display: flex;
@@ -73,29 +81,45 @@ const StyledNav = styled.nav`
     list-style: none;
   }
 
-
   @media (max-width: 1173px) {
-    justify-content: space-between;
-    
-    li{
+    li {
       padding: 0rem 2rem;
     }
-    padding: 1rem 1rem;
+    padding: 1rem;
     min-height: 11vh;
   }
 
   @media (max-width: 715px) {
-    ul{
-      display: block;
+    flex-direction: column;
+
+    ul {
+      justify-content: space-around;
+      width: 100%;
+      padding: 0.5rem;
     }
-    li{
-      padding: 0.4rem 1.5rem 0.4rem 1rem;
+    li {
+      padding: 0;
     }
   }
 
-  @media (max-width: 522px) {
-    li{
-      padding: 0rem 1rem;
+  @media (max-width: 640px) {
+    margin-bottom: 1rem;
+  }
+
+  @media (max-width: 550px) {
+    .navText {
+      font-size: 12px;
+    }
+
+    ul {
+      justify-content: space-between;
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 374px) {
+    li {
+      padding: 0.3rem;
     }
   }
 `;
@@ -109,16 +133,15 @@ const StyledNavContainer = styled.nav`
     color: white;
     text-decoration: none;
   }
-  
+
   #logo {
     font-size: 1.8rem;
     font-family: "Lobster", cursive;
     font-weight: lighter;
   }
-  
 `;
 
-const Line = styled(motion.div)`
+const Line1 = styled(motion.div)`
   height: 0.3rem;
   background: #23d997;
   width: 0;
@@ -131,12 +154,37 @@ const Line = styled(motion.div)`
   }
 
   @media (max-width: 715px) {
-    bottom: -5%;
-    left: 1rem;
+    bottom: -30%;
+    left: 0rem;
   }
 
-  @media (max-width: 522px) {
-    left: 1rem;
+  @media (max-width: 550px) {
+    left: 0rem;
+    max-width: 6.5rem !important;
+  }
+
+  @media (max-width: 374px) {
+    max-width: 4.5rem !important;
+  }
+`;
+
+const Line2 = styled(Line1)`
+  @media (max-width: 550px) {
+    max-width: 9rem !important;
+  }
+
+  @media (max-width: 374px) {
+    max-width: 4.5rem !important;
+  }
+`;
+
+const Line3 = styled(Line1)`
+  @media (max-width: 550px) {
+    max-width: 9.5rem !important;
+  }
+
+  @media (max-width: 374px) {
+    max-width: 4.5rem !important;
   }
 `;
 
