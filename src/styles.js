@@ -255,9 +255,8 @@ export const StyledAttribute = styled(motion.div)`
 
   @media (max-width: 1323px) {
     flex-direction: column-reverse;
-    padding: 5rem 0rem;
+    padding: 5.5rem 0rem 0rem 0rem;
     object-fit: cover;
-    padding-top: 0.5rem;
   }
 `;
 
@@ -285,6 +284,16 @@ export const StyledContact = styled(motion.div)`
   }
   @media (max-width: 1323px) {
     padding: 5rem 1rem;
+    height: 90vh;
+  }
+
+  @media (max-width: 640px) {
+    h2 {
+      font-size: 2rem;
+    }
+    p {
+      padding: 0;
+    }
   }
 `;
 
@@ -292,7 +301,7 @@ export const StyledContactOptions = styled(motion.div)`
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  height: 20rem;
+  height: 50%;
   flex-wrap: wrap;
   margin-bottom: 5rem;
 
@@ -302,6 +311,13 @@ export const StyledContactOptions = styled(motion.div)`
     }
     flex-direction: column;
     min-height: 40rem;
+  }
+
+  @media (max-width: 640px) {
+    h1 {
+      font-size: 16px;
+    }
+    height: 10%;
   }
 `;
 
@@ -318,7 +334,12 @@ export const StyledSocialsContainer = styled(motion.div)`
   min-width: 25%;
 
   @media (max-width: 800px) {
-    width: 20rem;
+    width: 28rem;
+  }
+
+  @media (max-width: 640px) {
+    flex-direction: column;
+    align-items: center;
   }
 `;
 
@@ -337,11 +358,12 @@ export const StyledContactOptionNandMCon = styled(motion.div)`
   }
   padding: 0rem 1rem;
 
-  @media (max-width: 665px) {
+  @media (max-width: 640px) {
     svg {
       font-size: 3rem;
     }
     justify-content: space-evenly;
+    height: 90%;
   }
 `;
 
