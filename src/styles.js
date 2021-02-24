@@ -78,7 +78,7 @@ export const StyledDescription = styled.div`
     }
   }
 
-  @media (max-width: 581px) {
+  @media (max-width: 550px) {
     padding-left: 0;
 
     h2 {
@@ -159,6 +159,21 @@ export const StyledCards = styled(motion.div)`
   }
 `;
 
+export const StyledAttriP = styled(motion.div)`
+  padding: 3rem 0rem;
+  color: #ccc;
+  line-height: 150%;
+
+  font-size: 1.4rem;
+
+  @media (max-width: 640px) {
+    font-size: 1rem;
+    line-height: 140%;
+    width: 95%;
+    padding: 1.5rem 0rem 2rem 0rem;
+  }
+`;
+
 export const StyledCard = styled(motion.div)`
   width: 20rem;
   padding-left: 2rem;
@@ -173,6 +188,7 @@ export const StyledCard = styled(motion.div)`
       background: white;
       padding: 1rem;
       color: black;
+      white-space: nowrap;
     }
   }
 
@@ -187,14 +203,27 @@ export const StyledCard = styled(motion.div)`
   }
 
   @media (max-width: 710px) {
-    padding-left: 0;
-    margin-right: 0rem;
     width: 20rem;
   }
 
+  @media (max-width: 640px) {
+    .icon {
+      svg {
+        font-size: 40px;
+      }
+      h3 {
+        margin-left: 1rem;
+        background: white;
+        padding: 0.5rem;
+      }
+    }
+  }
+
+  @media (max-height: 600px) {
+    /* min-height: 50vh; */
+  }
+
   @media (max-width: 581px) {
-    padding-left: 0;
-    margin-right: 0rem;
     width: 15rem;
   }
 `;

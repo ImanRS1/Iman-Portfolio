@@ -118,6 +118,7 @@ const StyledNav = styled.nav`
   }
 
   @media (max-width: 374px) {
+    padding: 1rem 0rem;
     li {
       padding: 0.3rem;
     }
@@ -165,6 +166,7 @@ const Line1 = styled(motion.div)`
 
   @media (max-width: 374px) {
     max-width: 4.5rem !important;
+    bottom: -10%;
   }
 `;
 

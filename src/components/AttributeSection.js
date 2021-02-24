@@ -18,6 +18,7 @@ import {
   StyledAttribute,
   StyledHide,
   StyledAttriHeader,
+  StyledAttriP
 } from "../styles";
 
 const AttributeSection = () => {
@@ -43,7 +44,7 @@ const AttributeSection = () => {
                 <FontAwesomeIcon icon={faFileCode} color="#23d997" />
                 <h3>Coding</h3>
               </div>
-              <p>Ambitious programmer, always striving to improve</p>
+              <StyledAttriP>Ambitious programmer, always striving to improve</StyledAttriP>
             </StyledCard>
           </StyledHide>
           <StyledHide>
@@ -52,7 +53,7 @@ const AttributeSection = () => {
                 <FontAwesomeIcon icon={faPlane} color="#23d997" />
                 <h3>International</h3>
               </div>
-              <p>International work experience stretching over 17 countries</p>
+              <StyledAttriP>International work experience stretching over 17 countries</StyledAttriP>
             </StyledCard>
           </StyledHide>
 
@@ -62,7 +63,7 @@ const AttributeSection = () => {
                 <FontAwesomeIcon icon={faCogs} color="#23d997" />
                 <h3>Engineer</h3>
               </div>
-              <p>Experienced engineer, a professional problem solver</p>
+              <StyledAttriP>Experienced engineer, a professional problem solver</StyledAttriP>
             </StyledCard>
           </StyledHide>
           <StyledHide>
@@ -71,7 +72,7 @@ const AttributeSection = () => {
                 <FontAwesomeIcon icon={faStreetView} color="#23d997" />
                 <h3>Data & Location</h3>
               </div>
-              <p>Born 1989 residing in Stockholm Sweden</p>
+              <StyledAttriP>Born 1989 residing in Stockholm Sweden</StyledAttriP>
             </StyledCard>
           </StyledHide>
         </StyledCards>
