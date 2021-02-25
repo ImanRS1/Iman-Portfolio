@@ -261,7 +261,7 @@ export const StyledAttribute = styled(motion.div)`
 `;
 
 export const StyledContact = styled(motion.div)`
-  min-height: 60vh;
+  min-height: 80vh;
   display: flex;
   flex-direction: column;
   padding: 5rem 10rem;
@@ -301,7 +301,6 @@ export const StyledContactOptions = styled(motion.div)`
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  justify-content: center;
   flex-wrap: wrap;
   margin-bottom: 5rem;
   height: 100%;
@@ -370,6 +369,9 @@ export const StyledContactOptionNandMCon = styled(motion.div)`
     }
     justify-content: space-evenly;
     height: 90%;
+  }
+  @media (max-width: 426px) {
+    padding-left: 0;
   }
 `;
 
