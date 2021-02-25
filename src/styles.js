@@ -261,7 +261,7 @@ export const StyledAttribute = styled(motion.div)`
 `;
 
 export const StyledContact = styled(motion.div)`
-  min-height: 50vh;
+  min-height: 60vh;
   display: flex;
   flex-direction: column;
   padding: 5rem 10rem;
@@ -283,8 +283,8 @@ export const StyledContact = styled(motion.div)`
     height: 60rem;
   }
   @media (max-width: 1323px) {
-    padding: 5rem 1rem;
-    height: 90vh;
+    padding: 5rem 1rem 1rem 1rem;
+    height: 80vh;
   }
 
   @media (max-width: 640px) {
@@ -301,23 +301,24 @@ export const StyledContactOptions = styled(motion.div)`
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  height: 50%;
+  justify-content: center;
   flex-wrap: wrap;
   margin-bottom: 5rem;
+  height: 100%;
 
   @media (max-width: 800px) {
     h1 {
       font-size: 20px;
     }
     flex-direction: column;
-    min-height: 40rem;
+    height: 100%;
+    padding-top: 1rem;
   }
 
   @media (max-width: 640px) {
     h1 {
       font-size: 16px;
     }
-    height: 10%;
   }
 `;
 
@@ -325,6 +326,10 @@ export const StyledContactOptionSocial = styled(motion.div)`
   svg {
     font-size: 10rem;
     padding: 0rem 1rem;
+
+    @media (max-width: 640px) {
+      font-size: 7rem;
+    }
   }
 `;
 
@@ -340,6 +345,7 @@ export const StyledSocialsContainer = styled(motion.div)`
   @media (max-width: 640px) {
     flex-direction: column;
     align-items: center;
+    width: 0;
   }
 `;
 
