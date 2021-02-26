@@ -654,6 +654,24 @@ export const StyledEandSContainer = styled(motion.div)`
     background: #23d997;
     margin-bottom: 3rem;
   }
+
+  @media (max-width: 1000px) {
+    padding: 1rem;
+    h2 {
+      font-size: 2rem;
+    }
+    h4 {
+      font-size: 1.5rem;
+    }
+  }
+
+  @media (max-width: 600px) {
+    padding-top: 3rem;
+  }
+
+  @media (max-width: 350px) {
+    padding-top: 4rem;
+  }
 `;
 
 export const StyledEducationsHolder = styled(motion.div)``;
@@ -695,6 +713,14 @@ export const StyledEducation = styled(motion.div)`
   p {
     padding: 0;
   }
+
+  @media (max-width: 814px) {
+    flex-direction: column;
+    text-align: center;
+    img {
+      height: 15vh;
+    }
+  }
 `;
 
 export const StyledSkillsHolder = styled(motion.div)`
@@ -720,5 +746,18 @@ export const StyledSkill = styled(motion.div)`
   img {
     width: 80%;
     height: 80%;
+  }
+
+  @media (max-width: 814px) {
+    img {
+      width: 60%;
+      height: 60%;
+    }
+  }
+
+  @media (max-width: 660px) {
+    height: 8rem;
+    width: 8rem;
+    margin: 2rem;
   }
 `;

@@ -8,6 +8,7 @@ import {
   lineAnim,
   skillsStagger,
   skillAnim,
+  scrollReveal,
 } from "../animation";
 import ScrollTop from "../components/ScrollTop";
 import {
@@ -39,7 +40,6 @@ import redux from "../img/redux.svg";
 
 const EducationAndSkills = () => {
   const [element, controls] = useScroll();
-  const [element2, controls2] = useScroll();
   return (
     <StyledEandSContainer
       variants={pageAnimation}
@@ -135,7 +135,7 @@ const EducationAndSkills = () => {
         layout="position"
       >
         <h4>Education:</h4>
-        <StyledEducation>
+        <StyledEducation variants={scrollReveal}>
           <img src={cme} />
           <div>
             <h3>
@@ -146,7 +146,7 @@ const EducationAndSkills = () => {
             <p>Stockholm, Sweden</p>
           </div>
         </StyledEducation>
-        <StyledEducation>
+        <StyledEducation variants={scrollReveal}>
           <img src={mdh} />
           <div>
             <h3>
