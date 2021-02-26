@@ -1,8 +1,7 @@
-import React from "react";
+import React, { useLayoutEffect, useState } from "react";
 import plane1 from "../img/plane3.jpg";
 import code2 from "../img/code2.jpg";
 import turbine1 from "../img/gasturbine12.jpg";
-import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import {
@@ -12,6 +11,7 @@ import {
   lineAnim,
   slider,
   sliderContainer,
+  skillsStagger,
 } from "../animation";
 import {
   StyledHide,
@@ -26,9 +26,31 @@ import {
 import { useScroll } from "../components/useScroll";
 import ScrollTop from "../components/ScrollTop";
 
+/* function useWindowSize() {
+  const [size, setSize] = useState([0, 0]);
+  useLayoutEffect(() => {
+    function updateSize() {
+      setSize([window.innerWidth, window.innerHeight]);
+    }
+    window.addEventListener('resize', updateSize);
+    updateSize();
+    return () => window.removeEventListener('resize', updateSize);
+  }, []);
+  return size;
+}
+
+function ShowWindowDimensions(props) {
+  const [width, height] = useWindowSize();
+  let currentWidth = width;
+  return currentWidth;
+} */
+
 const WorkExperiance = () => {
   const [element, controls] = useScroll();
   const [element2, controls2] = useScroll();
+
+ /*  let x = ShowWindowDimensions();
+  console.log(x); */
 
   return (
     <StyledWorks

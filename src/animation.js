@@ -56,7 +56,6 @@ export const animStagger = {
 
 export const skillsStagger = {
   hidden: {
-
   },
   show: {
     transition: {
@@ -82,6 +81,7 @@ export const fade = {
     transition: { ease: "easeOut", duration: 0.75 },
   },
 };
+
 
 export const imgAnim = {
   hidden: { scale: 1.5, opacity: 0 },

@@ -15,7 +15,6 @@ import {
   StyledWorkDescription,
   StyledImageDisplay,
   StyledFedDesc,
-  lightBoxWindow,
 } from "../styles";
 
 const WorkDetail = () => {
@@ -83,14 +82,6 @@ const WorkDescription = ({
   );
 };
 
-{
-  /* <img
-  src={mie}
-  onClick={(mie) => {
-    lightBox(mie.target.src);
-  }}
-/>; */
-}
 
 const WorkDetailDesc = () => {
   return (

@@ -503,19 +503,49 @@ export const StyledDetails = styled(motion.div)`
 `;
 
 export const StyledHeadLine = styled.div`
-  min-height: 50vh;
-  padding-top: 20vh;
+  min-height: 10vh;
+  padding-top: 2vh;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
   h2 {
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    transform: translate(-50%, -10%);
+    padding: 2rem;
   }
   img {
     width: 100%;
     height: 50vh;
     object-fit: cover;
+  }
+
+  @media (max-width: 1020px) {
+    h2 {
+      font-size: 3rem;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    h2 {
+      font-size: 2rem;
+    }
+    img {
+      height: 30vh;
+    }
+  }
+
+  @media (max-width: 518px) {
+    h2 {
+      font-size: 1.5rem;
+    }
+  }
+
+  @media (max-width: 350px) and (max-height: 600px) {
+    padding-top: 10vh;
+  }
+
+  @media (max-width: 290px) and (max-height: 660px) {
+    padding-top: 10vh;
   }
 `;
 
@@ -536,6 +566,20 @@ export const StyledWorkDescription = styled.div`
   }
   p {
     padding: 1rem 0rem;
+  }
+
+  @media (max-width: 1056px) {
+    margin: 5rem 1rem;
+
+    h3 {
+      font-size: 3rem;
+    }
+  }
+
+  @media (max-width: 518px) {
+    h3 {
+      font-size: 2rem;
+    }
   }
 `;
 
@@ -578,6 +622,20 @@ export const StyledFedDesc = styled(motion.div)`
     text-decoration: none;
     color: #23d997;
     font-size: 1.4rem;
+  }
+
+  @media (max-width: 1000px) {
+    h2 {
+      font-size: 2rem;
+    }
+  }
+
+  @media (max-width: 640px) {
+    flex-direction: column;
+
+    img {
+      height: 20vh;
+    }
   }
 `;
 
