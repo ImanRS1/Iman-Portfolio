@@ -255,8 +255,12 @@ export const StyledAttribute = styled(motion.div)`
 
   @media (max-width: 1323px) {
     flex-direction: column-reverse;
-    padding: 5.5rem 0rem 0rem 0rem;
+    padding: 2.5rem 0rem 0rem 0rem;
     object-fit: cover;
+  }
+
+  @media (max-width: 640px) {
+    min-height: 70vh;
   }
 `;
 
@@ -410,6 +414,18 @@ export const StyledWorks = styled(motion.div)`
   h2 {
     padding: 1rem 0rem;
   }
+
+  @media (max-width: 1000px) {
+    padding: 1rem;
+  }
+
+  @media (max-width: 450px) {
+    padding-top: 2rem;
+  }
+
+  @media (max-width: 352px) {
+    padding-top: 4rem;
+  }
 `;
 
 export const StyledWork = styled(motion.div)`
@@ -431,6 +447,49 @@ export const StyledWork = styled(motion.div)`
 
   h2 {
     display: flex;
+  }
+
+  @media (max-width: 1400px) {
+    img {
+      height: 40vh;
+    }
+  }
+
+  @media (max-width: 1250px) {
+    h2 {
+      font-size: 3rem;
+    }
+  }
+
+  @media (max-width: 730px) {
+    h2 {
+      font-size: 2rem;
+    }
+
+    img {
+      height: 30vh;
+    }
+  }
+
+  @media (max-width: 500px) {
+    padding-bottom: 2rem;
+    .line {
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      font-size: 1rem;
+    }
+
+    img {
+      height: 20vh;
+    }
+  }
+
+  @media (max-width: 375px) {
+    img {
+      height: 15vh;
+    }
   }
 `;
 
