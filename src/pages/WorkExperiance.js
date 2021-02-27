@@ -1,4 +1,4 @@
-import React, { useLayoutEffect, useState } from "react";
+import React from "react";
 import plane1 from "../img/plane3.jpg";
 import code2 from "../img/code2.jpg";
 import turbine1 from "../img/gasturbine12.jpg";
@@ -23,41 +23,10 @@ import {
   StyledWork,
   StyledWorkxHeaders,
 } from "../styles";
-import { useScroll } from "../components/useScroll";
 import ScrollTop from "../components/ScrollTop";
 
-function useWindowSize() {
-  const [size, setSize] = useState([0, 0]);
-  useLayoutEffect(() => {
-    function updateSize() {
-      setSize([window.innerWidth, window.innerHeight]);
-    }
-    window.addEventListener('resize', updateSize);
-    updateSize();
-    return () => window.removeEventListener('resize', updateSize);
-  }, []);
-  return size;
-}
-
-function ShowWindowDimensions(props) {
-  const [width, height] = useWindowSize();
-  let stag = "skillsStagger"; /* "animate= skillsStagger"; */
-  let ctrl = "controls"; /* "animate= controls"; */
-  let currentWidth = width;
-
-  if(currentWidth < 501){
-    return stag;
-  }else{
-    return ctrl;
-  }
-}
 
 const WorkExperiance = () => {
-  /* let x = ShowWindowDimensions(); */
-  const [element, controls] = useScroll();
-  const [element2, controls2] = useScroll();
-
-
 
   return (
     <StyledWorks
@@ -91,7 +60,6 @@ const WorkExperiance = () => {
         </Link>
       </StyledWork>
       <StyledWork
-        /* ref={element} */
         variants={fade}
         animate={skillsStagger}
         initial="hidden"
@@ -115,7 +83,6 @@ const WorkExperiance = () => {
         </Link>
       </StyledWork>
       <StyledWork
-        /* ref={element2} */
         variants={fade}
         animate={skillsStagger}
         initial="hidden"

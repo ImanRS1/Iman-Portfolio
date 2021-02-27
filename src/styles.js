@@ -504,7 +504,6 @@ export const StyledDetails = styled(motion.div)`
 
 export const StyledHeadLine = styled.div`
   min-height: 10vh;
-  padding-top: 2vh;
   position: relative;
   display: flex;
   flex-direction: column;

@@ -36,7 +36,6 @@ const WorkDetail = () => {
       exit="exit"
     >
       <StyledHeadLine>
-        {/* <h2>{work.title}</h2> */}
         <img src={work.mainImg} alt="Work picture" />
       </StyledHeadLine>
       <StyledWorkDescription>
