@@ -23,13 +23,9 @@ export const WorkState = () => {
       secondaryImg: siemens3,
       url: "/work/work1",
       workDescription1: "During my time at Siemens I have been working with hot and cold commissioning as well as service of Siemens medium gas turbines ranging from 19MW to 53MW (SGT-500, 600, 700, 800).",
-
       workDescription2: "My position requires me to be technically knowledge, heavily self-reliant while also being customer minded and have the ability to easily adapt to the different cultures of the clients.",
-
-      workDescription3: "With up to 80% of the work being carried abroad, my profession has taken me to multiple countries ranging from South America to Northern Siberia to East Asia. as well as to Africa",
-      
+      workDescription3: "With up to 80% of the work being carried abroad, my profession has taken me to multiple countries ranging from South America to Northern Siberia to East Asia. as well as to Africa",  
       workDescription4: "The profession has given me experience and knowledge of automation systems such as Siemens PSC7 and ABB Advant, control logic and programming, vibration equipment such as the Bentley Nevada systems, actuators and servo actuators such as the MOOG system. Protection and monitoring systems such as the BRAUN system. Statistics and monitoring systems such as the Siemens Condition Monitoring Systems and much more.",
-
       workDescription5: "The work requires me to be hands on as well as acting as a technical field adviser depending on the situation and generally requires me to be heavily adaptable and quick minded.",      
       
     },
@@ -40,7 +36,6 @@ export const WorkState = () => {
       secondaryImg: plane2,
       workDescription1: "After completing my thesis work at the airline company NextJet, I was offered a position at the engineering department.",
       workDescription2: "During my time working at NextJet I developed several of the internal and external technical procedures and manuals. As well as evaluating service bulletins, air worthiness directives and creating engineering and repair orders.",
-
       workDescription3: "I also acted as contact towards external maintenance organizations, part manufacturers and different aviation authorities such as the European EASA, the american FAA and the Swedish aviation authority.",
       workDescription4: "Beyond that I also took part of a project to roll out a new maintenance software and the training of the companies technicians in that software.",
     },
