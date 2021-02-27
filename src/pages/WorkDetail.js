@@ -82,7 +82,6 @@ const WorkDescription = ({
   );
 };
 
-
 const WorkDetailDesc = () => {
   return (
     <div>
@@ -158,8 +157,8 @@ const WorkDetailDesc = () => {
         <div>
           <h2>Title: React Music Player</h2>
           <p>
-            An app like music player with minimalistic styling, easy to use and
-            easy to like.
+            Description: An app like music player with minimalistic styling,
+            easy to use and easy to like.
           </p>
           <p>
             The website was created using React, JS (ES6), HTML5 and SCSS with
@@ -174,23 +173,25 @@ const WorkDetailDesc = () => {
         </div>
       </StyledFedDesc>
       <StyledFedDesc>
-        <a href="https://imanrs1.github.io/React-Music-Player/">
+        <a href="https://imanrs1.github.io/Iman-Portfolio/">
           <img src={ip} />
         </a>
         <div>
           <h2>Title: Iman Portfolio</h2>
           <p>
-            An app like music player with minimalistic styling, easy to use and
-            easy to like.
+            Description: A smooth portfolio website I created to showcase myself
+            and my other projects, using carefully selected color themes and
+            smooth animations pleasing to the eyes.
           </p>
           <p>
-            The website was created using React, JS (ES6), HTML5 and SCSS with
+            The website was created using React, JS (ES6), HTML5, SCSS,
+            animations with framer motion package, styled components and
             imported fontawesome icons.
           </p>
           <p>
             Link:{" "}
-            <a href="https://imanrs1.github.io/React-Music-Player/">
-              imanrs1.github.io/React-Music-Player
+            <a href="https://imanrs1.github.io/Iman-Portfolio/">
+              imanrs1.github.io/Iman-Portfolio
             </a>
           </p>
         </div>
