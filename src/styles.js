@@ -437,7 +437,7 @@ export const StyledWork = styled(motion.div)`
   }
   img {
     width: 100%;
-    height: 60vh;
+    height: 35vh;
     object-fit: cover;
   }
   a {

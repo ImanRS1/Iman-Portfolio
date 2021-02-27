@@ -26,7 +26,7 @@ import {
 import { useScroll } from "../components/useScroll";
 import ScrollTop from "../components/ScrollTop";
 
-/* function useWindowSize() {
+function useWindowSize() {
   const [size, setSize] = useState([0, 0]);
   useLayoutEffect(() => {
     function updateSize() {
@@ -41,16 +41,23 @@ import ScrollTop from "../components/ScrollTop";
 
 function ShowWindowDimensions(props) {
   const [width, height] = useWindowSize();
+  let stag = "skillsStagger"; /* "animate= skillsStagger"; */
+  let ctrl = "controls"; /* "animate= controls"; */
   let currentWidth = width;
-  return currentWidth;
-} */
+
+  if(currentWidth < 501){
+    return stag;
+  }else{
+    return ctrl;
+  }
+}
 
 const WorkExperiance = () => {
+  /* let x = ShowWindowDimensions(); */
   const [element, controls] = useScroll();
   const [element2, controls2] = useScroll();
 
- /*  let x = ShowWindowDimensions();
-  console.log(x); */
+
 
   return (
     <StyledWorks
@@ -84,9 +91,9 @@ const WorkExperiance = () => {
         </Link>
       </StyledWork>
       <StyledWork
-        ref={element}
+        /* ref={element} */
         variants={fade}
-        animate={controls}
+        animate={skillsStagger}
         initial="hidden"
         layout="position"
       >
@@ -108,9 +115,9 @@ const WorkExperiance = () => {
         </Link>
       </StyledWork>
       <StyledWork
-        ref={element2}
+        /* ref={element2} */
         variants={fade}
-        animate={controls2}
+        animate={skillsStagger}
         initial="hidden"
         layout="position"
       >
