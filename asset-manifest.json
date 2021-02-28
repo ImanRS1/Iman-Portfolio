@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.js": "/Iman-Portfolio/static/js/main.d8d8372a.chunk.js",
-    "main.js.map": "/Iman-Portfolio/static/js/main.d8d8372a.chunk.js.map",
+    "main.js": "/Iman-Portfolio/static/js/main.f665731d.chunk.js",
+    "main.js.map": "/Iman-Portfolio/static/js/main.f665731d.chunk.js.map",
     "runtime-main.js": "/Iman-Portfolio/static/js/runtime-main.eaf02637.js",
     "runtime-main.js.map": "/Iman-Portfolio/static/js/runtime-main.eaf02637.js.map",
-    "static/js/2.abbdf680.chunk.js": "/Iman-Portfolio/static/js/2.abbdf680.chunk.js",
-    "static/js/2.abbdf680.chunk.js.map": "/Iman-Portfolio/static/js/2.abbdf680.chunk.js.map",
+    "static/js/2.c83ab7b2.chunk.js": "/Iman-Portfolio/static/js/2.c83ab7b2.chunk.js",
+    "static/js/2.c83ab7b2.chunk.js.map": "/Iman-Portfolio/static/js/2.c83ab7b2.chunk.js.map",
     "static/js/3.36863b43.chunk.js": "/Iman-Portfolio/static/js/3.36863b43.chunk.js",
     "static/js/3.36863b43.chunk.js.map": "/Iman-Portfolio/static/js/3.36863b43.chunk.js.map",
     "index.html": "/Iman-Portfolio/index.html",
-    "static/js/2.abbdf680.chunk.js.LICENSE.txt": "/Iman-Portfolio/static/js/2.abbdf680.chunk.js.LICENSE.txt",
+    "static/js/2.c83ab7b2.chunk.js.LICENSE.txt": "/Iman-Portfolio/static/js/2.c83ab7b2.chunk.js.LICENSE.txt",
     "static/media/bootstrap-icon.5d590f6c.svg": "/Iman-Portfolio/static/media/bootstrap-icon.5d590f6c.svg",
     "static/media/code1.fc68d16e.jpg": "/Iman-Portfolio/static/media/code1.fc68d16e.jpg",
     "static/media/code2.4ab6cf92.jpg": "/Iman-Portfolio/static/media/code2.4ab6cf92.jpg",
@@ -38,7 +38,7 @@
   },
   "entrypoints": [
     "static/js/runtime-main.eaf02637.js",
-    "static/js/2.abbdf680.chunk.js",
-    "static/js/main.d8d8372a.chunk.js"
+    "static/js/2.c83ab7b2.chunk.js",
+    "static/js/main.f665731d.chunk.js"
   ]
 }
