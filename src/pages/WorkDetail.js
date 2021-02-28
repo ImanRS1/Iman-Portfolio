@@ -178,7 +178,7 @@ const WorkDetailDesc = () => {
         <div>
           <h2>Title: Iman Portfolio</h2>
           <p>
-            Description: A smooth portfolio website I created to showcase myself
+            Description: A portfolio website I created to showcase myself
             and my other projects, using carefully selected color themes and
             smooth animations pleasing to the eyes.
           </p>

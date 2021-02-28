@@ -22,16 +22,16 @@ function App() {
       <Nav />
       <AnimatePresence exitBeforeEnter>
         <Switch location={location} key={location.pathname}>
-          <Route path="/Iman-Portfolio/" exact>
+          <Route path="/" exact>
             <About />
           </Route>
-          <Route path="/Iman-Portfolio/workexperiance" exact>
+          <Route path="/workexperiance" exact>
             <WorkExperiance />
           </Route>
-          <Route path="/Iman-Portfolio/work/:id">
+          <Route path="/work/:id">
             <WorkDetail />
           </Route>
-          <Route path="/Iman-Portfolio/educationandskills">
+          <Route path="/educationandskills">
             <EducationAndSkills />
           </Route>
         </Switch>
