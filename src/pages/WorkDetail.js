@@ -108,6 +108,28 @@ const WorkDetailDesc = () => {
         </div>
       </StyledFedDesc>
       <StyledFedDesc>
+        <a href="https://imanrs1.github.io/React-Music-Player/">
+          <img src={rmp} />
+        </a>
+        <div>
+          <h2>Title: React Music Player</h2>
+          <p>
+            Description: An app like music player with minimalistic styling,
+            easy to use and easy to like.
+          </p>
+          <p>
+            The website was created using React, JS (ES6), HTML5 and SCSS with
+            imported fontawesome icons.
+          </p>
+          <p>
+            Link:{" "}
+            <a href="https://imanrs1.github.io/React-Music-Player/">
+              imanrs1.github.io/React-Music-Player
+            </a>
+          </p>
+        </div>
+      </StyledFedDesc>
+      <StyledFedDesc>
         <a href="https://imanrs1.github.io/Lorem-News/">
           <img src={ln} />
         </a>
@@ -149,28 +171,7 @@ const WorkDetailDesc = () => {
           </p>
         </div>
       </StyledFedDesc>
-      <StyledFedDesc>
-        <a href="https://imanrs1.github.io/React-Music-Player/">
-          <img src={rmp} />
-        </a>
-        <div>
-          <h2>Title: React Music Player</h2>
-          <p>
-            Description: An app like music player with minimalistic styling,
-            easy to use and easy to like.
-          </p>
-          <p>
-            The website was created using React, JS (ES6), HTML5 and SCSS with
-            imported fontawesome icons.
-          </p>
-          <p>
-            Link:{" "}
-            <a href="https://imanrs1.github.io/React-Music-Player/">
-              imanrs1.github.io/React-Music-Player
-            </a>
-          </p>
-        </div>
-      </StyledFedDesc>
+      
       <StyledFedDesc>
         <a href="https://imanrs1.github.io/Iman-Portfolio/">
           <img src={ip} />
@@ -183,7 +184,7 @@ const WorkDetailDesc = () => {
             smooth animations pleasing to the eyes.
           </p>
           <p>
-            The website was created using React, JS (ES6), HTML5, SCSS,
+            The website was created using React, JS (ES6), HTML5, SASS,
             animations with framer motion package, styled components and
             imported fontawesome icons.
           </p>
