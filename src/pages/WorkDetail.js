@@ -85,7 +85,7 @@ const WorkDetailDesc = () => {
   return (
     <div>
       <StyledFedDesc>
-        <a href="https://imanrs1.github.io/MakeItEasy/">
+        <a href="https://imanrs1.github.io/MakeItEasy/" target="_blank">
           <img src={mie} />
         </a>
         <div>
@@ -101,14 +101,14 @@ const WorkDetailDesc = () => {
           </p>
           <p>
             Link:{" "}
-            <a href="https://imanrs1.github.io/MakeItEasy/">
+            <a href="https://imanrs1.github.io/MakeItEasy/" target="_blank">
               imanrs1.github.io/MakeItEasy
             </a>
           </p>
         </div>
       </StyledFedDesc>
       <StyledFedDesc>
-        <a href="https://imanrs1.github.io/React-Music-Player/">
+        <a href="https://imanrs1.github.io/React-Music-Player/" target="_blank">
           <img src={rmp} />
         </a>
         <div>
@@ -123,14 +123,14 @@ const WorkDetailDesc = () => {
           </p>
           <p>
             Link:{" "}
-            <a href="https://imanrs1.github.io/React-Music-Player/">
+            <a href="https://imanrs1.github.io/React-Music-Player/" target="_blank">
               imanrs1.github.io/React-Music-Player
             </a>
           </p>
         </div>
       </StyledFedDesc>
       <StyledFedDesc>
-        <a href="https://imanrs1.github.io/Lorem-News/">
+        <a href="https://imanrs1.github.io/Lorem-News/" target="_blank">
           <img src={ln} />
         </a>
         <div>
@@ -143,14 +143,14 @@ const WorkDetailDesc = () => {
           <p>The website was created using vanilla JS, HTML5 and CSS3.</p>
           <p>
             Link:{" "}
-            <a href="https://imanrs1.github.io/Lorem-News/">
+            <a href="https://imanrs1.github.io/Lorem-News/" target="_blank">
               imanrs1.github.io/Lorem-News
             </a>
           </p>
         </div>
       </StyledFedDesc>
       <StyledFedDesc>
-        <a href="https://imanrs1.github.io/TicTacToe/">
+        <a href="https://imanrs1.github.io/TicTacToe/" target="_blank">
           <img src={ttt} />
         </a>
         <div>
@@ -165,7 +165,7 @@ const WorkDetailDesc = () => {
           </p>
           <p>
             Link:{" "}
-            <a href="https://imanrs1.github.io/TicTacToe/">
+            <a href="https://imanrs1.github.io/TicTacToe/" target="_blank">
               imanrs1.github.io/TicTacToe
             </a>
           </p>
@@ -173,7 +173,7 @@ const WorkDetailDesc = () => {
       </StyledFedDesc>
       
       <StyledFedDesc>
-        <a href="https://imanrs1.github.io/Iman-Portfolio/">
+        <a href="https://imanrs1.github.io/Iman-Portfolio/" target="_blank">
           <img src={ip} />
         </a>
         <div>
@@ -190,7 +190,7 @@ const WorkDetailDesc = () => {
           </p>
           <p>
             Link:{" "}
-            <a href="https://imanrs1.github.io/Iman-Portfolio/">
+            <a href="https://imanrs1.github.io/Iman-Portfolio/" target="_blank">
               imanrs1.github.io/Iman-Portfolio
             </a>
           </p>
