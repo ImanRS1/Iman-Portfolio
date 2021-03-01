@@ -72,7 +72,7 @@ const AttributeSection = () => {
                 <FontAwesomeIcon icon={faStreetView} color="#23d997" />
                 <h3>Data & Location</h3>
               </div>
-              <StyledAttriP>Born 1989 residing in Stockholm Sweden</StyledAttriP>
+              <StyledAttriP>Born 1989, residing in Stockholm Sweden</StyledAttriP>
             </StyledCard>
           </StyledHide>
         </StyledCards>
