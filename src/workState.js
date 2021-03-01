@@ -35,9 +35,9 @@ export const WorkState = () => {
       url: "/work/work2",
       secondaryImg: plane2,
       workDescription1: "After completing my thesis work at the airline company NextJet, I was offered a position at the engineering department.",
-      workDescription2: "During my time working at NextJet I developed several of the internal and external technical procedures and manuals. As well as evaluating service bulletins, air worthiness directives and creating engineering and repair orders.",
-      workDescription3: "I also acted as contact towards external maintenance organizations, part manufacturers and different aviation authorities such as the European EASA, the american FAA and the Swedish aviation authority.",
-      workDescription4: "Beyond that I also took part of a project to roll out a new maintenance software and the training of the companies technicians in that software.",
+      workDescription2: "During my time working at NextJet I developed several of the internal and external technical procedures and manuals. As well as evaluating service bulletins, air worthiness directives and creating engineering and repair orders for the airlines SAAB340 and BAe ATP airplanes.",
+      workDescription3: "I also acted as contact towards external maintenance organizations, part manufacturers and different aviation authorities such as the European EASA, the american FAA and the Swedish aviation authority. Furthermore it was my role to act as support towards the maintenance control center, the maintenance planner and Part-145.",
+      workDescription4: "Beyond that I also took part in a project to roll out a new maintenance software and the training of the companies technicians in that software.",
     },
   ];
 };
