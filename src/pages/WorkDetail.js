@@ -84,16 +84,15 @@ const WorkDescription = ({
 const WorkDetailDesc = () => {
   return (
     <div>
+      <a href="https://imanrs1.github.io/MakeItEasy/" target="_blank">
       <StyledFedDesc>
-        <a href="https://imanrs1.github.io/MakeItEasy/" target="_blank">
           <img src={mie} />
-        </a>
         <div>
           <h2>Title: MakeItEasy</h2>
           <p>
-            Description: This website was created as part of my education at
-            Changemaker Educations and is a website of a made believe web
-            developer company targeting smaller sized businesses.
+            Description: This website was created as part of my studies at
+            Changemaker Educations. It is a website of a made believe web
+            development company targeting smaller sized businesses.
           </p>
           <p>
             The website was created using vanilla JS, HTML5 and CSS3 with
@@ -107,10 +106,10 @@ const WorkDetailDesc = () => {
           </p>
         </div>
       </StyledFedDesc>
-      <StyledFedDesc>
-        <a href="https://imanrs1.github.io/React-Music-Player/" target="_blank">
+      </a>
+      <a href="https://imanrs1.github.io/React-Music-Player/" target="_blank">
+      <StyledFedDesc>        
           <img src={rmp} />
-        </a>
         <div>
           <h2>Title: React Music Player</h2>
           <p>
@@ -129,10 +128,10 @@ const WorkDetailDesc = () => {
           </p>
         </div>
       </StyledFedDesc>
+      </a>
+      <a href="https://imanrs1.github.io/Lorem-News/" target="_blank">
       <StyledFedDesc>
-        <a href="https://imanrs1.github.io/Lorem-News/" target="_blank">
           <img src={ln} />
-        </a>
         <div>
           <h2 href="">Title: Lorem News</h2>
           <p>
@@ -149,15 +148,15 @@ const WorkDetailDesc = () => {
           </p>
         </div>
       </StyledFedDesc>
+      </a>
+      <a href="https://imanrs1.github.io/TicTacToe/" target="_blank">
       <StyledFedDesc>
-        <a href="https://imanrs1.github.io/TicTacToe/" target="_blank">
           <img src={ttt} />
-        </a>
         <div>
           <h2>Title: TicTacToe</h2>
           <p>
             Description: A TicTacToe game with retro neon arcade inspiration,
-            demonstrating javascript DOM traversing and stylish CSS.
+            demonstrating javascript DOM manipulation and traversing and stylish CSS.
           </p>
           <p>
             The website was created using vanilla JS, HTML5 and CSS3 with
@@ -171,11 +170,10 @@ const WorkDetailDesc = () => {
           </p>
         </div>
       </StyledFedDesc>
-      
+      </a>
+      <a href="https://imanrs1.github.io/Iman-Portfolio/" target="_blank">
       <StyledFedDesc>
-        <a href="https://imanrs1.github.io/Iman-Portfolio/" target="_blank">
           <img src={ip} />
-        </a>
         <div>
           <h2>Title: Iman Portfolio</h2>
           <p>
@@ -196,6 +194,7 @@ const WorkDetailDesc = () => {
           </p>
         </div>
       </StyledFedDesc>
+      </a>
     </div>
   );
 };

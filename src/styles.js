@@ -500,6 +500,9 @@ export const StyledWorkxHeaders = styled(motion.div)`
 
 export const StyledDetails = styled(motion.div)`
   color: white;
+  a{
+    text-decoration: none;
+  }
 `;
 
 export const StyledHeadLine = styled.div`
@@ -600,6 +603,7 @@ export const StyledFedDesc = styled(motion.div)`
   transition: all 1s ease;
   &:hover {
     background-color: #333333;
+    cursor: pointer;
     img {
       filter: brightness(105%);
     }
@@ -616,6 +620,7 @@ export const StyledFedDesc = styled(motion.div)`
   h2 {
     font-weight: normal;
     font-size: 30px;
+    color: white;
   }
   a {
     text-decoration: none;
