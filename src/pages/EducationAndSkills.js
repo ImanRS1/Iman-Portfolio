@@ -92,7 +92,7 @@ const EducationAndSkills = () => {
         <StyledHide>
           <StyledSkill variants={skillAnim}>
             <img src={js} />
-            <p>JavaScript (ES6)</p>
+            <p>JavaScript(ES6)</p>
           </StyledSkill>
         </StyledHide>
         <StyledHide>

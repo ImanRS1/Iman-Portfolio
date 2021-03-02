@@ -117,7 +117,7 @@ const WorkDetailDesc = () => {
             easy to use and easy to like.
           </p>
           <p>
-            The website was created using React, JS (ES6), HTML5 and SCSS with
+            The website was created using React, JS (ES6), HTML5 and SASS with
             imported fontawesome icons.
           </p>
           <p>
