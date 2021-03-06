@@ -61,7 +61,7 @@ const ContactSection = () => {
         <StyledSocialsContainer>
           <StyledHide>
             <StyledContactOptionSocial variants={titleAnim}>
-              <a href="https://se.linkedin.com/in/imanrezasoltani">
+              <a href="https://linkedin.com/in/imanrezasoltani">
                 <FontAwesomeIcon icon={faLinkedin} color="#0077B5" />
               </a>
             </StyledContactOptionSocial>
