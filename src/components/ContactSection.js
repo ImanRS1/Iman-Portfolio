@@ -47,14 +47,14 @@ const ContactSection = () => {
             <StyledContactOptionNandM>
               <a href="tel:+46736189682">
                 <FontAwesomeIcon icon={faPhoneSquareAlt} color="#23d997" />
-              </a>
               <h1>+46 73 61 89 682</h1>
+              </a>
             </StyledContactOptionNandM>
             <StyledContactOptionNandM>
               <a href="mailto:iman.rezasoltani@gmail.com">
-                <FontAwesomeIcon icon={faEnvelopeSquare} color="#c5352b" />
-              </a>
+                <FontAwesomeIcon icon={faEnvelopeSquare} color="#c5352b" />              
               <h1>iman.rezasoltani@gmail.com</h1>
+              </a>
             </StyledContactOptionNandM>
           </StyledContactOptionNandMCon>
         </StyledHide>

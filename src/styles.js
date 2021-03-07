@@ -380,8 +380,12 @@ export const StyledContactOptionNandMCon = styled(motion.div)`
 `;
 
 export const StyledContactOptionNandM = styled(motion.div)`
-  display: flex;
-  align-items: center;
+  a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+  }
 `;
 
 export const Frame1 = styled(motion.div)`
