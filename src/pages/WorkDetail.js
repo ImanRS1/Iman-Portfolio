@@ -8,6 +8,7 @@ import ln from "../img/ln.jpg";
 import ttt from "../img/ttt.jpg";
 import rmp from "../img/rmp.jpg";
 import ip from "../img/ip.jpg";
+import irr from "../img/irr.jpg"
 
 import {
   StyledDetails,
@@ -84,24 +85,23 @@ const WorkDescription = ({
 const WorkDetailDesc = () => {
   return (
     <div>
-      <a href="https://imanrs1.github.io/MakeItEasy/" target="_blank">
+      <a href="https://imanrs1.github.io/Ignite-React-Redux/" target="_blank">
       <StyledFedDesc>
-          <img src={mie} />
+          <img src={irr} />
         <div>
-          <h2>Title: MakeItEasy</h2>
+          <h2>Title: Ignite React Redux</h2>
           <p>
-            Description: This website was created as part of my studies at
-            Changemaker Educations. It is a website of a made believe web
-            development company targeting smaller sized businesses.
+            Description: An API connected game library website with a search function. 
+            Displaying the latest, most popular, and new games using RAWG.io database and API.
           </p>
           <p>
-            The website was created using vanilla JS, HTML5 and CSS3 with
-            imported fonts.
+          The website was created using React, Redux for state management, axios API method, styled SASS components
+           and animations from framer motion.
           </p>
           <p>
             Link:{" "}
-            <a href="https://imanrs1.github.io/MakeItEasy/" target="_blank">
-              imanrs1.github.io/MakeItEasy
+            <a href="https://imanrs1.github.io/Ignite-React-Redux/" target="_blank">
+              imanrs1.github.io/Ignite-React-Redux
             </a>
           </p>
         </div>
@@ -129,21 +129,24 @@ const WorkDetailDesc = () => {
         </div>
       </StyledFedDesc>
       </a>
-      <a href="https://imanrs1.github.io/Lorem-News/" target="_blank">
+      <a href="https://imanrs1.github.io/MakeItEasy/" target="_blank">
       <StyledFedDesc>
-          <img src={ln} />
+          <img src={mie} />
         <div>
-          <h2 href="">Title: Lorem News</h2>
+          <h2>Title: MakeItEasy</h2>
           <p>
-            Description: Lorem News is designed and structured as a news website
-            using different layout options and image animations, your best place
-            for the latest news in lorem!
+            Description: This project was created as part of my studies at
+            Changemaker Educations. It is a website of a made believe web
+            development company targeting smaller sized businesses.
           </p>
-          <p>The website was created using vanilla JS, HTML5 and CSS3.</p>
+          <p>
+            The website was created using vanilla JS, HTML5 and CSS3 with
+            imported fonts.
+          </p>
           <p>
             Link:{" "}
-            <a href="https://imanrs1.github.io/Lorem-News/" target="_blank">
-              imanrs1.github.io/Lorem-News
+            <a href="https://imanrs1.github.io/MakeItEasy/" target="_blank">
+              imanrs1.github.io/MakeItEasy
             </a>
           </p>
         </div>
@@ -171,6 +174,26 @@ const WorkDetailDesc = () => {
         </div>
       </StyledFedDesc>
       </a>
+      <a href="https://imanrs1.github.io/Lorem-News/" target="_blank">
+      <StyledFedDesc>
+          <img src={ln} />
+        <div>
+          <h2 href="">Title: Lorem News</h2>
+          <p>
+            Description: Lorem News is designed and structured as a news website
+            using different layout options and image animations, your best place
+            for the latest news in lorem!
+          </p>
+          <p>The website was created using vanilla JS, HTML5 and CSS3.</p>
+          <p>
+            Link:{" "}
+            <a href="https://imanrs1.github.io/Lorem-News/" target="_blank">
+              imanrs1.github.io/Lorem-News
+            </a>
+          </p>
+        </div>
+      </StyledFedDesc>
+      </a>      
       <a href="https://imanrs1.github.io/Iman-Portfolio/" target="_blank">
       <StyledFedDesc>
           <img src={ip} />
