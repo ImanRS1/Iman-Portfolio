@@ -37,6 +37,9 @@ import reactI from "../img/reactjs-icon.svg";
 import nodeI from "../img/nodejs-icon.svg";
 import gitI from "../img/git-scm-icon.svg";
 import redux from "../img/redux.svg";
+import motionI from "../img/motion-icon.png";
+import jsxI from "../img/jsx-icon.png";
+import styledI from "../img/styled-icon.png";
 
 const EducationAndSkills = () => {
   const [element, controls] = useScroll();
@@ -123,6 +126,24 @@ const EducationAndSkills = () => {
           <StyledSkill variants={skillAnim}>
             <img src={jqr} />
             <p>jQuerry</p>
+          </StyledSkill>
+        </StyledHide>
+        <StyledHide>
+          <StyledSkill variants={skillAnim}>
+            <img src={motionI} />
+            <p>Framer Motion</p>
+          </StyledSkill>
+        </StyledHide>
+        <StyledHide>
+          <StyledSkill variants={skillAnim}>
+            <img src={jsxI} />
+            <p>JSX Syntax</p>
+          </StyledSkill>
+        </StyledHide>
+        <StyledHide>
+          <StyledSkill variants={skillAnim}>
+            <img src={styledI} />
+            <p>SComponents</p>
           </StyledSkill>
         </StyledHide>
       </StyledSkillsHolder>

@@ -750,6 +750,7 @@ export const StyledSkill = styled(motion.div)`
   p {
     color: black;
     padding: 0;
+    text-align: center;
   }
   img {
     width: 80%;
