@@ -8,7 +8,8 @@ import ln from "../img/ln.jpg";
 import ttt from "../img/ttt.jpg";
 import rmp from "../img/rmp.jpg";
 import ip from "../img/ip.jpg";
-import irr from "../img/irr.jpg"
+import irr from "../img/irr.jpg";
+import nwe from "../img/nwe.jpg";
 
 import {
   StyledDetails,
@@ -86,137 +87,182 @@ const WorkDetailDesc = () => {
   return (
     <div>
       <a href="https://imanrs1.github.io/Ignite-React-Redux/" target="_blank">
-      <StyledFedDesc>
+        <StyledFedDesc>
           <img src={irr} />
-        <div>
-          <h2>Title: Ignite React Redux</h2>
-          <p>
-            Description: An API connected game library website with a search function. 
-            Displaying the latest, most popular, and new games using RAWG.io database and API.
-          </p>
-          <p>
-          The website was created using React, Redux for state management, axios API method, styled SASS components
-           and animations from framer motion.
-          </p>
-          <p>
-            Link:{" "}
-            <a href="https://imanrs1.github.io/Ignite-React-Redux/" target="_blank">
-              imanrs1.github.io/Ignite-React-Redux
-            </a>
-          </p>
-        </div>
-      </StyledFedDesc>
+          <div>
+            <h2>Title: Ignite React Redux</h2>
+            <p>
+              Description: An API connected game library website with a search
+              function. Displaying the latest, most popular, and new games using
+              RAWG.io database and API.
+            </p>
+            <p>
+              The website was created using React, Redux for state management,
+              axios API method, styled SASS components and animations from
+              framer motion.
+            </p>
+            <p>
+              Link:{" "}
+              <a
+                href="https://imanrs1.github.io/Ignite-React-Redux/"
+                target="_blank"
+              >
+                imanrs1.github.io/Ignite-React-Redux
+              </a>
+            </p>
+          </div>
+        </StyledFedDesc>
+      </a>
+      <a
+        href="https://imanrs1.github.io/Nice-Weather-Everyday/"
+        target="_blank"
+      >
+        <StyledFedDesc>
+          <img src={nwe} />
+          <div>
+            <h2>Title: Nice Weather Everyday</h2>
+            <p>
+              Description: Pixel art inspired weather site using API from
+              weatherapi.com. The site includes a search function, actual wind
+              force updated wind turbine, forecasts for the following 3 day as
+              well as an interactive chart with hourly forecasts and and
+              conditions.
+            </p>
+            <p>
+              The website was created using the rechart npm package for the
+              weather chart, React and Redux for state management, Axios API
+              call methord, styled components, animations from the framer motion
+              package and JSX.
+            </p>
+            <p>
+              Link:{" "}
+              <a
+                href="https://imanrs1.github.io/Nice-Weather-Everyday/"
+                target="_blank"
+              >
+                imanrs1.github.io/Nice-Weather-Everyday
+              </a>
+            </p>
+          </div>
+        </StyledFedDesc>
       </a>
       <a href="https://imanrs1.github.io/React-Music-Player/" target="_blank">
-      <StyledFedDesc>        
+        <StyledFedDesc>
           <img src={rmp} />
-        <div>
-          <h2>Title: React Music Player</h2>
-          <p>
-            Description: An app like music player with minimalistic styling,
-            easy to use and easy to like.
-          </p>
-          <p>
-            The website was created using React, JS (ES6), HTML5 and SASS with
-            imported fontawesome icons.
-          </p>
-          <p>
-            Link:{" "}
-            <a href="https://imanrs1.github.io/React-Music-Player/" target="_blank">
-              imanrs1.github.io/React-Music-Player
-            </a>
-          </p>
-        </div>
-      </StyledFedDesc>
+          <div>
+            <h2>Title: React Music Player</h2>
+            <p>
+              Description: An app like music player with minimalistic styling,
+              easy to use and easy to like.
+            </p>
+            <p>
+              The website was created using React, JS (ES6), HTML5 and SASS with
+              imported fontawesome icons.
+            </p>
+            <p>
+              Link:{" "}
+              <a
+                href="https://imanrs1.github.io/React-Music-Player/"
+                target="_blank"
+              >
+                imanrs1.github.io/React-Music-Player
+              </a>
+            </p>
+          </div>
+        </StyledFedDesc>
       </a>
       <a href="https://imanrs1.github.io/MakeItEasy/" target="_blank">
-      <StyledFedDesc>
+        <StyledFedDesc>
           <img src={mie} />
-        <div>
-          <h2>Title: MakeItEasy</h2>
-          <p>
-            Description: This project was created as part of my studies at
-            Changemaker Educations. It is a website of a made believe web
-            development company targeting smaller sized businesses.
-          </p>
-          <p>
-            The website was created using vanilla JS, HTML5 and CSS3 with
-            imported fonts.
-          </p>
-          <p>
-            Link:{" "}
-            <a href="https://imanrs1.github.io/MakeItEasy/" target="_blank">
-              imanrs1.github.io/MakeItEasy
-            </a>
-          </p>
-        </div>
-      </StyledFedDesc>
+          <div>
+            <h2>Title: MakeItEasy</h2>
+            <p>
+              Description: This project was created as part of my studies at
+              Changemaker Educations. It is a website of a made believe web
+              development company targeting smaller sized businesses.
+            </p>
+            <p>
+              The website was created using vanilla JS, HTML5 and CSS3 with
+              imported fonts.
+            </p>
+            <p>
+              Link:{" "}
+              <a href="https://imanrs1.github.io/MakeItEasy/" target="_blank">
+                imanrs1.github.io/MakeItEasy
+              </a>
+            </p>
+          </div>
+        </StyledFedDesc>
       </a>
       <a href="https://imanrs1.github.io/TicTacToe/" target="_blank">
-      <StyledFedDesc>
+        <StyledFedDesc>
           <img src={ttt} />
-        <div>
-          <h2>Title: TicTacToe</h2>
-          <p>
-            Description: A TicTacToe game with retro neon arcade inspiration,
-            demonstrating javascript DOM manipulation and traversing and stylish CSS.
-          </p>
-          <p>
-            The website was created using vanilla JS, HTML5 and CSS3 with
-            imported neon fonts.
-          </p>
-          <p>
-            Link:{" "}
-            <a href="https://imanrs1.github.io/TicTacToe/" target="_blank">
-              imanrs1.github.io/TicTacToe
-            </a>
-          </p>
-        </div>
-      </StyledFedDesc>
+          <div>
+            <h2>Title: TicTacToe</h2>
+            <p>
+              Description: A TicTacToe game with retro neon arcade inspiration,
+              demonstrating javascript DOM manipulation and traversing and
+              stylish CSS.
+            </p>
+            <p>
+              The website was created using vanilla JS, HTML5 and CSS3 with
+              imported neon fonts.
+            </p>
+            <p>
+              Link:{" "}
+              <a href="https://imanrs1.github.io/TicTacToe/" target="_blank">
+                imanrs1.github.io/TicTacToe
+              </a>
+            </p>
+          </div>
+        </StyledFedDesc>
       </a>
       <a href="https://imanrs1.github.io/Lorem-News/" target="_blank">
-      <StyledFedDesc>
+        <StyledFedDesc>
           <img src={ln} />
-        <div>
-          <h2 href="">Title: Lorem News</h2>
-          <p>
-            Description: Lorem News is designed and structured as a news website
-            using different layout options and image animations, your best place
-            for the latest news in lorem!
-          </p>
-          <p>The website was created using vanilla JS, HTML5 and CSS3.</p>
-          <p>
-            Link:{" "}
-            <a href="https://imanrs1.github.io/Lorem-News/" target="_blank">
-              imanrs1.github.io/Lorem-News
-            </a>
-          </p>
-        </div>
-      </StyledFedDesc>
-      </a>      
+          <div>
+            <h2 href="">Title: Lorem News</h2>
+            <p>
+              Description: Lorem News is designed and structured as a news
+              website using different layout options and image animations, your
+              best place for the latest news in lorem!
+            </p>
+            <p>The website was created using vanilla JS, HTML5 and CSS3.</p>
+            <p>
+              Link:{" "}
+              <a href="https://imanrs1.github.io/Lorem-News/" target="_blank">
+                imanrs1.github.io/Lorem-News
+              </a>
+            </p>
+          </div>
+        </StyledFedDesc>
+      </a>
       <a href="https://imanrs1.github.io/Iman-Portfolio/" target="_blank">
-      <StyledFedDesc>
+        <StyledFedDesc>
           <img src={ip} />
-        <div>
-          <h2>Title: Iman Portfolio</h2>
-          <p>
-            Description: A portfolio website I created to showcase myself
-            and my other projects, using carefully selected color themes and
-            smooth animations pleasing to the eyes.
-          </p>
-          <p>
-            The website was created using React, JS (ES6), HTML5, SASS,
-            animations with framer motion package, styled components and
-            imported fontawesome icons.
-          </p>
-          <p>
-            Link:{" "}
-            <a href="https://imanrs1.github.io/Iman-Portfolio/" target="_blank">
-              imanrs1.github.io/Iman-Portfolio
-            </a>
-          </p>
-        </div>
-      </StyledFedDesc>
+          <div>
+            <h2>Title: Iman Portfolio</h2>
+            <p>
+              Description: A portfolio website I created to showcase myself and
+              my other projects, using carefully selected color themes and
+              smooth animations pleasing to the eyes.
+            </p>
+            <p>
+              The website was created using React, JS (ES6), HTML5, SASS,
+              animations with framer motion package, styled components and
+              imported fontawesome icons.
+            </p>
+            <p>
+              Link:{" "}
+              <a
+                href="https://imanrs1.github.io/Iman-Portfolio/"
+                target="_blank"
+              >
+                imanrs1.github.io/Iman-Portfolio
+              </a>
+            </p>
+          </div>
+        </StyledFedDesc>
       </a>
     </div>
   );
