@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/Iman-Portfolio/static/js/main.675e348b.chunk.js",
-    "main.js.map": "/Iman-Portfolio/static/js/main.675e348b.chunk.js.map",
+    "main.js": "/Iman-Portfolio/static/js/main.a8822d6f.chunk.js",
+    "main.js.map": "/Iman-Portfolio/static/js/main.a8822d6f.chunk.js.map",
     "runtime-main.js": "/Iman-Portfolio/static/js/runtime-main.eaf02637.js",
     "runtime-main.js.map": "/Iman-Portfolio/static/js/runtime-main.eaf02637.js.map",
     "static/js/2.c83ab7b2.chunk.js": "/Iman-Portfolio/static/js/2.c83ab7b2.chunk.js",
@@ -29,6 +29,7 @@
     "static/media/mie.2b3acfaf.jpg": "/Iman-Portfolio/static/media/mie.2b3acfaf.jpg",
     "static/media/nodejs-icon.502737ea.svg": "/Iman-Portfolio/static/media/nodejs-icon.502737ea.svg",
     "static/media/npmjs-icon.42414088.svg": "/Iman-Portfolio/static/media/npmjs-icon.42414088.svg",
+    "static/media/nwe.1f6e1fe5.jpg": "/Iman-Portfolio/static/media/nwe.1f6e1fe5.jpg",
     "static/media/plane2.42b03d6f.jpg": "/Iman-Portfolio/static/media/plane2.42b03d6f.jpg",
     "static/media/plane3.40965e5a.jpg": "/Iman-Portfolio/static/media/plane3.40965e5a.jpg",
     "static/media/reactjs-icon.6c1d44b8.svg": "/Iman-Portfolio/static/media/reactjs-icon.6c1d44b8.svg",
@@ -42,6 +43,6 @@
   "entrypoints": [
     "static/js/runtime-main.eaf02637.js",
     "static/js/2.c83ab7b2.chunk.js",
-    "static/js/main.675e348b.chunk.js"
+    "static/js/main.a8822d6f.chunk.js"
   ]
 }
