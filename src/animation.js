@@ -23,7 +23,7 @@ export const titleAnim = {
   hidden: { y: 200 },
   show: {
     y: 0,
-    transition: { duration: 0.75, ease: "easeOut"},
+    transition: { duration: 0.75, ease: "easeOut" },
   },
 };
 
@@ -31,7 +31,7 @@ export const skillAnim = {
   hidden: { y: 300 },
   show: {
     y: 0,
-    transition: { duration: 0.35, ease: "easeOut"},
+    transition: { duration: 0.35, ease: "easeOut" },
   },
 };
 
@@ -39,31 +39,27 @@ export const attributeAnim = {
   hidden: { y: 400 },
   show: {
     y: 0,
-    transition: { duration: 0.75, ease: "easeOut"},
+    transition: { duration: 0.75, ease: "easeOut" },
   },
 };
 
 export const animStagger = {
-  hidden: {
-
-  },
+  hidden: {},
   show: {
     transition: {
       staggerChildren: 0.4,
-    }
-  }
-}
+    },
+  },
+};
 
 export const skillsStagger = {
-  hidden: {
-  },
+  hidden: {},
   show: {
     transition: {
       staggerChildren: 0.2,
-    }
-  }
-}
-
+    },
+  },
+};
 
 export const contactAnim = {
   hidden: { x: -400 },
@@ -73,7 +69,6 @@ export const contactAnim = {
   },
 };
 
-
 export const fade = {
   hidden: { opacity: 0 },
   show: {
@@ -81,7 +76,6 @@ export const fade = {
     transition: { ease: "easeOut", duration: 0.75 },
   },
 };
-
 
 export const imgAnim = {
   hidden: { scale: 1.5, opacity: 0 },
@@ -121,17 +115,22 @@ export const sliderContainer = {
 
 export const scrollReveal = {
   hidden: {
-    opacity: 0, 
-    scale: 0.8, 
+    opacity: 0,
+    scale: 0.8,
     transition: {
       duration: 0.5,
-    }},
-  
+    },
+  },
+
   show: {
     opacity: 1,
     scale: 1.0,
     transition: {
       duration: 0.5,
-    }
-  }
-}
+    },
+  },
+};
+
+export const expandProject = {
+  show: { width: "300%" },
+};
