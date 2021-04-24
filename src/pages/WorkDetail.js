@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useHistory } from "react-router-dom";
 import { WorkState } from "../workState";
-import { pageAnimation, fade } from "../animation";
+import { pageAnimation} from "../animation";
 import ScrollTop from "../components/ScrollTop";
 import mie from "../img/mie.jpg";
 import ln from "../img/ln.jpg";
