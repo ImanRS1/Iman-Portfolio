@@ -132,5 +132,22 @@ export const scrollReveal = {
 };
 
 export const expandProject = {
-  show: { width: "300%" },
+  show: {
+    scale: 1.1,
+    width: "900%",
+    zIndex: 5,
+    transition: {
+      duration: 0.5,
+    },
+  },
+};
+
+export const reduceProject = {
+  show: {
+    width: "100%",
+    scale: 1,
+    transition: {
+      duration: 0.5,
+    },
+  },
 };

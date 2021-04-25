@@ -2,10 +2,15 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import fp1 from "../img/fp1.JPG";
-import fp2 from "../img/fp2.JPG";
+import fp2 from "../img/fp2.jpg";
 import fp3 from "../img/fp3.JPG";
 import { useScroll } from "./useScroll";
-import { scrollReveal, lineAnimSlow, expandProject } from "../animation";
+import {
+  scrollReveal,
+  lineAnimSlow,
+  expandProject,
+  reduceProject,
+} from "../animation";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithubSquare } from "@fortawesome/free-brands-svg-icons";
 import {
@@ -38,38 +43,40 @@ const ProjectSection = () => {
           onClick={() => (
             setClicked1(!clicked1), setClicked2(false), setClicked3(false)
           )}
-          variants={clicked1 ? expandProject : ""}
+          variants={clicked1 ? expandProject : reduceProject}
           initial="hidden"
           animate="show"
         >
-          <div className={clicked1 ? "clickedProject" : "nonClickedProject"}>
-            {clicked1 ? <div className="project-info"></div> : ""}
-            <img src={fp1} />
-          </div>
+          <img
+            src={fp1}
+            className={clicked1 ? "clickedProject" : "nonClickedProject"}
+          />
         </StyledProject>
         <StyledProject
           onClick={() => (
             setClicked2(!clicked2), setClicked1(false), setClicked3(false)
           )}
-          variants={clicked2 ? expandProject : ""}
+          variants={clicked2 ? expandProject : reduceProject}
           initial="hidden"
           animate="show"
         >
-          <div className={clicked2 ? "clickedProject" : "nonClickedProject"}>
-            <img src={fp2} />
-          </div>
+          <img
+            src={fp2}
+            className={clicked2 ? "clickedProject" : "nonClickedProject"}
+          />
         </StyledProject>
         <StyledProject
           onClick={() => (
             setClicked3(!clicked3), setClicked1(false), setClicked2(false)
           )}
-          variants={clicked3 ? expandProject : ""}
+          variants={clicked3 ? expandProject : reduceProject}
           initial="hidden"
           animate="show"
         >
-          <div className={clicked3 ? "clickedProject" : "nonClickedProject"}>
-            <img src={fp3} />
-          </div>
+          <img
+            src={fp3}
+            className={clicked3 ? "clickedProject" : "nonClickedProject"}
+          />
         </StyledProject>
       </StyledProjectHolder>
     </StyledProjectContainer>
@@ -94,19 +101,19 @@ const StyledProjectContainer = styled(motion.div)`
 const StyledProjectHolder = styled(motion.div)`
   display: flex;
   width: 100%;
+  position: relative;
 `;
 
 const StyledProject = styled(motion.div)`
   display: flex;
   justify-content: center;
-  align-items: flex-end;
-  width: 33%;
   border: 1px solid black;
-  height: 85vh;
+  height: 70vh;
   cursor: pointer;
   .nonClickedProject {
     filter: grayscale(80%);
     height: 100%;
+    width: 100%;
     &:hover {
       filter: grayscale(0%);
     }
@@ -114,7 +121,7 @@ const StyledProject = styled(motion.div)`
 
   .clickedProject {
     filter: grayscale(0%);
-    height: 100%;
+    margin: auto;
   }
 
   /*   .project-info {
