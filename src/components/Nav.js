@@ -129,7 +129,7 @@ const StyledNavContainer = styled.nav`
   min-height: 10vh;
   position: sticky;
   top: 0;
-  z-index: 4;
+  z-index: 99;
   a {
     color: white;
     text-decoration: none;

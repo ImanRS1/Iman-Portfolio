@@ -51,6 +51,22 @@ const ProjectSection = () => {
             src={fp1}
             className={clicked1 ? "clickedProject" : "nonClickedProject"}
           />
+
+          {clicked1 === true && (
+            <div className="project-info">
+              <h2>Ignite React Redux</h2>
+              <p>
+                An API connected game library website with a search function.
+                Displaying the latest, most popular, and new games using RAWG.io
+                database and API.
+              </p>
+              <p>
+                The website was created using React, Redux for state management,
+                axios API method, styled SASS components and animations from
+                framer motion.
+              </p>
+            </div>
+          )}
         </StyledProject>
         <StyledProject
           onClick={() => (
@@ -124,7 +140,7 @@ const StyledProject = styled(motion.div)`
     margin: auto;
   }
 
-  /*   .project-info {
+  .project-info {
     background-color: #1b1b1b;
     position: absolute;
     box-sizing: border-box;
@@ -132,8 +148,17 @@ const StyledProject = styled(motion.div)`
     padding: 2rem;
     border: 5px solid #1b1b1b;
     width: 40rem;
-    height: 40rem;
-  } */
+    height: 30rem;
+    top: 3%;
+    left: 60%;
+
+    h2 {
+      font-size: 2rem;
+    }
+    p {
+      padding: 1rem 0;
+    }
+  }
 
   img {
     width: 100%;
