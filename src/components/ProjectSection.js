@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import fp1 from "../img/fp1.JPG";
 import fp2 from "../img/fp2.jpg";
 import fp3 from "../img/fp3.JPG";
@@ -10,6 +10,7 @@ import {
   lineAnimSlow,
   expandProject,
   reduceProject,
+  fpInfoFade,
 } from "../animation";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithubSquare } from "@fortawesome/free-brands-svg-icons";
@@ -52,8 +53,19 @@ const ProjectSection = () => {
             className={clicked1 ? "clickedProject" : "nonClickedProject"}
           />
 
+          {clicked1 === false && clicked2 === false && clicked3 === false && (
+            <motion.div className="fp-name">
+              <h2>IGNITE REACT REDUX</h2>
+            </motion.div>
+          )}
+
           {clicked1 === true && (
-            <div className="project-info">
+            <motion.div
+              className="project-info"
+              variants={fpInfoFade}
+              initial="hidden"
+              animate="show"
+            >
               <h2>Ignite React Redux</h2>
               <p>
                 An API connected game library website with a search function.
@@ -65,7 +77,7 @@ const ProjectSection = () => {
                 axios API method, styled SASS components and animations from
                 framer motion.
               </p>
-            </div>
+            </motion.div>
           )}
         </StyledProject>
         <StyledProject
@@ -80,6 +92,12 @@ const ProjectSection = () => {
             src={fp2}
             className={clicked2 ? "clickedProject" : "nonClickedProject"}
           />
+
+          {clicked1 === false && clicked2 === false && clicked3 === false && (
+            <motion.div className="fp-name">
+              <h2>Nice weather everyday</h2>
+            </motion.div>
+          )}
         </StyledProject>
         <StyledProject
           onClick={() => (
@@ -93,6 +111,12 @@ const ProjectSection = () => {
             src={fp3}
             className={clicked3 ? "clickedProject" : "nonClickedProject"}
           />
+
+          {clicked1 === false && clicked2 === false && clicked3 === false && (
+            <motion.div className="fp-name">
+              <h2>React music player</h2>
+            </motion.div>
+          )}
         </StyledProject>
       </StyledProjectHolder>
     </StyledProjectContainer>
@@ -127,7 +151,7 @@ const StyledProject = styled(motion.div)`
   height: 70vh;
   cursor: pointer;
   .nonClickedProject {
-    filter: grayscale(80%);
+    filter: grayscale(90%);
     height: 100%;
     width: 100%;
     &:hover {
@@ -140,6 +164,26 @@ const StyledProject = styled(motion.div)`
     margin: auto;
   }
 
+  .fp-name {
+    position: absolute;
+    z-index: 5;
+    transform: rotate(-90deg);
+    bottom: 20rem;
+    width: 29rem;
+
+    h2 {
+      font-size: 3rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5rem;
+
+      /* color: #00000000; */
+      color: #7a4477;
+      text-shadow: 4px 5px 4px #ababab;
+      -webkit-text-stroke-width: 2px;
+      -webkit-text-stroke-color: #23d997;
+    }
+  }
+
   .project-info {
     background-color: #1b1b1b;
     position: absolute;
@@ -148,7 +192,7 @@ const StyledProject = styled(motion.div)`
     padding: 2rem;
     border: 5px solid #1b1b1b;
     width: 40rem;
-    height: 30rem;
+    height: auto;
     top: 3%;
     left: 60%;
 

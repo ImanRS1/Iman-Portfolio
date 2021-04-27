@@ -53,7 +53,7 @@ const AttributeSection = () => {
                 <FontAwesomeIcon icon={faPlane} color="#23d997" />
                 <h3>International</h3>
               </div>
-              <StyledAttriP>International work experience stretching over 17 countries</StyledAttriP>
+              <StyledAttriP>International work experience stretching over 19 countries</StyledAttriP>
             </StyledCard>
           </StyledHide>
 
