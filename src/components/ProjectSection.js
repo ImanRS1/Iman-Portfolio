@@ -11,6 +11,8 @@ import {
   expandProject,
   reduceProject,
   fpInfoFade,
+  fpLinkFadeCode,
+  fpLinkFadeDemo,
 } from "../animation";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -18,10 +20,7 @@ import {
   faGithubSquare,
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
-import {
-  faEnvelopeSquare,
-  faPhoneSquareAlt,
-} from "@fortawesome/free-solid-svg-icons";
+import { faCode } from "@fortawesome/free-solid-svg-icons";
 
 const ProjectSection = () => {
   const [element, controls] = useScroll();
@@ -83,9 +82,26 @@ const ProjectSection = () => {
                   animations from framer motion.
                 </p>
               </motion.div>
-              <a href="https://github.com/ImanRS1">
-                <FontAwesomeIcon icon={faGithubSquare} color="#fafafa" />
-              </a>
+              <motion.a
+                href="https://imanrs1.github.io/Ignite-React-Redux/"
+                target="_blank"
+                className="project-demolink-fp1"
+                variants={fpLinkFadeDemo}
+                initial="hidden"
+                animate="show"
+              >
+                <FontAwesomeIcon icon={faGithub} color="#fafafa" />
+              </motion.a>
+              <motion.a
+                href="https://github.com/ImanRS1/Ignite-React-Redux"
+                target="_blank"
+                className="project-codelink-fp1"
+                variants={fpLinkFadeCode}
+                initial="hidden"
+                animate="show"
+              >
+                <FontAwesomeIcon icon={faCode} color="#fafafa" />
+              </motion.a>
             </div>
           )}
         </StyledProject>
@@ -137,6 +153,26 @@ const ProjectSection = () => {
                   motion package and JSX.
                 </p>
               </motion.div>
+              <motion.a
+                href="https://imanrs1.github.io/Nice-Weather-Everyday/"
+                target="_blank"
+                className="project-demolink-fp2"
+                variants={fpLinkFadeDemo}
+                initial="hidden"
+                animate="show"
+              >
+                <FontAwesomeIcon icon={faGithub} color="#fafafa" />
+              </motion.a>
+              <motion.a
+                href="https://github.com/ImanRS1/Nice-Weather-Everyday"
+                target="_blank"
+                className="project-codelink-fp2"
+                variants={fpLinkFadeCode}
+                initial="hidden"
+                animate="show"
+              >
+                <FontAwesomeIcon icon={faCode} color="#fafafa" />
+              </motion.a>
             </div>
           )}
         </StyledProject>
@@ -177,6 +213,26 @@ const ProjectSection = () => {
                   with imported fontawesome icons.
                 </p>
               </motion.div>
+              <motion.a
+                href="https://imanrs1.github.io/React-Music-Player/"
+                target="_blank"
+                className="project-demolink-fp3"
+                variants={fpLinkFadeDemo}
+                initial="hidden"
+                animate="show"
+              >
+                <FontAwesomeIcon icon={faGithub} color="#fafafa" />
+              </motion.a>
+              <motion.a
+                href="https://github.com/ImanRS1/React-Music-Player"
+                target="_blank"
+                className="project-codelink-fp3"
+                variants={fpLinkFadeCode}
+                initial="hidden"
+                animate="show"
+              >
+                <FontAwesomeIcon icon={faCode} color="#fafafa" />
+              </motion.a>
             </div>
           )}
         </StyledProject>
@@ -267,6 +323,24 @@ const StyledProject = styled(motion.div)`
     }
   }
 
+  .project-demolink-fp1 {
+    position: absolute;
+    left: 35%;
+    top: 5%;
+    svg {
+      font-size: 6rem;
+    }
+  }
+
+  .project-codelink-fp1 {
+    position: absolute;
+    left: 46%;
+    top: 5%;
+    svg {
+      font-size: 6rem;
+    }
+  }
+
   .project-info-fp2-1 {
     background-color: #1b1b1b;
     position: absolute;
@@ -309,6 +383,24 @@ const StyledProject = styled(motion.div)`
     }
   }
 
+  .project-demolink-fp2 {
+    position: absolute;
+    left: 25%;
+    top: 5%;
+    svg {
+      font-size: 6rem;
+    }
+  }
+
+  .project-codelink-fp2 {
+    position: absolute;
+    left: 36%;
+    top: 5%;
+    svg {
+      font-size: 6rem;
+    }
+  }
+
   .project-info-fp3 {
     background-color: #1b1b1b;
     position: absolute;
@@ -327,6 +419,24 @@ const StyledProject = styled(motion.div)`
     }
     p {
       padding: 1rem 0;
+    }
+  }
+
+  .project-demolink-fp3 {
+    position: absolute;
+    right: 20%;
+    top: 8%;
+    svg {
+      font-size: 6rem;
+    }
+  }
+
+  .project-codelink-fp3 {
+    position: absolute;
+    right: 7%;
+    top: 8%;
+    svg {
+      font-size: 6rem;
     }
   }
 
