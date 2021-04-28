@@ -78,6 +78,16 @@ export const fade = {
   },
 };
 
+export const fastFade = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: { ease: "easeOut", duration: 0.2 },
+  },
+};
+
+
+
 export const fpInfoFade = {
   hidden: { opacity: 0, y: 200, scale: 0.8 },
   show: {

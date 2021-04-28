@@ -13,6 +13,8 @@ import {
   fpInfoFade,
   fpLinkFadeCode,
   fpLinkFadeDemo,
+  skillsStagger,
+  fastFade,
 } from "../animation";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -21,6 +23,18 @@ import {
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
 import { faCode } from "@fortawesome/free-solid-svg-icons";
+import ht from "../img/html-icon.svg";
+import css from "../img/css-icon.png";
+import scss from "../img/sass-icon.svg";
+import js from "../img/javascript-icon.svg";
+import npm from "../img/npmjs-icon.svg";
+import reactI from "../img/reactjs-icon.svg";
+import nodeI from "../img/nodejs-icon.svg";
+import gitI from "../img/git-scm-icon.svg";
+import redux from "../img/redux.svg";
+import motionI from "../img/motion-icon.png";
+import jsxI from "../img/jsx-icon.png";
+import styledI from "../img/styled-icon.png";
 
 const ProjectSection = () => {
   const [element, controls] = useScroll();
@@ -139,8 +153,39 @@ const ProjectSection = () => {
                   wind turbine, forecasts for the following 3 day as well as an
                   interactive chart with hourly forecasts and and conditions.
                 </p>
+
+                <motion.div className="used-skils-fp2" variants={skillsStagger}>
+                  <motion.img
+                    src={reactI}
+                    variants={fastFade}
+                    title="ReactJS"
+                  />
+                  <motion.img src={redux} variants={fastFade} title="Redux" />
+                  <motion.img src={jsxI} variants={fastFade} title="JSX" />
+                  <motion.img src={scss} variants={fastFade} title="SCSS" />
+                  <motion.img
+                    src={motionI}
+                    variants={fastFade}
+                    title="Framer Motion"
+                  />
+                  <motion.img src={npm} variants={fastFade} title="NPM" />
+                  <motion.img src={nodeI} variants={fastFade} title="NodeJS" />
+                  <motion.img src={gitI} variants={fastFade} title="Git" />
+                  <motion.img src={ht} variants={fastFade} title="HTML5" />
+                  <motion.img src={css} variants={fastFade} title="CSS3" />
+                  <motion.img
+                    src={js}
+                    variants={fastFade}
+                    title="JavaScript(ES6)"
+                  />
+                  <motion.img
+                    src={styledI}
+                    variants={fastFade}
+                    title="Styled Components"
+                  />
+                </motion.div>
               </motion.div>
-              <motion.div
+              {/*  <motion.div
                 className="project-info-fp2-2"
                 variants={fpInfoFade}
                 initial="hidden"
@@ -152,7 +197,7 @@ const ProjectSection = () => {
                   call methord, styled components, animations from the framer
                   motion package and JSX.
                 </p>
-              </motion.div>
+              </motion.div> */}
               <motion.a
                 href="https://imanrs1.github.io/Nice-Weather-Everyday/"
                 target="_blank"
@@ -348,7 +393,7 @@ const StyledProject = styled(motion.div)`
     box-shadow: inset 0px 0px 0px 2px #ffffff;
     padding: 2rem;
     border: 5px solid #1b1b1b;
-    width: 24rem;
+    width: 26rem;
     height: auto;
     top: 6%;
     left: -5%;
@@ -359,6 +404,18 @@ const StyledProject = styled(motion.div)`
     }
     p {
       padding: 1rem 0;
+    }
+    img {
+      width: 2rem;
+      height: 2rem;
+      margin: 0.5rem;
+    }
+
+    @media (max-width: 1464px) {
+      /*   top: -8%;
+      margin-left: 5%;
+      width: 75rem; */
+      padding: 1rem;
     }
   }
 
@@ -385,19 +442,41 @@ const StyledProject = styled(motion.div)`
 
   .project-demolink-fp2 {
     position: absolute;
-    left: 25%;
+    left: 27%;
     top: 5%;
     svg {
       font-size: 6rem;
+    }
+
+    @media (max-width: 1464px) {
+      left: 33%;
+      top: 5%;
+    }
+
+    @media (max-width: 1323px) {
+      svg {
+        font-size: 3rem;
+      }
     }
   }
 
   .project-codelink-fp2 {
     position: absolute;
-    left: 36%;
+    left: 38%;
     top: 5%;
     svg {
       font-size: 6rem;
+    }
+
+    @media (max-width: 1464px) {
+      left: 46%;
+      top: 5%;
+    }
+
+    @media (max-width: 1323px) {
+      svg {
+        font-size: 3rem;
+      }
     }
   }
 
@@ -433,7 +512,7 @@ const StyledProject = styled(motion.div)`
 
   .project-codelink-fp3 {
     position: absolute;
-    right: 7%;
+    right: 8%;
     top: 8%;
     svg {
       font-size: 6rem;
