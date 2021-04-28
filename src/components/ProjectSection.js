@@ -13,7 +13,11 @@ import {
   fpInfoFade,
 } from "../animation";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLinkedin, faGithubSquare } from "@fortawesome/free-brands-svg-icons";
+import {
+  faLinkedin,
+  faGithubSquare,
+  faGithub,
+} from "@fortawesome/free-brands-svg-icons";
 import {
   faEnvelopeSquare,
   faPhoneSquareAlt,
@@ -60,24 +64,29 @@ const ProjectSection = () => {
           )}
 
           {clicked1 === true && (
-            <motion.div
-              className="project-info"
-              variants={fpInfoFade}
-              initial="hidden"
-              animate="show"
-            >
-              <h2>Ignite React Redux</h2>
-              <p>
-                An API connected game library website with a search function.
-                Displaying the latest, most popular, and new games using RAWG.io
-                database and API.
-              </p>
-              <p>
-                The website was created using React, Redux for state management,
-                axios API method, styled SASS components and animations from
-                framer motion.
-              </p>
-            </motion.div>
+            <div>
+              <motion.div
+                className="project-info-fp1"
+                variants={fpInfoFade}
+                initial="hidden"
+                animate="show"
+              >
+                <h2>Ignite React Redux</h2>
+                <p>
+                  An API connected game library website with a search function.
+                  Displaying the latest, most popular, and new games using
+                  RAWG.io database and API.
+                </p>
+                <p>
+                  The website was created using React, Redux for state
+                  management, axios API method, styled SASS components and
+                  animations from framer motion.
+                </p>
+              </motion.div>
+              <a href="https://github.com/ImanRS1">
+                <FontAwesomeIcon icon={faGithubSquare} color="#fafafa" />
+              </a>
+            </div>
           )}
         </StyledProject>
         <StyledProject
@@ -98,6 +107,38 @@ const ProjectSection = () => {
               <h2>Nice weather everyday</h2>
             </motion.div>
           )}
+
+          {clicked2 === true && (
+            <div>
+              <motion.div
+                className="project-info-fp2-1"
+                variants={fpInfoFade}
+                initial="hidden"
+                animate="show"
+              >
+                <h2>Nice Weather Everyday</h2>
+                <p>
+                  Pixel art inspired weather site using API from weatherapi.com.
+                  The site includes a search function, actual wind force updated
+                  wind turbine, forecasts for the following 3 day as well as an
+                  interactive chart with hourly forecasts and and conditions.
+                </p>
+              </motion.div>
+              <motion.div
+                className="project-info-fp2-2"
+                variants={fpInfoFade}
+                initial="hidden"
+                animate="show"
+              >
+                <p>
+                  The website was created using the rechart npm package for the
+                  weather chart, React and Redux for state management, Axios API
+                  call methord, styled components, animations from the framer
+                  motion package and JSX.
+                </p>
+              </motion.div>
+            </div>
+          )}
         </StyledProject>
         <StyledProject
           onClick={() => (
@@ -116,6 +157,27 @@ const ProjectSection = () => {
             <motion.div className="fp-name">
               <h2>React music player</h2>
             </motion.div>
+          )}
+
+          {clicked3 === true && (
+            <div>
+              <motion.div
+                className="project-info-fp3"
+                variants={fpInfoFade}
+                initial="hidden"
+                animate="show"
+              >
+                <h2>React Music Player</h2>
+                <p>
+                  An app like music player with minimalistic styling, easy to
+                  use and easy to like.
+                </p>
+                <p>
+                  The website was created using React, JS (ES6), HTML5 and SASS
+                  with imported fontawesome icons.
+                </p>
+              </motion.div>
+            </div>
           )}
         </StyledProject>
       </StyledProjectHolder>
@@ -184,7 +246,7 @@ const StyledProject = styled(motion.div)`
     }
   }
 
-  .project-info {
+  .project-info-fp1 {
     background-color: #1b1b1b;
     position: absolute;
     box-sizing: border-box;
@@ -198,6 +260,70 @@ const StyledProject = styled(motion.div)`
 
     h2 {
       font-size: 2rem;
+      color: #23d997;
+    }
+    p {
+      padding: 1rem 0;
+    }
+  }
+
+  .project-info-fp2-1 {
+    background-color: #1b1b1b;
+    position: absolute;
+    box-sizing: border-box;
+    box-shadow: inset 0px 0px 0px 2px #ffffff;
+    padding: 2rem;
+    border: 5px solid #1b1b1b;
+    width: 24rem;
+    height: auto;
+    top: 6%;
+    left: -5%;
+
+    h2 {
+      font-size: 2rem;
+      color: #23d997;
+    }
+    p {
+      padding: 1rem 0;
+    }
+  }
+
+  .project-info-fp2-2 {
+    background-color: #1b1b1b;
+    position: absolute;
+    box-sizing: border-box;
+    box-shadow: inset 0px 0px 0px 2px #ffffff;
+    padding: 2rem;
+    border: 5px solid #1b1b1b;
+    width: 24rem;
+    height: auto;
+    top: 6%;
+    right: -5%;
+
+    h2 {
+      font-size: 2rem;
+      color: #23d997;
+    }
+    p {
+      padding: 1rem 0;
+    }
+  }
+
+  .project-info-fp3 {
+    background-color: #1b1b1b;
+    position: absolute;
+    box-sizing: border-box;
+    box-shadow: inset 0px 0px 0px 2px #ffffff;
+    padding: 2rem;
+    border: 5px solid #1b1b1b;
+    width: 30rem;
+    height: auto;
+    top: 3%;
+    right: 60%;
+
+    h2 {
+      font-size: 2rem;
+      color: #23d997;
     }
     p {
       padding: 1rem 0;
