@@ -95,6 +95,40 @@ const ProjectSection = () => {
                   management, axios API method, styled SASS components and
                   animations from framer motion.
                 </p>
+
+                <motion.div
+                  className="used-skills-fp2"
+                  variants={skillsStagger}
+                >
+                  <motion.img
+                    src={reactI}
+                    variants={fastFade}
+                    title="ReactJS"
+                  />
+                  <motion.img src={redux} variants={fastFade} title="Redux" />
+                  <motion.img src={jsxI} variants={fastFade} title="JSX" />
+                  <motion.img src={scss} variants={fastFade} title="SASS" />
+                  <motion.img
+                    src={motionI}
+                    variants={fastFade}
+                    title="Framer Motion"
+                  />
+                  <motion.img src={npm} variants={fastFade} title="NPM" />
+                  <motion.img src={nodeI} variants={fastFade} title="NodeJS" />
+                  <motion.img src={gitI} variants={fastFade} title="Git" />
+                  <motion.img src={ht} variants={fastFade} title="HTML5" />
+                  <motion.img src={css} variants={fastFade} title="CSS3" />
+                  <motion.img
+                    src={js}
+                    variants={fastFade}
+                    title="JavaScript(ES6)"
+                  />
+                  <motion.img
+                    src={styledI}
+                    variants={fastFade}
+                    title="Styled Components"
+                  />
+                </motion.div>
               </motion.div>
               <motion.a
                 href="https://imanrs1.github.io/Ignite-React-Redux/"
@@ -154,7 +188,10 @@ const ProjectSection = () => {
                   interactive chart with hourly forecasts and and conditions.
                 </p>
 
-                <motion.div className="used-skils-fp2" variants={skillsStagger}>
+                <motion.div
+                  className="used-skills-fp2"
+                  variants={skillsStagger}
+                >
                   <motion.img
                     src={reactI}
                     variants={fastFade}
@@ -162,7 +199,7 @@ const ProjectSection = () => {
                   />
                   <motion.img src={redux} variants={fastFade} title="Redux" />
                   <motion.img src={jsxI} variants={fastFade} title="JSX" />
-                  <motion.img src={scss} variants={fastFade} title="SCSS" />
+                  <motion.img src={scss} variants={fastFade} title="SASS" />
                   <motion.img
                     src={motionI}
                     variants={fastFade}
@@ -257,6 +294,35 @@ const ProjectSection = () => {
                   The website was created using React, JS (ES6), HTML5 and SASS
                   with imported fontawesome icons.
                 </p>
+                <motion.div
+                  className="used-skills-fp2"
+                  variants={skillsStagger}
+                >
+                  <motion.img
+                    src={reactI}
+                    variants={fastFade}
+                    title="ReactJS"
+                  />
+
+                  <motion.img src={jsxI} variants={fastFade} title="JSX" />
+                  <motion.img src={scss} variants={fastFade} title="SASS" />
+
+                  <motion.img src={npm} variants={fastFade} title="NPM" />
+                  <motion.img src={nodeI} variants={fastFade} title="NodeJS" />
+                  <motion.img src={gitI} variants={fastFade} title="Git" />
+                  <motion.img src={ht} variants={fastFade} title="HTML5" />
+                  <motion.img src={css} variants={fastFade} title="CSS3" />
+                  <motion.img
+                    src={js}
+                    variants={fastFade}
+                    title="JavaScript(ES6)"
+                  />
+                  <motion.img
+                    src={styledI}
+                    variants={fastFade}
+                    title="Styled Components"
+                  />
+                </motion.div>
               </motion.div>
               <motion.a
                 href="https://imanrs1.github.io/React-Music-Player/"
@@ -354,7 +420,7 @@ const StyledProject = styled(motion.div)`
     box-shadow: inset 0px 0px 0px 2px #ffffff;
     padding: 2rem;
     border: 5px solid #1b1b1b;
-    width: 40rem;
+    width: 35rem;
     height: auto;
     top: 3%;
     left: 60%;
@@ -365,6 +431,12 @@ const StyledProject = styled(motion.div)`
     }
     p {
       padding: 1rem 0;
+    }
+
+    img {
+      width: 2rem;
+      height: 2rem;
+      margin: 0.5rem;
     }
   }
 
@@ -498,6 +570,12 @@ const StyledProject = styled(motion.div)`
     }
     p {
       padding: 1rem 0;
+    }
+
+    img {
+      width: 2rem;
+      height: 2rem;
+      margin: 0.5rem;
     }
   }
 
