@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import fp1 from "../img/fp1.JPG";
 import fp2 from "../img/fp2.jpg";
 import fp3 from "../img/fp3.JPG";
@@ -17,11 +17,7 @@ import {
   fastFade,
 } from "../animation";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faLinkedin,
-  faGithubSquare,
-  faGithub,
-} from "@fortawesome/free-brands-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faCode } from "@fortawesome/free-solid-svg-icons";
 import ht from "../img/html-icon.svg";
 import css from "../img/css-icon.png";
@@ -90,11 +86,11 @@ const ProjectSection = () => {
                   Displaying the latest, most popular, and new games using
                   RAWG.io database and API.
                 </p>
-                <p>
+                {/*  <p>
                   The website was created using React, Redux for state
                   management, axios API method, styled SASS components and
                   animations from framer motion.
-                </p>
+                </p> */}
 
                 <motion.div
                   className="used-skills-fp2"
@@ -399,7 +395,7 @@ const StyledProject = styled(motion.div)`
     position: absolute;
     z-index: 5;
     transform: rotate(-90deg);
-    bottom: 20rem;
+    bottom: 15rem;
     width: 29rem;
 
     h2 {
@@ -440,6 +436,50 @@ const StyledProject = styled(motion.div)`
       height: 2rem;
       margin: 0.5rem;
     }
+
+    @media (max-width: 1464px) {
+      padding: 1rem;
+    }
+
+    @media (max-width: 1020px) {
+      width: 25rem;
+    }
+
+    @media (max-width: 715px) {
+      width: 35rem;
+      top: 64%;
+      left: 10%;
+
+      h2 {
+        font-size: 1.5rem;
+      }
+      p {
+        font-size: 1rem;
+        padding: 0.2rem 0;
+      }
+
+      img {
+        width: 1.2rem;
+        height: 1.2rem;
+        margin: 0.3rem;
+      }
+    }
+
+    @media (max-width: 550px) {
+      width: 35rem;
+      top: 64%;
+      left: 2%;
+    }
+
+    @media (max-width: 520px) {
+      width: 25rem;
+      top: 55%;
+    }
+
+    @media (max-width: 375px) {
+      left: 0.1%;
+      width: 20rem;
+    }
   }
 
   .project-demolink-fp1 {
@@ -449,6 +489,28 @@ const StyledProject = styled(motion.div)`
     svg {
       font-size: 6rem;
     }
+
+    @media (max-width: 1020px) {
+      left: -30%;
+    }
+
+    @media (max-width: 715px) {
+      left: 70%;
+      top: 2%;
+
+      svg {
+        font-size: 3rem;
+      }
+    }
+
+    @media (max-width: 375px) {
+      left: 86%;
+      top: 1%;
+
+      svg {
+        font-size: 2.5rem;
+      }
+    }
   }
 
   .project-codelink-fp1 {
@@ -457,6 +519,27 @@ const StyledProject = styled(motion.div)`
     top: 5%;
     svg {
       font-size: 6rem;
+    }
+
+    @media (max-width: 1020px) {
+      left: -64%;
+    }
+
+    @media (max-width: 715px) {
+      left: 83%;
+      top: 2%;
+
+      svg {
+        font-size: 3rem;
+      }
+    }
+
+    @media (max-width: 375px) {
+      left: 84%;
+      top: 19%;
+      svg {
+        font-size: 2.5rem;
+      }
     }
   }
 
@@ -486,10 +569,13 @@ const StyledProject = styled(motion.div)`
     }
 
     @media (max-width: 1464px) {
-      /*   top: -8%;
-      margin-left: 5%;
-      width: 75rem; */
       padding: 1rem;
+    }
+
+    @media (max-width: 600px) {
+      width: 35rem;
+      top: 80%;
+      left: -5%;
     }
   }
 
@@ -547,6 +633,10 @@ const StyledProject = styled(motion.div)`
       width: 2rem;
       height: 2rem;
       margin: 0.5rem;
+    }
+
+    @media (max-width: 1464px) {
+      padding: 1rem;
     }
   }
 
