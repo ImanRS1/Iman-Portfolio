@@ -47,7 +47,7 @@ const ProjectSection = () => {
       ref={element}
     >
       <div>
-        <h2>
+        <h2 className="section-header">
           Featured <span>Projects</span>
         </h2>
         <motion.div variants={lineAnimSlow} className="line"></motion.div>
@@ -195,8 +195,8 @@ const ProjectSection = () => {
                     title="ReactJS"
                   />
                   <motion.img src={redux} variants={fastFade} title="Redux" />
-                  <motion.img src={jsxI} variants={fastFade} title="JSX" />
-                  <motion.img src={scss} variants={fastFade} title="SASS" />
+                  {/*  <motion.img src={jsxI} variants={fastFade} title="JSX" />
+                  <motion.img src={scss} variants={fastFade} title="SASS" /> */}
                   <motion.img
                     src={motionI}
                     variants={fastFade}
@@ -360,8 +360,18 @@ const StyledProjectContainer = styled(motion.div)`
     margin-bottom: 3rem;
   }
 
+  .section-header {
+    padding-bottom: 1.5rem;
+  }
+
   @media (max-width: 1323px) {
     padding: 5rem 1rem 1rem 1rem;
+  }
+
+  @media (max-width: 640px) {
+    .section-header {
+      font-size: 2rem;
+    }
   }
 `;
 
@@ -408,6 +418,12 @@ const StyledProject = styled(motion.div)`
       text-shadow: 4px 5px 4px #ababab;
       -webkit-text-stroke-width: 2px;
       -webkit-text-stroke-color: #23d997;
+    }
+
+    @media (max-width: 530px) {
+      h2 {
+        font-size: 2.5rem;
+      }
     }
   }
 
@@ -479,6 +495,9 @@ const StyledProject = styled(motion.div)`
     @media (max-width: 375px) {
       left: 0.1%;
       width: 20rem;
+      h2 {
+        margin-right: 5rem;
+      }
     }
   }
 
@@ -504,8 +523,8 @@ const StyledProject = styled(motion.div)`
     }
 
     @media (max-width: 375px) {
-      left: 86%;
-      top: 1%;
+      left: 66%;
+      top: 5%;
 
       svg {
         font-size: 2.5rem;
@@ -535,8 +554,8 @@ const StyledProject = styled(motion.div)`
     }
 
     @media (max-width: 375px) {
-      left: 84%;
-      top: 19%;
+      left: 82%;
+      top: 5%;
       svg {
         font-size: 2.5rem;
       }
