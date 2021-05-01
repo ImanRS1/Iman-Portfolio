@@ -690,6 +690,40 @@ const StyledProject = styled(motion.div)`
     @media (max-width: 1464px) {
       padding: 1rem;
     }
+
+    @media (max-width: 880px) {
+      width: 35rem;
+      right: auto;
+      left: -16%;
+      top: auto;
+      bottom: -5%;
+    }
+
+    @media (max-width: 715px) {
+      width: 30rem;
+      bottom: 20%;
+
+      h2 {
+        font-size: 1.5rem;
+      }
+      p {
+        font-size: 1rem;
+        padding: 0.2rem 0;
+      }
+      img {
+        width: 1.2rem;
+        height: 1.2rem;
+        margin: 0.3rem;
+      }
+    }
+
+    @media (max-width: 460px) {
+      width: 20rem;
+      left: -22%;
+      h2 {
+        margin-right: 5rem;
+      }
+    }
   }
 
   .project-demolink-fp3 {
@@ -699,6 +733,27 @@ const StyledProject = styled(motion.div)`
     svg {
       font-size: 6rem;
     }
+
+    @media (max-width: 1250px) {
+      right: -25%;
+    }
+
+    @media (max-width: 880px) {
+      right: -18%;
+    }
+    @media (max-width: 715px) {
+      left: 75%;
+      top: 2%;
+
+      svg {
+        font-size: 3rem;
+      }
+    }
+
+    @media (max-width: 460px) {
+      top: 5%;
+      left: 62%;
+    }
   }
 
   .project-codelink-fp3 {
@@ -707,6 +762,27 @@ const StyledProject = styled(motion.div)`
     top: 6%;
     svg {
       font-size: 6rem;
+    }
+
+    @media (max-width: 1250px) {
+      right: -54%;
+    }
+
+    @media (max-width: 880px) {
+      right: -40%;
+    }
+    @media (max-width: 715px) {
+      left: 87%;
+      top: 2%;
+
+      svg {
+        font-size: 3rem;
+      }
+    }
+
+    @media (max-width: 460px) {
+      top: 5%;
+      left: 79%;
     }
   }
 
