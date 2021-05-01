@@ -1,19 +1,20 @@
 {
   "files": {
-    "main.js": "/Iman-Portfolio/static/js/main.a8822d6f.chunk.js",
-    "main.js.map": "/Iman-Portfolio/static/js/main.a8822d6f.chunk.js.map",
-    "runtime-main.js": "/Iman-Portfolio/static/js/runtime-main.eaf02637.js",
-    "runtime-main.js.map": "/Iman-Portfolio/static/js/runtime-main.eaf02637.js.map",
-    "static/js/2.c83ab7b2.chunk.js": "/Iman-Portfolio/static/js/2.c83ab7b2.chunk.js",
-    "static/js/2.c83ab7b2.chunk.js.map": "/Iman-Portfolio/static/js/2.c83ab7b2.chunk.js.map",
-    "static/js/3.36863b43.chunk.js": "/Iman-Portfolio/static/js/3.36863b43.chunk.js",
-    "static/js/3.36863b43.chunk.js.map": "/Iman-Portfolio/static/js/3.36863b43.chunk.js.map",
+    "main.js": "/Iman-Portfolio/static/js/main.0d2ef071.chunk.js",
+    "main.js.map": "/Iman-Portfolio/static/js/main.0d2ef071.chunk.js.map",
+    "runtime-main.js": "/Iman-Portfolio/static/js/runtime-main.0d57fc44.js",
+    "runtime-main.js.map": "/Iman-Portfolio/static/js/runtime-main.0d57fc44.js.map",
+    "static/js/2.9d657971.chunk.js": "/Iman-Portfolio/static/js/2.9d657971.chunk.js",
+    "static/js/2.9d657971.chunk.js.map": "/Iman-Portfolio/static/js/2.9d657971.chunk.js.map",
     "index.html": "/Iman-Portfolio/index.html",
-    "static/js/2.c83ab7b2.chunk.js.LICENSE.txt": "/Iman-Portfolio/static/js/2.c83ab7b2.chunk.js.LICENSE.txt",
+    "static/js/2.9d657971.chunk.js.LICENSE.txt": "/Iman-Portfolio/static/js/2.9d657971.chunk.js.LICENSE.txt",
     "static/media/bootstrap-icon.5d590f6c.svg": "/Iman-Portfolio/static/media/bootstrap-icon.5d590f6c.svg",
     "static/media/code2.4ab6cf92.jpg": "/Iman-Portfolio/static/media/code2.4ab6cf92.jpg",
     "static/media/code3.21ca51e4.jpg": "/Iman-Portfolio/static/media/code3.21ca51e4.jpg",
     "static/media/codex.19fbe984.jpg": "/Iman-Portfolio/static/media/codex.19fbe984.jpg",
+    "static/media/fp1.a1bf79e7.JPG": "/Iman-Portfolio/static/media/fp1.a1bf79e7.JPG",
+    "static/media/fp2.441289fd.jpg": "/Iman-Portfolio/static/media/fp2.441289fd.jpg",
+    "static/media/fp3.176cc454.JPG": "/Iman-Portfolio/static/media/fp3.176cc454.JPG",
     "static/media/gasturbine12.c34e7225.jpg": "/Iman-Portfolio/static/media/gasturbine12.c34e7225.jpg",
     "static/media/git-scm-icon.6d27b5e0.svg": "/Iman-Portfolio/static/media/git-scm-icon.6d27b5e0.svg",
     "static/media/html-icon.87f3f64a.svg": "/Iman-Portfolio/static/media/html-icon.87f3f64a.svg",
@@ -41,8 +42,8 @@
     "static/media/ttt.4bc0f88f.jpg": "/Iman-Portfolio/static/media/ttt.4bc0f88f.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.eaf02637.js",
-    "static/js/2.c83ab7b2.chunk.js",
-    "static/js/main.a8822d6f.chunk.js"
+    "static/js/runtime-main.0d57fc44.js",
+    "static/js/2.9d657971.chunk.js",
+    "static/js/main.0d2ef071.chunk.js"
   ]
 }
