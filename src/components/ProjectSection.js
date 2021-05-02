@@ -240,19 +240,6 @@ const ProjectSection = () => {
                   <FontAwesomeIcon icon={faCode} color="#fafafa" />
                 </motion.a>
               </motion.div>
-              {/*  <motion.div
-                className="project-info-fp2-2"
-                variants={fpInfoFade}
-                initial="hidden"
-                animate="show"
-              >
-                <p>
-                  The website was created using the rechart npm package for the
-                  weather chart, React and Redux for state management, Axios API
-                  call methord, styled components, animations from the framer
-                  motion package and JSX.
-                </p>
-              </motion.div> */}
             </div>
           )}
         </StyledProject>
@@ -412,8 +399,6 @@ const StyledProject = styled(motion.div)`
       font-size: 3rem;
       text-transform: uppercase;
       letter-spacing: 0.5rem;
-
-      /* color: #00000000; */
       color: #7a4477;
       text-shadow: 4px 5px 4px #ababab;
       -webkit-text-stroke-width: 2px;
