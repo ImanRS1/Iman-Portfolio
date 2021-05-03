@@ -1,3 +1,5 @@
+import { withTheme } from "styled-components";
+
 export const pageAnimation = {
   hidden: {
     opacity: 0,
@@ -86,8 +88,6 @@ export const fastFade = {
   },
 };
 
-
-
 export const fpInfoFade = {
   hidden: { opacity: 0, y: 200, scale: 0.8 },
   show: {
@@ -116,12 +116,40 @@ export const fpLinkFadeCode = {
 };
 
 export const fpLinkFadeDemo = {
-  hidden: { opacity: 0, y: 400, scale: 0.5 },
+  hidden: { opacity: 0, y: 400, scale: 0.5, color: "white" },
   show: {
     y: -0,
     opacity: 1,
     scale: 1,
     transition: { delay: 0.5, ease: "easeOut", duration: 0.75 },
+  },
+};
+
+export const linkIconAnim1 = {
+  hidden: { scale: 1 },
+  show: {
+    scale: [1, 0.95, 1],
+    color: ["#ffffff", "#23d997", "#ffffff"],
+    transition: {
+      delay: 1.5,
+      ease: "easeOut",
+      duration: 1.75,
+      repeat: Infinity,
+    },
+  },
+};
+
+export const linkIconAnim2 = {
+  hidden: { scale: 1 },
+  show: {
+    scale: [1, 0.95, 1],
+    color: ["#ffffff", "#23d997", "#ffffff"],
+    transition: {
+      delay: 2,
+      ease: "easeOut",
+      duration: 1.75,
+      repeat: Infinity,
+    },
   },
 };
 

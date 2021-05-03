@@ -15,6 +15,8 @@ import {
   fpLinkFadeDemo,
   skillsStagger,
   fastFade,
+  linkIconAnim1,
+  linkIconAnim2,
 } from "../animation";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
@@ -133,7 +135,13 @@ const ProjectSection = () => {
                     initial="hidden"
                     animate="show"
                   >
-                    <FontAwesomeIcon icon={faGithub} color="#fafafa" />
+                    <motion.div
+                      variants={linkIconAnim1}
+                      initial="hidden"
+                      animate="show"
+                    >
+                      <FontAwesomeIcon icon={faGithub} /* color="#fafafa" */ />
+                    </motion.div>
                   </motion.a>
                   <motion.a
                     href="https://github.com/ImanRS1/Ignite-React-Redux"
@@ -143,7 +151,13 @@ const ProjectSection = () => {
                     initial="hidden"
                     animate="show"
                   >
-                    <FontAwesomeIcon icon={faCode} color="#fafafa" />
+                    <motion.div
+                      variants={linkIconAnim2}
+                      initial="hidden"
+                      animate="show"
+                    >
+                      <FontAwesomeIcon icon={faCode} />
+                    </motion.div>
                   </motion.a>
                 </motion.div>
               </motion.div>
