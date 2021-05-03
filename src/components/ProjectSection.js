@@ -140,7 +140,7 @@ const ProjectSection = () => {
                       initial="hidden"
                       animate="show"
                     >
-                      <FontAwesomeIcon icon={faGithub} /* color="#fafafa" */ />
+                      <FontAwesomeIcon icon={faGithub} />
                     </motion.div>
                   </motion.a>
                   <motion.a
@@ -241,7 +241,13 @@ const ProjectSection = () => {
                   initial="hidden"
                   animate="show"
                 >
-                  <FontAwesomeIcon icon={faGithub} color="#fafafa" />
+                  <motion.div
+                    variants={linkIconAnim1}
+                    initial="hidden"
+                    animate="show"
+                  >
+                    <FontAwesomeIcon icon={faGithub} />
+                  </motion.div>
                 </motion.a>
                 <motion.a
                   href="https://github.com/ImanRS1/Nice-Weather-Everyday"
@@ -251,7 +257,13 @@ const ProjectSection = () => {
                   initial="hidden"
                   animate="show"
                 >
-                  <FontAwesomeIcon icon={faCode} color="#fafafa" />
+                  <motion.div
+                    variants={linkIconAnim2}
+                    initial="hidden"
+                    animate="show"
+                  >
+                    <FontAwesomeIcon icon={faCode} />
+                  </motion.div>
                 </motion.a>
               </motion.div>
             </div>
