@@ -209,8 +209,6 @@ const ProjectSection = () => {
                     title="ReactJS"
                   />
                   <motion.img src={redux} variants={fastFade} title="Redux" />
-                  {/*  <motion.img src={jsxI} variants={fastFade} title="JSX" />
-                  <motion.img src={scss} variants={fastFade} title="SASS" /> */}
                   <motion.img
                     src={motionI}
                     variants={fastFade}
