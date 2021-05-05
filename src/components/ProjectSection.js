@@ -88,11 +88,6 @@ const ProjectSection = () => {
                   Displaying the latest, most popular, and new games using
                   RAWG.io database and API.
                 </p>
-                {/*  <p>
-                  The website was created using React, Redux for state
-                  management, axios API method, styled SASS components and
-                  animations from framer motion.
-                </p> */}
 
                 <motion.div
                   className="used-skills-fp2"
