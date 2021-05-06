@@ -36,8 +36,10 @@ function App() {
           </Route>
         </Switch>
       </AnimatePresence>
-    </div>
+   </div>
   );
 }
+
+
 
 export default App;

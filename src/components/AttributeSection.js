@@ -7,7 +7,6 @@ import {
   faStreetView,
 } from "@fortawesome/free-solid-svg-icons";
 import code1 from "../img/codex.jpg";
-import styled from "styled-components";
 import { useScroll } from "./useScroll";
 import { scrollReveal, animStagger, attributeAnim } from "../animation";
 import {

@@ -219,9 +219,6 @@ export const StyledCard = styled(motion.div)`
     }
   }
 
-  @media (max-height: 600px) {
-    /* min-height: 50vh; */
-  }
 
   @media (max-width: 581px) {
     width: 15rem;
