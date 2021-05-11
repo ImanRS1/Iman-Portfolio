@@ -40,6 +40,7 @@ import redux from "../img/redux.svg";
 import motionI from "../img/motion-icon.png";
 import jsxI from "../img/jsx-icon.png";
 import styledI from "../img/styled-icon.png";
+import gatsbyI from "../img/gatsby-icon.svg"
 
 const EducationAndSkills = () => {
   const [element, controls] = useScroll();
@@ -144,6 +145,12 @@ const EducationAndSkills = () => {
           <StyledSkill variants={skillAnim}>
             <img src={styledI} />
             <p>SComponents</p>
+          </StyledSkill>
+        </StyledHide>
+        <StyledHide>
+          <StyledSkill variants={skillAnim}>
+            <img src={gatsbyI} />
+            <p>Gatsby</p>
           </StyledSkill>
         </StyledHide>
       </StyledSkillsHolder>
