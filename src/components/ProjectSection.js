@@ -526,7 +526,7 @@ const StyledProject = styled(motion.div)`
 
   .project-demolink-fp1 {
     position: absolute;
-    left: -22%;
+    left: -26%;
     top: 5%;
     svg {
       font-size: 6rem;
@@ -537,12 +537,16 @@ const StyledProject = styled(motion.div)`
     }
 
     @media (max-width: 715px) {
-      left: 70%;
+      left: 72%;
       top: 2%;
 
       svg {
         font-size: 3rem;
       }
+    }
+
+    @media (max-width: 520px) {
+      left: 70%;
     }
 
     @media (max-width: 375px) {
