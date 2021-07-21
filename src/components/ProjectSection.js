@@ -64,7 +64,7 @@ const ProjectSection = () => {
           animate="show"
         >
           <img
-            src={fp1}
+            src={fp1} alt="Screenshot of featured project"
             className={clicked1 ? "clickedProject" : "nonClickedProject"}
           />
 
@@ -168,7 +168,7 @@ const ProjectSection = () => {
           animate="show"
         >
           <img
-            src={fp2}
+            src={fp2} alt="Screenshot of featured project"
             className={clicked2 ? "clickedProject" : "nonClickedProject"}
           />
 
@@ -271,7 +271,7 @@ const ProjectSection = () => {
           animate="show"
         >
           <img
-            src={fp3}
+            src={fp3} alt="Screenshot of featured project"
             className={clicked3 ? "clickedProject" : "nonClickedProject"}
           />
 
