@@ -20,11 +20,7 @@ import {
 } from "../animation";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import {
-  faCode,
-  faExternalLinkAlt,
-  faExternalLinkSquareAlt,
-} from "@fortawesome/free-solid-svg-icons";
+import { faExternalLinkSquareAlt } from "@fortawesome/free-solid-svg-icons";
 import ht from "../img/html-icon.svg";
 import css from "../img/css-icon.png";
 import scss from "../img/sass-icon.svg";
