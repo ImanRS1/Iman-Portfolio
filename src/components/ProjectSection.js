@@ -548,10 +548,6 @@ const StyledProject = styled(motion.div)`
     @media (max-width: 375px) {
       left: 66%;
       top: 5%;
-
-      svg {
-        font-size: 2.5rem;
-      }
     }
   }
 
@@ -579,9 +575,6 @@ const StyledProject = styled(motion.div)`
     @media (max-width: 375px) {
       left: 82%;
       top: 5%;
-      svg {
-        font-size: 2.5rem;
-      }
     }
   }
 
