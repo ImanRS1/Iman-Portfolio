@@ -20,7 +20,11 @@ import {
 } from "../animation";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faCode } from "@fortawesome/free-solid-svg-icons";
+import {
+  faCode,
+  faExternalLinkAlt,
+  faExternalLinkSquareAlt,
+} from "@fortawesome/free-solid-svg-icons";
 import ht from "../img/html-icon.svg";
 import css from "../img/css-icon.png";
 import scss from "../img/sass-icon.svg";
@@ -64,7 +68,8 @@ const ProjectSection = () => {
           animate="show"
         >
           <img
-            src={fp1} alt="Screenshot of featured project"
+            src={fp1}
+            alt="Screenshot of featured project"
             className={clicked1 ? "clickedProject" : "nonClickedProject"}
           />
 
@@ -135,7 +140,7 @@ const ProjectSection = () => {
                       initial="hidden"
                       animate="show"
                     >
-                      <FontAwesomeIcon icon={faGithub} />
+                      <FontAwesomeIcon icon={faExternalLinkSquareAlt} />
                     </motion.div>
                   </motion.a>
                   <motion.a
@@ -151,7 +156,7 @@ const ProjectSection = () => {
                       initial="hidden"
                       animate="show"
                     >
-                      <FontAwesomeIcon icon={faCode} />
+                      <FontAwesomeIcon icon={faGithub} />
                     </motion.div>
                   </motion.a>
                 </motion.div>
@@ -168,7 +173,8 @@ const ProjectSection = () => {
           animate="show"
         >
           <img
-            src={fp2} alt="Screenshot of featured project"
+            src={fp2}
+            alt="Screenshot of featured project"
             className={clicked2 ? "clickedProject" : "nonClickedProject"}
           />
 
@@ -239,7 +245,7 @@ const ProjectSection = () => {
                     initial="hidden"
                     animate="show"
                   >
-                    <FontAwesomeIcon icon={faGithub} />
+                    <FontAwesomeIcon icon={faExternalLinkSquareAlt} />
                   </motion.div>
                 </motion.a>
                 <motion.a
@@ -255,7 +261,7 @@ const ProjectSection = () => {
                     initial="hidden"
                     animate="show"
                   >
-                    <FontAwesomeIcon icon={faCode} />
+                    <FontAwesomeIcon icon={faGithub} />
                   </motion.div>
                 </motion.a>
               </motion.div>
@@ -271,7 +277,8 @@ const ProjectSection = () => {
           animate="show"
         >
           <img
-            src={fp3} alt="Screenshot of featured project"
+            src={fp3}
+            alt="Screenshot of featured project"
             className={clicked3 ? "clickedProject" : "nonClickedProject"}
           />
 
@@ -340,7 +347,7 @@ const ProjectSection = () => {
                     initial="hidden"
                     animate="show"
                   >
-                    <FontAwesomeIcon icon={faGithub} />
+                    <FontAwesomeIcon icon={faExternalLinkSquareAlt} />
                   </motion.div>
                 </motion.a>
                 <motion.a
@@ -356,7 +363,7 @@ const ProjectSection = () => {
                     initial="hidden"
                     animate="show"
                   >
-                    <FontAwesomeIcon icon={faCode} />
+                    <FontAwesomeIcon icon={faGithub} />
                   </motion.div>
                 </motion.a>
               </motion.div>
