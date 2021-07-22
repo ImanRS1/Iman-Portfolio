@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import styled from "styled-components";
 import {
   pageAnimation,
   slider,
@@ -163,6 +164,9 @@ const EducationAndSkills = () => {
         layout="position"
       >
         <h4>Education:</h4>
+        <EducationDiv>
+
+        
         <StyledEducation variants={scrollReveal}>
           <img src={cme} />
           <div>
@@ -184,11 +188,19 @@ const EducationAndSkills = () => {
             <p>Västerås, Sweden</p>
           </div>
         </StyledEducation>
+        </EducationDiv>
       </StyledEducationsHolder>
 
       <ScrollTop />
     </StyledEandSContainer>
   );
 };
+
+const EducationDiv = styled(motion.div)`
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+`
 
 export default EducationAndSkills;

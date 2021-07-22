@@ -219,7 +219,6 @@ export const StyledCard = styled(motion.div)`
     }
   }
 
-
   @media (max-width: 581px) {
     width: 15rem;
   }
@@ -377,7 +376,7 @@ export const StyledContactOptionNandMCon = styled(motion.div)`
 `;
 
 export const StyledContactOptionNandM = styled(motion.div)`
-  a{
+  a {
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -501,7 +500,7 @@ export const StyledWorkxHeaders = styled(motion.div)`
 
 export const StyledDetails = styled(motion.div)`
   color: white;
-  a{
+  a {
     text-decoration: none;
   }
 `;
@@ -688,6 +687,8 @@ export const StyledEducation = styled(motion.div)`
   min-height: 25vh;
   background-color: #252525;
   transition: all 1s ease;
+  width: 52rem;
+  margin: 1rem;
   &:hover {
     background-color: #333333;
     img {
