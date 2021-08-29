@@ -42,6 +42,8 @@ import motionI from "../img/motion-icon.png";
 import jsxI from "../img/jsx-icon.png";
 import styledI from "../img/styled-icon.png";
 import gatsbyI from "../img/gatsby-icon.svg"
+import pugI from "../img/pug-icon.svg"
+import expressI from "../img/express-icon.png"
 
 const EducationAndSkills = () => {
   const [element, controls] = useScroll();
@@ -152,6 +154,18 @@ const EducationAndSkills = () => {
           <StyledSkill variants={skillAnim}>
             <img src={gatsbyI} />
             <p>Gatsby</p>
+          </StyledSkill>
+        </StyledHide>
+        <StyledHide>
+          <StyledSkill variants={skillAnim}>
+            <img src={pugI} />
+            <p>PugJS</p>
+          </StyledSkill>
+        </StyledHide>
+        <StyledHide>
+          <StyledSkill variants={skillAnim}>
+            <img src={expressI} />
+            <p>Express</p>
           </StyledSkill>
         </StyledHide>
       </StyledSkillsHolder>
