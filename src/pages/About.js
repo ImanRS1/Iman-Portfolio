@@ -6,7 +6,6 @@ import ProjectSection from "../components/ProjectSection";
 import { motion } from "framer-motion";
 import { pageAnimation } from "../animation";
 import ScrollTop from "../components/ScrollTop";
-import styled from "styled-components";
 
 const About = () => {
   return (
