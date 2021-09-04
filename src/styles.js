@@ -128,14 +128,14 @@ export const StyledSecImage = styled.div`
     display: flex;
     justify-content: center;
     img {
-      width: 100%;
+      width: 100vw;
       height: 40vh;
     }
   }
 
   @media (max-width: 710px) {
     img {
-      width: 100%;
+      width: 100vw;
       height: 25vh;
     }
   }
