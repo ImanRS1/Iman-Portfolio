@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/Iman-Portfolio/static/js/main.07f59d83.chunk.js",
-    "main.js.map": "/Iman-Portfolio/static/js/main.07f59d83.chunk.js.map",
+    "main.js": "/Iman-Portfolio/static/js/main.13fb667c.chunk.js",
+    "main.js.map": "/Iman-Portfolio/static/js/main.13fb667c.chunk.js.map",
     "runtime-main.js": "/Iman-Portfolio/static/js/runtime-main.0d57fc44.js",
     "runtime-main.js.map": "/Iman-Portfolio/static/js/runtime-main.0d57fc44.js.map",
     "static/js/2.449228ad.chunk.js": "/Iman-Portfolio/static/js/2.449228ad.chunk.js",
@@ -48,6 +48,6 @@
   "entrypoints": [
     "static/js/runtime-main.0d57fc44.js",
     "static/js/2.449228ad.chunk.js",
-    "static/js/main.07f59d83.chunk.js"
+    "static/js/main.13fb667c.chunk.js"
   ]
 }
