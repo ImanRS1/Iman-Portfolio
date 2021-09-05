@@ -166,7 +166,7 @@ const EducationAndSkills = () => {
         <StyledHide>
           <StyledSkill variants={skillAnim}>
             <img src={expressI} />
-            <p>Express</p>
+            <p>ExpressJS</p>
           </StyledSkill>
         </StyledHide>
         <StyledHide>
