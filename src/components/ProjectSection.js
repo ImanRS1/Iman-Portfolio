@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import fp1 from "../img/fp1.JPG";
-import fp2 from "../img/fp2.jpg";
+import fp2 from "../img/fp2.JPG";
 import fp3 from "../img/fp3.JPG";
 import { useScroll } from "./useScroll";
 import {
