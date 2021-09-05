@@ -192,11 +192,11 @@ const EducationAndSkills = () => {
           <img src={treehouse} />
           <div>
             <h3>
-              <span>Changemaker Educations</span>
+              <span>Teamtreehouse</span>
             </h3>
 
-            <p>Front-end development</p>
-            <p>Stockholm, Sweden</p>
+            <p>Full Stack JavaScript development</p>
+            <p>Online, remote</p>
           </div>
         </StyledEducation>
         <StyledEducation variants={scrollReveal}>
