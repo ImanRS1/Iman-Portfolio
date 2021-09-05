@@ -27,6 +27,7 @@ import {
 import { useScroll } from "../components/useScroll";
 import mdh from "../img/mdh.jpg";
 import cme from "../img/cme.jpg";
+import treehouse from "../img/treehouse.png";
 import jqr from "../img/jquery-icon.svg";
 import ht from "../img/html-icon.svg";
 import css from "../img/css-icon.png";
@@ -187,7 +188,17 @@ const EducationAndSkills = () => {
         <h4>Education:</h4>
         <EducationDiv>
 
-        
+        <StyledEducation variants={scrollReveal}>
+          <img src={treehouse} />
+          <div>
+            <h3>
+              <span>Changemaker Educations</span>
+            </h3>
+
+            <p>Front-end development</p>
+            <p>Stockholm, Sweden</p>
+          </div>
+        </StyledEducation>
         <StyledEducation variants={scrollReveal}>
           <img src={cme} />
           <div>
