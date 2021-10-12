@@ -46,7 +46,9 @@ import gatsbyI from "../img/gatsby-icon.svg"
 import pugI from "../img/pug-icon.svg"
 import expressI from "../img/express-icon.png"
 import sqlI from "../img/sql-icon.png"
-import graph from "../img/graphql-icon.svg";
+import graphI from "../img/graphql-icon.svg";
+import mochaI from "../img/mocha-icon.svg";
+
 
 const EducationAndSkills = () => {
   const [element, controls] = useScroll();
@@ -179,8 +181,14 @@ const EducationAndSkills = () => {
         </StyledHide>
         <StyledHide>
           <StyledSkill variants={skillAnim}>
-            <img src={graph} />
+            <img src={graphI} />
             <p>GraphQL</p>
+          </StyledSkill>
+        </StyledHide>
+        <StyledHide>
+          <StyledSkill variants={skillAnim}>
+            <img src={mochaI} />
+            <p>Mocha</p>
           </StyledSkill>
         </StyledHide>
       </StyledSkillsHolder>
