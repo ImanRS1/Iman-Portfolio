@@ -49,6 +49,7 @@ import sqlI from "../img/sql-icon.png"
 import graphI from "../img/graphql-icon.svg";
 import mochaI from "../img/mocha-icon.svg";
 import jestI from "../img/jest-icon.svg"
+import pSQL from "../img/postgresql-icon.svg"
 
 
 const EducationAndSkills = () => {
@@ -196,6 +197,12 @@ const EducationAndSkills = () => {
           <StyledSkill variants={skillAnim}>
             <img src={jestI} />
             <p>Jest</p>
+          </StyledSkill>
+        </StyledHide>
+        <StyledHide>
+          <StyledSkill variants={skillAnim}>
+            <img src={pSQL} />
+            <p>PostgreSQL</p>
           </StyledSkill>
         </StyledHide>
       </StyledSkillsHolder>
