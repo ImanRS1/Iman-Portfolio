@@ -15,7 +15,7 @@ const Nav = () => {
               Iman Reza Soltani
             </Link>
           </h1>
-          <h6 style={{ color: "white" }}>Front-end Developer</h6>
+          <h6 style={{ color: "white" }}>Full-stack Developer</h6>
         </div>
         <ul>
           <li>
