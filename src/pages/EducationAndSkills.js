@@ -180,7 +180,7 @@ const EducationAndSkills = () => {
         <StyledHide>
           <StyledSkill variants={skillAnim}>
             <img src={sqlI} />
-            <p>SQL</p>
+            <p>SQLite</p>
           </StyledSkill>
         </StyledHide>
         <StyledHide>
