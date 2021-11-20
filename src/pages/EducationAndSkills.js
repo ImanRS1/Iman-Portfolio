@@ -51,6 +51,7 @@ import mochaI from "../img/mocha-icon.svg";
 import jestI from "../img/jest-icon.svg"
 import pSQL from "../img/postgresql-icon.svg"
 import mongoI from "../img/mongodb-icon.svg"
+import contentI from "../img/contentful-icon.svg"
 
 
 const EducationAndSkills = () => {
@@ -210,6 +211,12 @@ const EducationAndSkills = () => {
           <StyledSkill variants={skillAnim}>
             <img src={mongoI} />
             <p>MongoDB</p>
+          </StyledSkill>
+        </StyledHide>
+        <StyledHide>
+          <StyledSkill variants={skillAnim}>
+            <img src={contentI} />
+            <p>Contentful</p>
           </StyledSkill>
         </StyledHide>
       </StyledSkillsHolder>
