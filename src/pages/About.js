@@ -6,10 +6,11 @@ import ProjectSection from "../components/ProjectSection";
 import { motion } from "framer-motion";
 import { pageAnimation } from "../animation";
 import ScrollTop from "../components/ScrollTop";
+import styled from "styled-components";
 
 const About = () => {
   return (
-    <motion.div
+    <AboutContainer
       variants={pageAnimation}
       initial="hidden"
       animate="show"
@@ -20,9 +21,16 @@ const About = () => {
       <ProjectSection />
       <ContactSection />
       <ScrollTop />
-    </motion.div>
+    </AboutContainer>
   );
 };
+
+const AboutContainer = styled(motion.div)`
+  max-width: 1800px;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+`
 
 
 

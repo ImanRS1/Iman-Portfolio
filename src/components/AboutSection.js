@@ -3,7 +3,6 @@ import iman from "../img/iman.jpg";
 import iman1 from "../img/iman1.jpg";
 import { motion } from "framer-motion";
 import { titleAnim, fade, imgAnim } from "../animation";
-import Wave from "./Wave";
 import {
   StyledAbout,
   StyledDescription,
@@ -57,7 +56,6 @@ const AboutSection = () => {
           variants={imgAnim}
         />
       </StyledImage>
-      <Wave />
     </StyledAbout>
   );
 };
