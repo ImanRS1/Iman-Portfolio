@@ -15,7 +15,7 @@ const Nav = () => {
               Iman Reza Soltani
             </Link>
           </h1>
-          <h6 style={{ color: "white" }}>Front-end Developer</h6>
+          <h6 style={{ color: "white" }}>Full-stack Developer</h6>
         </div>
         <ul>
           <li>
@@ -42,7 +42,7 @@ const Nav = () => {
           </li>
           <li>
             <Link to="/educationandskills">
-              <div className="navText">3. Education & Skills</div>
+              <div className="navText">Contact</div>
             </Link>
             <Line3
               transition={{ duration: 0.75 }}
