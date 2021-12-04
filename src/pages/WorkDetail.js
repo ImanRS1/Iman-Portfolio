@@ -49,7 +49,7 @@ const WorkDetail = () => {
           desc4={work.workDescription4}
           desc5={work.workDescription5}
           key={work.title}
-          desc6={work.title === "Front-end Developer" ? WorkDetailDesc() : ""}
+          desc6={work.title === "Full Stack Developer" ? WorkDetailDesc() : ""}
         />
       </StyledWorkDescription>
       <StyledImageDisplay>

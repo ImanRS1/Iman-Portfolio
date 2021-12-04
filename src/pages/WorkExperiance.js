@@ -2,6 +2,7 @@ import React from "react";
 import plane1 from "../img/plane3.jpg";
 import code2 from "../img/code2.jpg";
 import turbine1 from "../img/gasturbine12.jpg";
+import salt from "../img/salt.jpg"
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import {
@@ -44,8 +45,11 @@ const WorkExperiance = () => {
       <StyledWork>
         <Link to="/work/work">
           <StyledWorkxHeaders variants={fade}>
-            <h2>Front-end Developer</h2>
-            <h2>2020-2021</h2>
+            <div>
+              <h2>Full Stack Developer</h2>
+              <h3>SALT</h3>
+              </div>
+            <h2>2021-Present</h2>
           </StyledWorkxHeaders>
         </Link>
         <motion.div variants={lineAnim} className="line"></motion.div>
@@ -53,7 +57,7 @@ const WorkExperiance = () => {
           <StyledHide>
             <motion.img
               variants={imgAnim}
-              src={code2}
+              src={salt}
               alt="Picture of some html code"
             />
           </StyledHide>

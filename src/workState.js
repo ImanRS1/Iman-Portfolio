@@ -1,6 +1,7 @@
 import plane1 from "./img/plane3.jpg"
 import plane2 from "./img/plane2.jpg"
-import code2 from "./img/code2.jpg";
+import code1 from "./img/code1.jpg";
+import salt from "./img/salt.jpg"
 import code3 from "./img/code3.jpg";
 import turbine1 from "./img/gasturbine12.jpg";
 import siemens3 from "./img/siemens3.jpg"
@@ -8,14 +9,15 @@ import siemens3 from "./img/siemens3.jpg"
 export const WorkState = () => {
   return [
     {
-      title: "Front-end Developer",
-      mainImg: code2,
+      title: "Full Stack Developer",
+      mainImg: salt,
       secondaryImg: code3,
       url: "/work/work",
-      workDescription1: "Starting in mid 2020 I studied front end development at Changemaker Educations. I have studied independently before that and continuously since then as well. ",
-      workDescription2: "My goal and ambition has always been to possess a firm understanding of the foundational skills and principles of web development while also ambitiously approaching new frameworks/libraries and new ways of using old skills.",
-      workDescription3: "I truly believe that in a field such as this one, it is of utmost importance to never stop developing and increasing ones knowledge/competence. The IT sphere in general is an ever evolving one. As new needs arises and old needs increases so does the technology which evolves and grows to meet those demands. I believe that understanding, accepting and embracing that will yield better progress and results as a developer.",
-      workDescription4: "See below for some of my featured projects:",
+      workDescription1: "With an acceptance rate of approximately 2% from over 1500 applicants I was picked together with 30 people to enroll in SALT's highly successful and intensive full stack developer bootcamp.",
+      workDescription2: "The program had a great emphasis on communication between developers as mob programming and agile work methods were heavily implemented. TDD was one of the core concepts utilised.",
+      workDescription3: "To mention part of the tech that was used during the program: JavaScript, React, ExpressJS, REST, Node, MongoDB, PostgreSQL, Redux, Jest, Docker, AWS, CI/CD and more.",
+      workDescription4: "Currently I am employed by SALT as one of their full stack developer consultants.",
+      workDescription5: "See below for some of my featured projects:",
     },
     {
       title: "Commissioning Engineer",
