@@ -45,10 +45,7 @@ const WorkExperiance = () => {
       <StyledWork>
         <Link to="/work/work">
           <StyledWorkxHeaders variants={fade}>
-            <div>
-              <h2>Full Stack Developer</h2>
-              <h3>SALT</h3>
-              </div>
+            <h2>Full Stack Developer</h2>
             <h2>2021-Present</h2>
           </StyledWorkxHeaders>
         </Link>
