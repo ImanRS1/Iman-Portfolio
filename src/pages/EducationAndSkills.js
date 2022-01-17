@@ -53,6 +53,7 @@ import pSQL from "../img/postgresql-icon.svg"
 import mongoI from "../img/mongodb-icon.svg"
 import contentI from "../img/contentful-icon.svg"
 import nextjs from "../img/next-js.svg"
+import docker from "../img/docker.svg"
 
 
 const EducationAndSkills = () => {
@@ -224,6 +225,12 @@ const EducationAndSkills = () => {
           <StyledSkill variants={skillAnim}>
             <img src={nextjs} />
             <p>NextJS</p>
+          </StyledSkill>
+        </StyledHide>
+        <StyledHide>
+          <StyledSkill variants={skillAnim}>
+            <img src={docker} />
+            <p>Docker</p>
           </StyledSkill>
         </StyledHide>
       </StyledSkillsHolder>
