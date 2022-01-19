@@ -79,157 +79,157 @@ const EducationAndSkills = () => {
       <StyledSkillsHolder variants={skillsStagger}>
         <StyledHide>
           <StyledSkill variants={skillAnim}>
-            <img src={reactI} />
+            <img src={reactI} alt="skill icon"/>
             <p>React</p>
           </StyledSkill>
         </StyledHide>
         <StyledHide>
           <StyledSkill variants={skillAnim}>
-            <img src={scss} />
+            <img src={scss} alt="skill icon" />
             <p>SASS</p>
           </StyledSkill>
         </StyledHide>
         <StyledHide>
           <StyledSkill variants={skillAnim}>
-            <img src={npm} />
+            <img src={npm} alt="skill icon" />
             <p>NPM</p>
           </StyledSkill>
         </StyledHide>
         <StyledHide>
           <StyledSkill variants={skillAnim}>
-            <img src={nodeI} />
+            <img src={nodeI} alt="skill icon" />
             <p>NodeJS</p>
           </StyledSkill>
         </StyledHide>
         <StyledHide>
           <StyledSkill variants={skillAnim}>
-            <img src={bs} />
+            <img src={bs} alt="skill icon" />
             <p>BootStrap5</p>
           </StyledSkill>
         </StyledHide>
         <StyledHide>
           <StyledSkill variants={skillAnim}>
-            <img src={js} />
+            <img src={js} alt="skill icon" />
             <p>JavaScript(ES6)</p>
           </StyledSkill>
         </StyledHide>
         <StyledHide>
           <StyledSkill variants={skillAnim}>
-            <img src={ht} />
+            <img src={ht} alt="skill icon" />
             <p>HTML5+</p>
           </StyledSkill>
         </StyledHide>
         <StyledHide>
           <StyledSkill variants={skillAnim}>
-            <img src={redux} />
+            <img src={redux} alt="skill icon" />
             <p>Redux</p>
           </StyledSkill>
         </StyledHide>
         <StyledHide>
           <StyledSkill variants={skillAnim}>
-            <img src={css} />
+            <img src={css} alt="skill icon" />
             <p>CSS3</p>
           </StyledSkill>
         </StyledHide>
         <StyledHide>
           <StyledSkill variants={skillAnim}>
-            <img src={gitI} />
+            <img src={gitI} alt="skill icon" />
             <p>Git</p>
           </StyledSkill>
         </StyledHide>
         <StyledHide>
           <StyledSkill variants={skillAnim}>
-            <img src={jqr} />
+            <img src={jqr} alt="skill icon" />
             <p>jQuerry</p>
           </StyledSkill>
         </StyledHide>
         <StyledHide>
           <StyledSkill variants={skillAnim}>
-            <img src={motionI} />
+            <img src={motionI} alt="skill icon" />
             <p>Framer Motion</p>
           </StyledSkill>
         </StyledHide>
         <StyledHide>
           <StyledSkill variants={skillAnim}>
-            <img src={jsxI} />
+            <img src={jsxI} alt="skill icon" />
             <p>JSX Syntax</p>
           </StyledSkill>
         </StyledHide>
         <StyledHide>
           <StyledSkill variants={skillAnim}>
-            <img src={styledI} />
+            <img src={styledI} alt="skill icon" />
             <p>SComponents</p>
           </StyledSkill>
         </StyledHide>
         <StyledHide>
           <StyledSkill variants={skillAnim}>
-            <img src={gatsbyI} />
+            <img src={gatsbyI} alt="skill icon" />
             <p>Gatsby</p>
           </StyledSkill>
         </StyledHide>
         <StyledHide>
           <StyledSkill variants={skillAnim}>
-            <img src={pugI} />
+            <img src={pugI} alt="skill icon" />
             <p>PugJS</p>
           </StyledSkill>
         </StyledHide>
         <StyledHide>
           <StyledSkill variants={skillAnim}>
-            <img src={expressI} />
+            <img src={expressI} alt="skill icon" />
             <p>ExpressJS</p>
           </StyledSkill>
         </StyledHide>
         <StyledHide>
           <StyledSkill variants={skillAnim}>
-            <img src={sqlI} />
+            <img src={sqlI} alt="skill icon" />
             <p>SQLite</p>
           </StyledSkill>
         </StyledHide>
         <StyledHide>
           <StyledSkill variants={skillAnim}>
-            <img src={graphI} />
+            <img src={graphI} alt="skill icon" />
             <p>GraphQL</p>
           </StyledSkill>
         </StyledHide>
         <StyledHide>
           <StyledSkill variants={skillAnim}>
-            <img src={mochaI} />
+            <img src={mochaI} alt="skill icon" />
             <p>Mocha</p>
           </StyledSkill>
         </StyledHide>
         <StyledHide>
           <StyledSkill variants={skillAnim}>
-            <img src={jestI} />
+            <img src={jestI} alt="skill icon" />
             <p>Jest</p>
           </StyledSkill>
         </StyledHide>
         <StyledHide>
           <StyledSkill variants={skillAnim}>
-            <img src={pSQL} />
+            <img src={pSQL} alt="skill icon" />
             <p>PostgreSQL</p>
           </StyledSkill>
         </StyledHide>
         <StyledHide>
           <StyledSkill variants={skillAnim}>
-            <img src={mongoI} />
+            <img src={mongoI} alt="skill icon" />
             <p>MongoDB</p>
           </StyledSkill>
         </StyledHide>
         <StyledHide>
           <StyledSkill variants={skillAnim}>
-            <img src={contentI} />
+            <img src={contentI} alt="skill icon" />
             <p>Contentful</p>
           </StyledSkill>
         </StyledHide>
         <StyledHide>
           <StyledSkill variants={skillAnim}>
-            <img src={nextjs} />
+            <img src={nextjs} alt="skill icon" />
             <p>NextJS</p>
           </StyledSkill>
         </StyledHide>
         <StyledHide>
           <StyledSkill variants={skillAnim}>
-            <img src={docker} />
+            <img src={docker} alt="skill icon" />
             <p>Docker</p>
           </StyledSkill>
         </StyledHide>
